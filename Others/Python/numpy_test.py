@@ -162,4 +162,4 @@ def fun_9():
     print(a)
     print(b)
 
-fun_9()
+fun_1()
