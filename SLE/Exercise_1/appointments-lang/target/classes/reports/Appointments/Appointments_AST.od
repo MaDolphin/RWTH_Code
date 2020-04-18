@@ -1,0 +1,355 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram appointments_AST {
+  @Appointments!MCGrammar(2,0):ASTMCGrammar {
+    symbol = @Appointments!Symbol(2,0);
+    enclosingScope = @Appointments!ArtifactScope;
+    spanningScope = @Appointments!Scope;
+    startRule = @!StartRule(4,2):ASTStartRule {
+      enclosingScope = @Appointments!Scope;
+      name = "Appointment";
+    };
+    r__package = [];
+    name = "Appointments";
+    supergrammar = [// *size: 1
+      @MCCommonLiterals!GrammarReference(2,29):ASTGrammarReference {
+        enclosingScope = @Appointments!Scope;
+        name = [de, monticore, literals, MCCommonLiterals];
+      }];
+    classProd = [// *size: 6
+      @Appointment!ClassProd(6,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(6,16):ASTAlt {
+            enclosingScope = @Appointment!Scope;
+            component = [// *size: 11
+              @appointment!Terminal(6,16):ASTTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "appointment";
+                iteration = 0;
+              },
+              @String!NonTerminal(6,30):ASTNonTerminal {
+                enclosingScope = @Appointment!Scope;
+                usageName = "string";
+                name = "String";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(6,37):ASTTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @Start!NonTerminal(7,4):ASTNonTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "Start";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @End!NonTerminal(8,4):ASTNonTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "End";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @participants_!Terminal(9,4):ASTTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "participants:";
+                iteration = 0;
+              },
+              @!Block(9,21):ASTBlock {
+                enclosingScope = @Appointment!Scope;
+                alt = [// *size: 1
+                  @!Alt(9,22):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 2
+                      @String!NonTerminal(9,22):ASTNonTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        usageName = "string";
+                        name = "String";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @COMMA !Terminal(9,29):ASTTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        name = ", ";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @!Block(9,36):ASTBlock {
+                enclosingScope = @Appointment!Scope;
+                alt = [// *size: 1
+                  @!Alt(9,37):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 1
+                      @String!NonTerminal(9,37):ASTNonTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        usageName = "string";
+                        name = "String";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @!Block(10,4):ASTBlock {
+                enclosingScope = @Appointment!Scope;
+                alt = [// *size: 4
+                  @!Alt(10,5):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 1
+                      @once!Terminal(10,5):ASTTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        name = "once";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(10,14):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 1
+                      @daily!Terminal(10,14):ASTTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        name = "daily";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(10,24):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 1
+                      @weekly!Terminal(10,24):ASTTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        name = "weekly";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(10,34):ASTAlt {
+                    enclosingScope = @Appointment!Scope;
+                    component = [// *size: 1
+                      @monthly!Terminal(10,34):ASTTerminal {
+                        enclosingScope = @Appointment!Scope;
+                        name = "monthly";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              },
+              @Break!NonTerminal(11,4):ASTNonTerminal {
+                enclosingScope = @Appointment!Scope;
+                usageName = "break";
+                name = "Break";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 18;
+              },
+              @RCURLY!Terminal(12,4):ASTTerminal {
+                enclosingScope = @Appointment!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Appointment";
+      },
+      @Start!ClassProd(14,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(14,10):ASTAlt {
+            enclosingScope = @Start!Scope;
+            component = [// *size: 4
+              @start!Terminal(14,10):ASTTerminal {
+                enclosingScope = @Start!Scope;
+                name = "start";
+                iteration = 0;
+              },
+              @COLON!Terminal(14,18):ASTTerminal {
+                enclosingScope = @Start!Scope;
+                name = ":";
+                iteration = 0;
+              },
+              @Date!NonTerminal(14,22):ASTNonTerminal {
+                enclosingScope = @Start!Scope;
+                name = "Date";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @Time!NonTerminal(14,28):ASTNonTerminal {
+                enclosingScope = @Start!Scope;
+                name = "Time";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Start";
+      },
+      @End!ClassProd(16,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(16,8):ASTAlt {
+            enclosingScope = @End!Scope;
+            component = [// *size: 4
+              @end!Terminal(16,8):ASTTerminal {
+                enclosingScope = @End!Scope;
+                name = "end";
+                iteration = 0;
+              },
+              @COLON!Terminal(16,14):ASTTerminal {
+                enclosingScope = @End!Scope;
+                name = ":";
+                iteration = 0;
+              },
+              @Date!NonTerminal(16,18):ASTNonTerminal {
+                enclosingScope = @End!Scope;
+                name = "Date";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @Time!NonTerminal(16,24):ASTNonTerminal {
+                enclosingScope = @End!Scope;
+                name = "Time";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "End";
+      },
+      @Date!ClassProd(18,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(18,9):ASTAlt {
+            enclosingScope = @Date!Scope;
+            component = [// *size: 5
+              @Digits!NonTerminal(18,9):ASTNonTerminal {
+                enclosingScope = @Date!Scope;
+                usageName = "digits";
+                name = "Digits";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @SLASH!Terminal(18,16):ASTTerminal {
+                enclosingScope = @Date!Scope;
+                name = "/";
+                iteration = 0;
+              },
+              @Digits!NonTerminal(18,20):ASTNonTerminal {
+                enclosingScope = @Date!Scope;
+                usageName = "digits";
+                name = "Digits";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @SLASH!Terminal(18,28):ASTTerminal {
+                enclosingScope = @Date!Scope;
+                name = "/";
+                iteration = 0;
+              },
+              @Digits!NonTerminal(18,32):ASTNonTerminal {
+                enclosingScope = @Date!Scope;
+                usageName = "digits";
+                name = "Digits";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Date";
+      },
+      @Time!ClassProd(20,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(20,9):ASTAlt {
+            enclosingScope = @Time!Scope;
+            component = [// *size: 3
+              @Digits!NonTerminal(20,9):ASTNonTerminal {
+                enclosingScope = @Time!Scope;
+                usageName = "digits";
+                name = "Digits";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @COLON!Terminal(20,16):ASTTerminal {
+                enclosingScope = @Time!Scope;
+                name = ":";
+                iteration = 0;
+              },
+              @Digits!NonTerminal(20,20):ASTNonTerminal {
+                enclosingScope = @Time!Scope;
+                usageName = "digits";
+                name = "Digits";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Time";
+      },
+      @Break!ClassProd(22,2):ASTClassProd {
+        enclosingScope = @Appointments!Scope;
+        alt = [// *size: 1
+          @!Alt(22,10):ASTAlt {
+            enclosingScope = @Break!Scope;
+            component = [// *size: 5
+              @break!Terminal(22,10):ASTTerminal {
+                enclosingScope = @Break!Scope;
+                name = "break";
+                iteration = 0;
+              },
+              @LCURLY!Terminal(22,18):ASTTerminal {
+                enclosingScope = @Break!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @Start!NonTerminal(22,22):ASTNonTerminal {
+                enclosingScope = @Break!Scope;
+                name = "Start";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @End!NonTerminal(22,28):ASTNonTerminal {
+                enclosingScope = @Break!Scope;
+                name = "End";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @RCURLY!Terminal(22,32):ASTTerminal {
+                enclosingScope = @Break!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Break";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

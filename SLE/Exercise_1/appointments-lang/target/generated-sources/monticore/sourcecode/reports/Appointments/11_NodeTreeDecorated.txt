@@ -1,0 +1,100 @@
+========================================================== Node Tree + Extra Infos
++--@Appointments!MCGrammar(2,0)                              (28x)
+                          template Parser.ftl
+                          template ParserHeader.ftl
+                          template LexerMember.ftl
+                          generates "AppointmentsAntlr.g4"
+                          template MCParser.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          generates "AppointmentsParser.java"
+   +--@!StartRule(4,2)
+   +--@MCCommonLiterals!GrammarReference(2,29)
+   +--@Appointment!ClassProd(6,2)
+   |  +--@!Alt(6,16)
+   |  |  +--@appointment!Terminal(6,16)
+   |  |  +--@String!NonTerminal(6,30)
+   |  |  +--@LCURLY!Terminal(6,37)
+   |  |  +--@Start!NonTerminal(7,4)
+   |  |  +--@End!NonTerminal(8,4)
+   |  |  +--@participants_!Terminal(9,4)
+   |  |  +--@!Block(9,21)
+   |  |  |  +--@!Alt(9,22)
+   |  |  |  |  +--@String!NonTerminal(9,22)
+   |  |  |  |  +--@COMMA !Terminal(9,29)
+   |  |  +--@!Block(9,36)
+   |  |  |  +--@!Alt(9,37)
+   |  |  |  |  +--@String!NonTerminal(9,37)
+   |  |  +--@!Block(10,4)
+   |  |  |  +--@!Alt(10,5)
+   |  |  |  |  +--@once!Terminal(10,5)
+   |  |  |  +--@!Alt(10,14)
+   |  |  |  |  +--@daily!Terminal(10,14)
+   |  |  |  +--@!Alt(10,24)
+   |  |  |  |  +--@weekly!Terminal(10,24)
+   |  |  |  +--@!Alt(10,34)
+   |  |  |  |  +--@monthly!Terminal(10,34)
+   |  |  +--@Break!NonTerminal(11,4)
+   |  |  +--@RCURLY!Terminal(12,4)
+   +--@Start!ClassProd(14,2)
+   |  +--@!Alt(14,10)
+   |  |  +--@start!Terminal(14,10)
+   |  |  +--@COLON!Terminal(14,18)
+   |  |  +--@Date!NonTerminal(14,22)
+   |  |  +--@Time!NonTerminal(14,28)
+   +--@End!ClassProd(16,2)
+   |  +--@!Alt(16,8)
+   |  |  +--@end!Terminal(16,8)
+   |  |  +--@COLON!Terminal(16,14)
+   |  |  +--@Date!NonTerminal(16,18)
+   |  |  +--@Time!NonTerminal(16,24)
+   +--@Date!ClassProd(18,2)
+   |  +--@!Alt(18,9)
+   |  |  +--@Digits!NonTerminal(18,9)
+   |  |  +--@SLASH!Terminal(18,16)
+   |  |  +--@Digits!NonTerminal(18,20)
+   |  |  +--@SLASH!Terminal(18,28)
+   |  |  +--@Digits!NonTerminal(18,32)
+   +--@Time!ClassProd(20,2)
+   |  +--@!Alt(20,9)
+   |  |  +--@Digits!NonTerminal(20,9)
+   |  |  +--@COLON!Terminal(20,16)
+   |  |  +--@Digits!NonTerminal(20,20)
+   +--@Break!ClassProd(22,2)
+   |  +--@!Alt(22,10)
+   |  |  +--@break!Terminal(22,10)
+   |  |  +--@LCURLY!Terminal(22,18)
+   |  |  +--@Start!NonTerminal(22,22)
+   |  |  +--@End!NonTerminal(22,28)
+   |  |  +--@RCURLY!Terminal(22,32)
+========================================================== Explanation
+Node Tree: this is the extended form: one with extra infos
+as sublines. The tree itself lists all AST nodes using their identifiers.
+Vertical line: list all the direct children of a node.
+Each node knows about:
+- #Visits through templates (in the raw version) looks like: (2x)
+- files generated originating from this node
+- templates called on this node
+Remark: a "null" as value in the tree means that the tree has been altered
+after parsing. --> this is not yet reflected in the protocol
+(EOF)

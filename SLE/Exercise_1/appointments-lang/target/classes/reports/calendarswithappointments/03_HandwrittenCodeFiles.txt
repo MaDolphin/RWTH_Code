@@ -1,0 +1,7 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+========================================================== Unused Handwritten Code Files
+          /Users/hhk/Documents/GitHub/Code/SLE/appointments-lang/src/main/java/appointments/AppointmentsTool.java
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

@@ -1,0 +1,10 @@
+// (c) https://github.com/MontiCore/monticore
+grammar Calendars extends de.monticore.literals.MCCommonLiterals {
+
+  interface Appointments;
+  start Calendars;
+
+  Calendars = Name "`s calendar:";
+
+}
+

@@ -1,0 +1,54 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram calendars_AST {
+  @Calendars!MCGrammar(2,0):ASTMCGrammar {
+    symbol = @Calendars!Symbol(2,0);
+    enclosingScope = @Calendars!ArtifactScope;
+    spanningScope = @Calendars!Scope;
+    startRule = @!StartRule(5,2):ASTStartRule {
+      enclosingScope = @Calendars!Scope;
+      name = "Calendars";
+    };
+    r__package = [];
+    name = "Calendars";
+    supergrammar = [// *size: 1
+      @MCCommonLiterals!GrammarReference(2,26):ASTGrammarReference {
+        enclosingScope = @Calendars!Scope;
+        name = [de, monticore, literals, MCCommonLiterals];
+      }];
+    classProd = [// *size: 1
+      @Calendars!ClassProd(7,2):ASTClassProd {
+        enclosingScope = @Calendars!Scope;
+        alt = [// *size: 1
+          @!Alt(7,14):ASTAlt {
+            enclosingScope = @Calendars!Scope(!2);
+            component = [// *size: 2
+              @Name!NonTerminal(7,14):ASTNonTerminal {
+                enclosingScope = @Calendars!Scope(!2);
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @_s_calendar_!Terminal(7,19):ASTTerminal {
+                enclosingScope = @Calendars!Scope(!2);
+                name = "`s calendar:";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Calendars";
+      }];
+    interfaceProd = [// *size: 1
+      @Appointments!InterfaceProd(4,2):ASTInterfaceProd {
+        enclosingScope = @Calendars!Scope;
+        name = "Appointments";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

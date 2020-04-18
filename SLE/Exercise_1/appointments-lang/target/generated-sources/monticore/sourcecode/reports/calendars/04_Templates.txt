@@ -1,0 +1,191 @@
+========================================================== Used Templates
+#Calls:   Template Name
+1x        ASTCNodeInit.ftl
+34x       ASTCNodeMethodDelegate.ftl
+4x        Accept.ftl
+3x        AcceptSuper.ftl
+1x        AddAndLinkSpanningSymbol.ftl
+1x        AddAndLinkSubScopes.ftl
+1x        AddScopeSpanningSymbol.ftl
+1x        AddSubScope.ftl
+1x        AddSymbols.ftl
+12x       Annotations.ftl
+79x       Attribute.ftl
+5x        Build.ftl
+1x        BuildMethod.ftl
+12x       BuilderDelegatorMethod.ftl
+7x        BuilderMethod.ftl
+1x        CacheMethod.ftl
+1x        CheckIfContinueAsSubScope.ftl
+29x       Class.ftl
+32x       Constructor.ftl
+1x        Create.ftl
+12x       CreateDelegateMethod.ftl
+2x        CreateFromAST.ftl
+3x        CreateScope.ftl
+1x        CreateSymbolTableFromAST.ftl
+1x        DeepCloneWithParameters.ftl
+1x        DeepEqualsWithComments.ftl
+1x        DeepEqualsWithOrder.ftl
+1x        DeserializeArtifactScope.ftl
+1x        DeserializeJsonObject.ftl
+1x        DeserializeScope.ftl
+1x        DeserializeString.ftl
+1x        DiagramVisitor.ftl
+1x        DoCreate.ftl
+25x       EmptyBody.ftl
+1x        Enum.ftl
+1x        EqualAttributes.ftl
+1x        EqualsWithComments.ftl
+1x        FilterRelevantSubScopes.ftl
+37x       Get.ftl
+1x        GetAllLanguages.ftl
+1x        GetChildren.ftl
+1x        GetFactory.ftl
+1x        GetFilePath.ftl
+1x        GetMill.ftl
+1x        GetMillMethod.ftl
+1x        GetName.ftl
+1x        GetParent.ftl
+1x        GetRemainingNameForResolveDown.ftl
+1x        GetSubScopes.ftl
+1x        GetTopLevelSymbol.ftl
+8x        Handle.ftl
+1x        HasSymbolsInSubScopes.ftl
+41x       Imports.ftl
+3x        InheritedSetEnclosingScope.ftl
+1x        InitMe.ftl
+1x        InitMeMethod.ftl
+1x        InitMethod.ftl
+12x       Interface.ftl
+7x        IsPresent.ftl
+1x        IsPresentName.ftl
+6x        IsValidMethod.ftl
+1x        LexerMember.ftl
+1x        LoadModels.ftl
+1x        LoadModelsIntoScope.ftl
+1x        LoadSymbolsIntoScope.ftl
+1x        MCParser.ftl
+17x       MCParserMethods.ftl
+585x      Method.ftl
+96x       MethodDelegate.ftl
+1x        Parser.ftl
+1x        ParserHeader.ftl
+1x        ProtectedBuilderMethod.ftl
+1x        PutOnStack.ftl
+1x        RemoveSubScope.ftl
+1x        Reset.ftl
+1x        ResetMethod.ftl
+1x        Resolve.ftl
+1x        ResolveSymbol.ftl
+1x        Serialize.ftl
+1x        SerializeLocalSymbols.ftl
+1x        SerializeRelevantSubScopes.ftl
+1x        SerializeSymbol.ftl
+28x       Set.ftl
+7x        SetAbsent.ftl
+1x        SetEnclosingScope.ftl
+1x        SetRealThis.ftl
+1x        SetSpanningSymbol.ftl
+1x        SetSpanningSymbolAbsent.ftl
+1x        SetSubScopes.ftl
+4x        SetVisitor.ftl
+1x        ShowWarningIfParsedModels.ftl
+1x        Travers.ftl
+3x        Traverse.ftl
+44x       Value.ftl
+1x        VisitArtifactScope.ftl
+1x        VisitNoSymbol.ftl
+1x        VisitScope.ftl
+81x       VisitorMethods.ftl
+========================================================== Unused Templates
+_ast/ast_class/refSymbolMethods/Get.ftl
+_ast/ast_class/refSymbolMethods/GetDefinition.ftl
+_ast/ast_class/refSymbolMethods/GetDefinitionList.ftl
+_ast/ast_class/refSymbolMethods/GetSymbol.ftl
+_ast/ast_class/refSymbolMethods/GetSymbolList.ftl
+_ast/ast_class/refSymbolMethods/IsPresent.ftl
+_ast/ast_class/refSymbolMethods/IsPresentDefinition.ftl
+_ast/ast_class/refSymbolMethods/IsPresentSymbol.ftl
+_ast/ast_class/refSymbolMethods/MethodDelegate.ftl
+_ast/ast_constants/ASTConstantsConstructor.ftl
+_ast/builder/BuildInit.ftl
+_ast/mill/ProtectedBuilderForSuperMethod.ftl
+_ast/nodefactory/CreateWithParams.ftl
+_ast/nodefactory/DoCreateWithParams.ftl
+_ast_emf/ast_class/EGet.ftl
+_ast_emf/ast_class/EIsSet.ftl
+_ast_emf/ast_class/ESet.ftl
+_ast_emf/ast_class/EToString.ftl
+_ast_emf/ast_class/EUnset.ftl
+_ast_emf/ast_class/Set.ftl
+_ast_emf/emf_package/CreatePackageContents.ftl
+_ast_emf/emf_package/EmfPackage.ftl
+_ast_emf/emf_package/GetASTESuperPackages.ftl
+_ast_emf/emf_package/InitMethod.ftl
+_ast_emf/emf_package/InitializePackageContents.ftl
+_ast_emf/factory/EmfCreate.ftl
+_ast_emf/factory/GetFactory.ftl
+_cocos/AddCoCo.ftl
+_cocos/Visit.ftl
+_symboltable/AcceptTop.ftl
+_symboltable/artifactscope/ContinueWithEnclosingScope.ftl
+_symboltable/globalscope/ResolveAdapted.ftl
+_symboltable/iglobalscope/LoadModelsFor.ftl
+_symboltable/iglobalscope/ResolveMany.ftl
+_symboltable/iscope/ContinueAsSubScope.ftl
+_symboltable/iscope/ContinueWithEnclosingScope.ftl
+_symboltable/iscope/Filter.ftl
+_symboltable/iscope/ResolveDelegate.ftl
+_symboltable/iscope/ResolveDownMany.ftl
+_symboltable/iscope/ResolveMany.ftl
+_symboltable/iscope/ResolveManyLocally.ftl
+_symboltable/language/CalculateModelNamesFor.ftl
+_symboltable/scope/AcceptOwn.ftl
+_symboltable/scope/GetSymbolSize.ftl
+_symboltable/scope/SetSpanningSymbolOpt.ftl
+_symboltable/serialization/PrintComplexAttribute.ftl
+_symboltable/serialization/PrintListAttribute.ftl
+_symboltable/serialization/PrintOptionalAttribute.ftl
+_symboltable/serialization/PrintSimpleAttribute.ftl
+_symboltable/serialization/scopeDeSer/DeserializeSymbol.ftl
+_symboltable/serialization/symbolDeSer/DeserializeJsonObject.ftl
+_symboltable/serialization/symbolDeSer/DeserializeSymbol.ftl
+_symboltable/serialization/symbolTablePrinter/SerializeOptAttribute.ftl
+_symboltable/serialization/symbolTablePrinter/SerializeSimpleListAttribute.ftl
+_symboltable/serialization/symbolTablePrinter/VisitSymbol.ftl
+_symboltable/symbol/Build.ftl
+_symboltable/symbol/DetermineFullName.ftl
+_symboltable/symbol/DeterminePackageName.ftl
+_symboltable/symbol/NameSetter.ftl
+_symboltable/symbolloader/Build.ftl
+_symboltable/symbolloader/Constructor.ftl
+_symboltable/symbolloader/GetSymbol.ftl
+_symboltable/symbolloader/IsSymbolLoaded.ftl
+_symboltable/symbolloader/LoadSymbol.ftl
+_symboltable/symbolloader/Set.ftl
+_symboltable/symboltablecreator/AddToScope.ftl
+_symboltable/symboltablecreator/AddToScopeAndLinkWithNode.ftl
+_symboltable/symboltablecreator/SetLinkBetweenSpannedScopeAndNode.ftl
+_symboltable/symboltablecreator/SetLinkBetweenSpannedScopeAndNodeScope.ftl
+_symboltable/symboltablecreator/SetLinkBetweenSymbolAndNode.ftl
+_symboltable/symboltablecreator/Visit.ftl
+_symboltable/symboltablecreator/VisitScope.ftl
+core/Constants.ftl
+core/EmptyConstants.ftl
+core/Package.ftl
+data/ConstructorAttributesSetter.ftl
+de/monticore/generating/templateengine/freemarker/Aliases.ftl
+types/TypeResolver.ftl
+========================================================== Used USTemplates
+#Calls:   Template Name
+========================================================== Unused USTemplates
+========================================================== Explanation
+Used Templates: the list of standard template being used.
+Used USTemplates: the list of user specifc templates being used.
+- #Executions: how often the template was called/included
+Unused Templates: the list of templates which have not been executed
+Unused USTemplates: the list of user specifc templates which
+                    have not been executed.
+All lists are sorted
+(EOF)

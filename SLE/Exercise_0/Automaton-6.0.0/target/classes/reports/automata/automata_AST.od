@@ -1,0 +1,322 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram automata_AST {
+  @Automata!MCGrammar(4,0):ASTMCGrammar {
+    symbol = @Automata!Symbol(4,0);
+    enclosingScope = @Automata!ArtifactScope;
+    spanningScope = @Automata!Scope;
+    r__package = [];
+    name = "Automata";
+    supergrammar = [// *size: 1
+      @MCBasics!GrammarReference(4,25):ASTGrammarReference {
+        enclosingScope = @Automata!Scope;
+        name = [de, monticore, MCBasics];
+      }];
+    classProd = [// *size: 3
+      @Automaton!ClassProd(11,0):ASTClassProd {
+        enclosingScope = @Automata!Scope;
+        symbolDefinition = [// *size: 2
+          @!SymbolDefinition(11,0):ASTSymbolDefinition {
+            enclosingScope = @Automaton!Scope;
+            genSymbol = true;
+            genScope = false;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          },
+          @!SymbolDefinition(11,7):ASTSymbolDefinition {
+            enclosingScope = @Automaton!Scope;
+            genSymbol = false;
+            genScope = true;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          }];
+        alt = [// *size: 1
+          @!Alt(12,2):ASTAlt {
+            enclosingScope = @Automaton!Scope;
+            component = [// *size: 5
+              @aut!Terminal(12,2):ASTTerminal {
+                enclosingScope = @Automaton!Scope;
+                name = "aut";
+                iteration = 0;
+              },
+              @Name!NonTerminal(12,8):ASTNonTerminal {
+                enclosingScope = @Automaton!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(12,13):ASTTerminal {
+                enclosingScope = @Automaton!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @!Block(12,17):ASTBlock {
+                enclosingScope = @Automaton!Scope;
+                alt = [// *size: 2
+                  @!Alt(12,18):ASTAlt {
+                    enclosingScope = @Automaton!Scope;
+                    component = [// *size: 1
+                      @State!NonTerminal(12,18):ASTNonTerminal {
+                        enclosingScope = @Automaton!Scope;
+                        usageName = "state";
+                        name = "State";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(12,26):ASTAlt {
+                    enclosingScope = @Automaton!Scope;
+                    component = [// *size: 1
+                      @Transition!NonTerminal(12,26):ASTNonTerminal {
+                        enclosingScope = @Automaton!Scope;
+                        usageName = "transition";
+                        name = "Transition";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @RCURLY!Terminal(12,39):ASTTerminal {
+                enclosingScope = @Automaton!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Automaton";
+      },
+      @State!ClassProd(21,0):ASTClassProd {
+        enclosingScope = @Automata!Scope;
+        symbolDefinition = [// *size: 2
+          @!SymbolDefinition(21,0):ASTSymbolDefinition {
+            enclosingScope = @State!Scope;
+            genSymbol = true;
+            genScope = false;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          },
+          @!SymbolDefinition(21,7):ASTSymbolDefinition {
+            enclosingScope = @State!Scope;
+            genSymbol = false;
+            genScope = true;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          }];
+        alt = [// *size: 1
+          @!Alt(22,2):ASTAlt {
+            enclosingScope = @State!Scope;
+            component = [// *size: 4
+              @state!Terminal(22,2):ASTTerminal {
+                enclosingScope = @State!Scope;
+                name = "state";
+                iteration = 0;
+              },
+              @Name!NonTerminal(22,10):ASTNonTerminal {
+                enclosingScope = @State!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(24,2):ASTBlock {
+                enclosingScope = @State!Scope;
+                alt = [// *size: 2
+                  @!Alt(24,3):ASTAlt {
+                    enclosingScope = @State!Scope;
+                    component = [// *size: 1
+                      @!Block(24,3):ASTBlock {
+                        enclosingScope = @State!Scope;
+                        alt = [// *size: 1
+                          @!Alt(24,4):ASTAlt {
+                            enclosingScope = @State!Scope;
+                            component = [// *size: 3
+                              @LTLT!Terminal(24,4):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = "<<";
+                                iteration = 0;
+                              },
+                              @!ConstantGroup(24,9):ASTConstantGroup {
+                                enclosingScope = @State!Scope;
+                                constant = [// *size: 1
+                                  @initial!Constant(24,10):ASTConstant {
+                                    enclosingScope = @State!Scope;
+                                    name = "initial";
+                                  }];
+                                iteration = 0;
+                              },
+                              @GTGT!Terminal(24,21):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = ">>";
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(24,30):ASTAlt {
+                    enclosingScope = @State!Scope;
+                    component = [// *size: 1
+                      @!Block(24,30):ASTBlock {
+                        enclosingScope = @State!Scope;
+                        alt = [// *size: 1
+                          @!Alt(24,31):ASTAlt {
+                            enclosingScope = @State!Scope;
+                            component = [// *size: 3
+                              @LTLT!Terminal(24,31):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = "<<";
+                                iteration = 0;
+                              },
+                              @!ConstantGroup(24,36):ASTConstantGroup {
+                                enclosingScope = @State!Scope;
+                                constant = [// *size: 1
+                                  @final!Constant(24,37):ASTConstant {
+                                    enclosingScope = @State!Scope;
+                                    name = "final";
+                                  }];
+                                iteration = 0;
+                              },
+                              @GTGT!Terminal(24,46):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = ">>";
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @!Block(26,2):ASTBlock {
+                enclosingScope = @State!Scope;
+                alt = [// *size: 2
+                  @!Alt(26,4):ASTAlt {
+                    enclosingScope = @State!Scope;
+                    component = [// *size: 1
+                      @!Block(26,4):ASTBlock {
+                        enclosingScope = @State!Scope;
+                        alt = [// *size: 1
+                          @!Alt(26,5):ASTAlt {
+                            enclosingScope = @State!Scope;
+                            component = [// *size: 3
+                              @LCURLY!Terminal(26,5):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = "{";
+                                iteration = 0;
+                              },
+                              @!Block(26,9):ASTBlock {
+                                enclosingScope = @State!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(26,10):ASTAlt {
+                                    enclosingScope = @State!Scope;
+                                    component = [// *size: 1
+                                      @State!NonTerminal(26,10):ASTNonTerminal {
+                                        enclosingScope = @State!Scope;
+                                        usageName = "state";
+                                        name = "State";
+                                        genSymbol = false;
+                                        plusKeywords = false;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              },
+                              @RCURLY!Terminal(26,18):ASTTerminal {
+                                enclosingScope = @State!Scope;
+                                name = "}";
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(26,25):ASTAlt {
+                    enclosingScope = @State!Scope;
+                    component = [// *size: 1
+                      @SEMI!Terminal(26,25):ASTTerminal {
+                        enclosingScope = @State!Scope;
+                        name = ";";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "State";
+      },
+      @Transition!ClassProd(34,0):ASTClassProd {
+        enclosingScope = @Automata!Scope;
+        alt = [// *size: 1
+          @!Alt(35,2):ASTAlt {
+            enclosingScope = @Transition!Scope;
+            component = [// *size: 6
+              @Name!NonTerminal(35,2):ASTNonTerminal {
+                enclosingScope = @Transition!Scope;
+                usageName = "from";
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @MINUS!Terminal(35,12):ASTTerminal {
+                enclosingScope = @Transition!Scope;
+                name = "-";
+                iteration = 0;
+              },
+              @Name!NonTerminal(35,16):ASTNonTerminal {
+                enclosingScope = @Transition!Scope;
+                usageName = "input";
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @GT!Terminal(35,27):ASTTerminal {
+                enclosingScope = @Transition!Scope;
+                name = ">";
+                iteration = 0;
+              },
+              @Name!NonTerminal(35,31):ASTNonTerminal {
+                enclosingScope = @Transition!Scope;
+                usageName = "to";
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @SEMI!Terminal(35,39):ASTTerminal {
+                enclosingScope = @Transition!Scope;
+                name = ";";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Transition";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

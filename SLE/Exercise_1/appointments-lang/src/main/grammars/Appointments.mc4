@@ -1,0 +1,24 @@
+// (c) https://github.com/MontiCore/monticore
+grammar Appointments extends de.monticore.literals.MCCommonLiterals {
+
+  start Appointment;
+
+  Appointment = "appointment" String "{"
+    Start
+    End
+    "participants:"  (String ", ")* (String)*
+    ("once" | "daily" | "weekly"| "monthly")
+    Break*
+    "}";
+
+  Start = "start" ":" Date? Time;
+
+  End = "end" ":" Date? Time;
+
+  Date = Digits "/" Digits  "/" Digits;
+
+  Time = Digits ":" Digits;
+
+  Break = "break" "{" Start End "}";
+}
+

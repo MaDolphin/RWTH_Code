@@ -1,0 +1,651 @@
+digraph {
+  subgraph cluster_ {
+    label = "";
+    labeljust = l;
+    subgraph cluster_core {
+      label = "core";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_core_Constructor [label="core.Constructor.ftl (28)"];
+      node[shape=ellipse];
+      Template_core_Attribute [label="core.Attribute.ftl (79)"];
+      node[shape=ellipse];
+      Template_core_Class [label="core.Class.ftl (29)"];
+      node[shape=ellipse];
+      Template_core_Interface [label="core.Interface.ftl (12)"];
+      node[shape=ellipse];
+      Template_core_EmptyBody [label="core.EmptyBody.ftl (25)"];
+      node[shape=ellipse];
+      Template_core_Annotations [label="core.Annotations.ftl (12)"];
+      node[shape=ellipse];
+      Template_core_Method [label="core.Method.ftl (585)"];
+      node[shape=ellipse];
+      Template_core_Imports [label="core.Imports.ftl (41)"];
+      node[shape=ellipse];
+      Template_core_Value [label="core.Value.ftl (44)"];
+      node[shape=ellipse];
+      Template_core_Enum [label="core.Enum.ftl (1)"];
+    }
+    subgraph cluster__symboltable_serialization_symbolDeSer {
+      label = "_symboltable.serialization.symbolDeSer";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolDeSer_Serialize [label="_symboltable.serialization.symbolDeSer.Serialize.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolDeSer_DeserializeString [label="_symboltable.serialization.symbolDeSer.DeserializeString.ftl (1)"];
+    }
+    subgraph cluster__symboltable_serialization_scopeDeSer {
+      label = "_symboltable.serialization.scopeDeSer";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_DeserializeArtifactScope [label="_symboltable.serialization.scopeDeSer.DeserializeArtifactScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_DeserializeScope [label="_symboltable.serialization.scopeDeSer.DeserializeScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_AddAndLinkSubScopes [label="_symboltable.serialization.scopeDeSer.AddAndLinkSubScopes.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_DeserializeJsonObject [label="_symboltable.serialization.scopeDeSer.DeserializeJsonObject.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_AddSymbols [label="_symboltable.serialization.scopeDeSer.AddSymbols.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_scopeDeSer_AddAndLinkSpanningSymbol [label="_symboltable.serialization.scopeDeSer.AddAndLinkSpanningSymbol.ftl (1)"];
+    }
+    subgraph cluster__symboltable_serialization_symbolTablePrinter {
+      label = "_symboltable.serialization.symbolTablePrinter";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_VisitScope [label="_symboltable.serialization.symbolTablePrinter.VisitScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_HasSymbolsInSubScopes [label="_symboltable.serialization.symbolTablePrinter.HasSymbolsInSubScopes.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_SerializeRelevantSubScopes [label="_symboltable.serialization.symbolTablePrinter.SerializeRelevantSubScopes.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_SerializeLocalSymbols [label="_symboltable.serialization.symbolTablePrinter.SerializeLocalSymbols.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_FilterRelevantSubScopes [label="_symboltable.serialization.symbolTablePrinter.FilterRelevantSubScopes.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_VisitArtifactScope [label="_symboltable.serialization.symbolTablePrinter.VisitArtifactScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_AddScopeSpanningSymbol [label="_symboltable.serialization.symbolTablePrinter.AddScopeSpanningSymbol.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_serialization_symbolTablePrinter_SerializeSymbol [label="_symboltable.serialization.symbolTablePrinter.SerializeSymbol.ftl (1)"];
+    }
+    subgraph cluster__symboltable_symboltablecreator {
+      label = "_symboltable.symboltablecreator";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreator_CreateScope [label="_symboltable.symboltablecreator.CreateScope.ftl (3)"];
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreator_VisitNoSymbol [label="_symboltable.symboltablecreator.VisitNoSymbol.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreator_PutOnStack [label="_symboltable.symboltablecreator.PutOnStack.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreator_CreateFromAST [label="_symboltable.symboltablecreator.CreateFromAST.ftl (1)"];
+    }
+    subgraph cluster__symboltable_artifactscope {
+      label = "_symboltable.artifactscope";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_CheckIfContinueAsSubScope [label="_symboltable.artifactscope.CheckIfContinueAsSubScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_GetRemainingNameForResolveDown [label="_symboltable.artifactscope.GetRemainingNameForResolveDown.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_Constructor [label="_symboltable.artifactscope.Constructor.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_Build [label="_symboltable.artifactscope.Build.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_GetTopLevelSymbol [label="_symboltable.artifactscope.GetTopLevelSymbol.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_GetFilePath [label="_symboltable.artifactscope.GetFilePath.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_GetName [label="_symboltable.artifactscope.GetName.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_artifactscope_IsPresentName [label="_symboltable.artifactscope.IsPresentName.ftl (1)"];
+    }
+    subgraph cluster__symboltable_scope {
+      label = "_symboltable.scope";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_scope_Build [label="_symboltable.scope.Build.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_SetSpanningSymbolAbsent [label="_symboltable.scope.SetSpanningSymbolAbsent.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_SetEnclosingScope [label="_symboltable.scope.SetEnclosingScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_Accept [label="_symboltable.scope.Accept.ftl (3)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_SetSubScopes [label="_symboltable.scope.SetSubScopes.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_SetSpanningSymbol [label="_symboltable.scope.SetSpanningSymbol.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_AddSubScope [label="_symboltable.scope.AddSubScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_RemoveSubScope [label="_symboltable.scope.RemoveSubScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_scope_GetSubScopes [label="_symboltable.scope.GetSubScopes.ftl (1)"];
+    }
+    subgraph cluster__symboltable_symboltablecreatordelegator {
+      label = "_symboltable.symboltablecreatordelegator";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreatordelegator_Constructor [label="_symboltable.symboltablecreatordelegator.Constructor.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreatordelegator_Build [label="_symboltable.symboltablecreatordelegator.Build.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symboltablecreatordelegator_CreateFromAST [label="_symboltable.symboltablecreatordelegator.CreateFromAST.ftl (1)"];
+    }
+    subgraph cluster__symboltable_language {
+      label = "_symboltable.language";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_language_Constructor [label="_symboltable.language.Constructor.ftl (1)"];
+    }
+    subgraph cluster__symboltable_symTabMill {
+      label = "_symboltable.symTabMill";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_symTabMill_GetMill [label="_symboltable.symTabMill.GetMill.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symTabMill_BuilderMethod [label="_symboltable.symTabMill.BuilderMethod.ftl (6)"];
+      node[shape=ellipse];
+      Template__symboltable_symTabMill_InitMe [label="_symboltable.symTabMill.InitMe.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_symTabMill_Reset [label="_symboltable.symTabMill.Reset.ftl (1)"];
+    }
+    subgraph cluster__symboltable_globalscope {
+      label = "_symboltable.globalscope";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_globalscope_Build [label="_symboltable.globalscope.Build.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_globalscope_CacheMethod [label="_symboltable.globalscope.CacheMethod.ftl (1)"];
+    }
+    subgraph cluster__symboltable_modelloader {
+      label = "_symboltable.modelloader";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__symboltable_modelloader_CreateSymbolTableFromAST [label="_symboltable.modelloader.CreateSymbolTableFromAST.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_Constructor [label="_symboltable.modelloader.Constructor.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_LoadModels [label="_symboltable.modelloader.LoadModels.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_Resolve [label="_symboltable.modelloader.Resolve.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_Build [label="_symboltable.modelloader.Build.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_ResolveSymbol [label="_symboltable.modelloader.ResolveSymbol.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_LoadModelsIntoScope [label="_symboltable.modelloader.LoadModelsIntoScope.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_ShowWarningIfParsedModels [label="_symboltable.modelloader.ShowWarningIfParsedModels.ftl (1)"];
+      node[shape=ellipse];
+      Template__symboltable_modelloader_LoadSymbolsIntoScope [label="_symboltable.modelloader.LoadSymbolsIntoScope.ftl (1)"];
+    }
+    subgraph cluster_parser {
+      label = "parser";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_parser_MCParserMethods [label="parser.MCParserMethods.ftl (17)"];
+      node[shape=ellipse];
+      Template_parser_Parser [label="parser.Parser.ftl (1)"];
+      node[shape=ellipse];
+      Template_parser_MCParser [label="parser.MCParser.ftl (1)"];
+      node[shape=ellipse];
+      Template_parser_ParserHeader [label="parser.ParserHeader.ftl (1)"];
+      node[shape=ellipse];
+      Template_parser_LexerMember [label="parser.LexerMember.ftl (1)"];
+    }
+    subgraph cluster_data {
+      label = "data";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_data_DeepEqualsWithComments [label="data.DeepEqualsWithComments.ftl (1)"];
+      node[shape=ellipse];
+      Template_data_EqualsWithComments [label="data.EqualsWithComments.ftl (1)"];
+      node[shape=ellipse];
+      Template_data_DeepCloneWithParameters [label="data.DeepCloneWithParameters.ftl (1)"];
+      node[shape=ellipse];
+      Template_data_DeepEqualsWithOrder [label="data.DeepEqualsWithOrder.ftl (1)"];
+      node[shape=ellipse];
+      Template_data_EqualAttributes [label="data.EqualAttributes.ftl (1)"];
+    }
+    subgraph cluster_calendars__symboltable {
+      label = "calendars._symboltable";
+      labeljust = l;
+      subgraph cluster_calendars__symboltable_serialization {
+        label = "calendars._symboltable.serialization";
+        labeljust = l;
+        node[shape=note];
+        File_calendars__symboltable_serialization_CalendarsScopeDeSer [label="calendars._symboltable.serialization.CalendarsScopeDeSer.java (1)"];
+        node[shape=note];
+        File_calendars__symboltable_serialization_CalendarsSymbolTablePrinter [label="calendars._symboltable.serialization.CalendarsSymbolTablePrinter.java (1)"];
+      }
+      node[shape=note];
+      File_calendars__symboltable_CalendarsSymbolTableCreator [label="calendars._symboltable.CalendarsSymbolTableCreator.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsScope [label="calendars._symboltable.CalendarsScope.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_ICalendarsGlobalScope [label="calendars._symboltable.ICalendarsGlobalScope.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsSymbolTableCreatorBuilder [label="calendars._symboltable.CalendarsSymbolTableCreatorBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsLanguage [label="calendars._symboltable.CalendarsLanguage.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsGlobalScopeBuilder [label="calendars._symboltable.CalendarsGlobalScopeBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsSymbolTableCreatorDelegator [label="calendars._symboltable.CalendarsSymbolTableCreatorDelegator.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_ICalendarsScope [label="calendars._symboltable.ICalendarsScope.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_ICommonCalendarsSymbol [label="calendars._symboltable.ICommonCalendarsSymbol.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_MCCommonLiteralsSTCForCalendars [label="calendars._symboltable.MCCommonLiteralsSTCForCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsArtifactScopeBuilder [label="calendars._symboltable.CalendarsArtifactScopeBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsSymTabMill [label="calendars._symboltable.CalendarsSymTabMill.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsModelLoader [label="calendars._symboltable.CalendarsModelLoader.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsSymbolTableCreatorDelegatorBuilder [label="calendars._symboltable.CalendarsSymbolTableCreatorDelegatorBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsModelLoaderBuilder [label="calendars._symboltable.CalendarsModelLoaderBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsScopeBuilder [label="calendars._symboltable.CalendarsScopeBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_MCLiteralsBasisSTCForCalendars [label="calendars._symboltable.MCLiteralsBasisSTCForCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsArtifactScope [label="calendars._symboltable.CalendarsArtifactScope.java (1)"];
+      node[shape=note];
+      File_calendars__symboltable_CalendarsGlobalScope [label="calendars._symboltable.CalendarsGlobalScope.java (1)"];
+    }
+    subgraph cluster_calendars__parser {
+      label = "calendars._parser";
+      labeljust = l;
+      node[shape=note];
+      File_calendars__parser_CalendarsAntlr [label="calendars._parser.CalendarsAntlr.g4 (1)"];
+      node[shape=note];
+      File_calendars__parser_CalendarsParser [label="calendars._parser.CalendarsParser.java (1)"];
+    }
+    subgraph cluster_calendars__od {
+      label = "calendars._od";
+      labeljust = l;
+      node[shape=note];
+      File_calendars__od_Calendars2OD [label="calendars._od.Calendars2OD.java (1)"];
+    }
+    subgraph cluster_calendars__visitor {
+      label = "calendars._visitor";
+      labeljust = l;
+      node[shape=note];
+      File_calendars__visitor_CalendarsDelegatorVisitor [label="calendars._visitor.CalendarsDelegatorVisitor.java (1)"];
+      node[shape=note];
+      File_calendars__visitor_CalendarsScopeVisitor [label="calendars._visitor.CalendarsScopeVisitor.java (1)"];
+      node[shape=note];
+      File_calendars__visitor_CalendarsVisitor [label="calendars._visitor.CalendarsVisitor.java (1)"];
+      node[shape=note];
+      File_calendars__visitor_CalendarsSymbolVisitor [label="calendars._visitor.CalendarsSymbolVisitor.java (1)"];
+      node[shape=note];
+      File_calendars__visitor_CalendarsInheritanceVisitor [label="calendars._visitor.CalendarsInheritanceVisitor.java (1)"];
+      node[shape=note];
+      File_calendars__visitor_CalendarsParentAwareVisitor [label="calendars._visitor.CalendarsParentAwareVisitor.java (1)"];
+    }
+    subgraph cluster_calendars__cocos {
+      label = "calendars._cocos";
+      labeljust = l;
+      node[shape=note];
+      File_calendars__cocos_CalendarsCoCoChecker [label="calendars._cocos.CalendarsCoCoChecker.java (1)"];
+      node[shape=note];
+      File_calendars__cocos_CalendarsASTCalendarsNodeCoCo [label="calendars._cocos.CalendarsASTCalendarsNodeCoCo.java (1)"];
+      node[shape=note];
+      File_calendars__cocos_CalendarsASTAppointmentsCoCo [label="calendars._cocos.CalendarsASTAppointmentsCoCo.java (1)"];
+      node[shape=note];
+      File_calendars__cocos_CalendarsASTCalendarsCoCo [label="calendars._cocos.CalendarsASTCalendarsCoCo.java (1)"];
+    }
+    subgraph cluster_calendars__ast {
+      label = "calendars._ast";
+      labeljust = l;
+      node[shape=note];
+      File_calendars__ast_ASTCalendarsNode [label="calendars._ast.ASTCalendarsNode.java (1)"];
+      node[shape=note];
+      File_calendars__ast_CalendarsMill [label="calendars._ast.CalendarsMill.java (1)"];
+      node[shape=note];
+      File_calendars__ast_MCCommonLiteralsMillForCalendars [label="calendars._ast.MCCommonLiteralsMillForCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__ast_MCLiteralsBasisMillForCalendars [label="calendars._ast.MCLiteralsBasisMillForCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__ast_ASTCalendarsBuilder [label="calendars._ast.ASTCalendarsBuilder.java (1)"];
+      node[shape=note];
+      File_calendars__ast_CalendarsNodeFactory [label="calendars._ast.CalendarsNodeFactory.java (1)"];
+      node[shape=note];
+      File_calendars__ast_ASTAppointments [label="calendars._ast.ASTAppointments.java (1)"];
+      node[shape=note];
+      File_calendars__ast_MCBasicsMillForCalendars [label="calendars._ast.MCBasicsMillForCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__ast_CalendarsLiterals [label="calendars._ast.CalendarsLiterals.java (1)"];
+      node[shape=note];
+      File_calendars__ast_ASTConstantsCalendars [label="calendars._ast.ASTConstantsCalendars.java (1)"];
+      node[shape=note];
+      File_calendars__ast_ASTCalendars [label="calendars._ast.ASTCalendars.java (1)"];
+    }
+    subgraph cluster_od {
+      label = "od";
+      labeljust = l;
+      node[shape=ellipse];
+      Template_od_DiagramVisitor [label="od.DiagramVisitor.ftl (1)"];
+    }
+    subgraph cluster_methods {
+      label = "methods";
+      labeljust = l;
+      subgraph cluster_methods_opt {
+        label = "methods.opt";
+        labeljust = l;
+        node[shape=ellipse];
+        Template_methods_opt_IsPresent [label="methods.opt.IsPresent.ftl (7)"];
+        node[shape=ellipse];
+        Template_methods_opt_Set [label="methods.opt.Set.ftl (3)"];
+        node[shape=ellipse];
+        Template_methods_opt_Get [label="methods.opt.Get.ftl (7)"];
+        node[shape=ellipse];
+        Template_methods_opt_SetAbsent [label="methods.opt.SetAbsent.ftl (3)"];
+      }
+      node[shape=ellipse];
+      Template_methods_Set [label="methods.Set.ftl (8)"];
+      node[shape=ellipse];
+      Template_methods_Get [label="methods.Get.ftl (30)"];
+      node[shape=ellipse];
+      Template_methods_MethodDelegate [label="methods.MethodDelegate.ftl (68)"];
+    }
+    subgraph cluster__visitor {
+      label = "_visitor";
+      labeljust = l;
+      subgraph cluster__visitor_parentaware {
+        label = "_visitor.parentaware";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__visitor_parentaware_Travers [label="_visitor.parentaware.Travers.ftl (1)"];
+        node[shape=ellipse];
+        Template__visitor_parentaware_GetParent [label="_visitor.parentaware.GetParent.ftl (1)"];
+      }
+      subgraph cluster__visitor_delegator {
+        label = "_visitor.delegator";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__visitor_delegator_SetVisitor [label="_visitor.delegator.SetVisitor.ftl (4)"];
+        node[shape=ellipse];
+        Template__visitor_delegator_VisitorMethods [label="_visitor.delegator.VisitorMethods.ftl (81)"];
+        node[shape=ellipse];
+        Template__visitor_delegator_SetRealThis [label="_visitor.delegator.SetRealThis.ftl (1)"];
+      }
+      subgraph cluster__visitor_scope {
+        label = "_visitor.scope";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__visitor_scope_Traverse [label="_visitor.scope.Traverse.ftl (2)"];
+      }
+      subgraph cluster__visitor_inheritance {
+        label = "_visitor.inheritance";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__visitor_inheritance_Handle [label="_visitor.inheritance.Handle.ftl (3)"];
+      }
+      node[shape=ellipse];
+      Template__visitor_Traverse [label="_visitor.Traverse.ftl (1)"];
+      node[shape=ellipse];
+      Template__visitor_Handle [label="_visitor.Handle.ftl (5)"];
+    }
+    subgraph cluster__ast_ast_class {
+      label = "_ast.ast_class";
+      labeljust = l;
+      subgraph cluster__ast_ast_class_builder {
+        label = "_ast.ast_class.builder";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__ast_ast_class_builder_ASTCNodeInit [label="_ast.ast_class.builder.ASTCNodeInit.ftl (1)"];
+        node[shape=ellipse];
+        Template__ast_ast_class_builder_ASTCNodeMethodDelegate [label="_ast.ast_class.builder.ASTCNodeMethodDelegate.ftl (34)"];
+      }
+      subgraph cluster__ast_ast_class_symboltable {
+        label = "_ast.ast_class.symboltable";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__ast_ast_class_symboltable_InheritedSetEnclosingScope [label="_ast.ast_class.symboltable.InheritedSetEnclosingScope.ftl (3)"];
+      }
+      node[shape=ellipse];
+      Template__ast_ast_class_Accept [label="_ast.ast_class.Accept.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_ast_class_AcceptSuper [label="_ast.ast_class.AcceptSuper.ftl (3)"];
+      node[shape=ellipse];
+      Template__ast_ast_class_GetChildren [label="_ast.ast_class.GetChildren.ftl (1)"];
+    }
+    subgraph cluster__ast_nodefactory {
+      label = "_ast.nodefactory";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__ast_nodefactory_Create [label="_ast.nodefactory.Create.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_nodefactory_DoCreate [label="_ast.nodefactory.DoCreate.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_nodefactory_CreateDelegateMethod [label="_ast.nodefactory.CreateDelegateMethod.ftl (12)"];
+      node[shape=ellipse];
+      Template__ast_nodefactory_GetFactory [label="_ast.nodefactory.GetFactory.ftl (1)"];
+    }
+    subgraph cluster__ast_builder {
+      label = "_ast.builder";
+      labeljust = l;
+      subgraph cluster__ast_builder_opt {
+        label = "_ast.builder.opt";
+        labeljust = l;
+        node[shape=ellipse];
+        Template__ast_builder_opt_Set [label="_ast.builder.opt.Set.ftl (4)"];
+        node[shape=ellipse];
+        Template__ast_builder_opt_SetAbsent [label="_ast.builder.opt.SetAbsent.ftl (4)"];
+      }
+      node[shape=ellipse];
+      Template__ast_builder_BuildMethod [label="_ast.builder.BuildMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_builder_Set [label="_ast.builder.Set.ftl (13)"];
+      node[shape=ellipse];
+      Template__ast_builder_IsValidMethod [label="_ast.builder.IsValidMethod.ftl (6)"];
+      node[shape=ellipse];
+      Template__ast_builder_MethodDelegate [label="_ast.builder.MethodDelegate.ftl (28)"];
+    }
+    subgraph cluster__ast_ast_constants {
+      label = "_ast.ast_constants";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__ast_ast_constants_GetAllLanguages [label="_ast.ast_constants.GetAllLanguages.ftl (1)"];
+    }
+    subgraph cluster__ast_mill {
+      label = "_ast.mill";
+      labeljust = l;
+      node[shape=ellipse];
+      Template__ast_mill_InitMethod [label="_ast.mill.InitMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_mill_InitMeMethod [label="_ast.mill.InitMeMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_mill_ResetMethod [label="_ast.mill.ResetMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_mill_BuilderMethod [label="_ast.mill.BuilderMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_mill_BuilderDelegatorMethod [label="_ast.mill.BuilderDelegatorMethod.ftl (12)"];
+      node[shape=ellipse];
+      Template__ast_mill_GetMillMethod [label="_ast.mill.GetMillMethod.ftl (1)"];
+      node[shape=ellipse];
+      Template__ast_mill_ProtectedBuilderMethod [label="_ast.mill.ProtectedBuilderMethod.ftl (1)"];
+    }
+    node[shape=box3d];
+    Model_Calendars [label="Calendars (1)"];
+  }
+  Model_Calendars -> Template_parser_Parser;
+  Model_Calendars -> Template_core_Class;
+  Model_Calendars -> Template_parser_MCParser;
+  Model_Calendars -> Template_od_DiagramVisitor;
+  Model_Calendars -> Template_core_Interface;
+  Model_Calendars -> Template_core_Enum;
+  Template_core_Constructor -> Template__symboltable_symboltablecreatordelegator_Constructor;
+  Template_core_Constructor -> Template_core_EmptyBody;
+  Template_core_Constructor -> Template__symboltable_artifactscope_Constructor;
+  Template_core_Constructor -> Template__symboltable_language_Constructor;
+  Template_core_Constructor -> Template__symboltable_modelloader_Constructor;
+  Template_core_Attribute -> Template_core_Value;
+  Template_core_Class -> File_calendars__ast_MCLiteralsBasisMillForCalendars;
+  Template_core_Class -> File_calendars__ast_MCCommonLiteralsMillForCalendars;
+  Template_core_Class -> File_calendars__symboltable_CalendarsArtifactScope;
+  Template_core_Class -> File_calendars__symboltable_MCCommonLiteralsSTCForCalendars;
+  Template_core_Class -> File_calendars__symboltable_serialization_CalendarsScopeDeSer;
+  Template_core_Class -> File_calendars__ast_ASTCalendarsBuilder;
+  Template_core_Class -> File_calendars__symboltable_CalendarsModelLoaderBuilder;
+  Template_core_Class -> File_calendars__symboltable_CalendarsScope;
+  Template_core_Class -> File_calendars__symboltable_CalendarsSymTabMill;
+  Template_core_Class -> File_calendars__symboltable_CalendarsLanguage;
+  Template_core_Class -> File_calendars__symboltable_serialization_CalendarsSymbolTablePrinter;
+  Template_core_Class -> Template_core_Method;
+  Template_core_Class -> File_calendars__cocos_CalendarsCoCoChecker;
+  Template_core_Class -> File_calendars__symboltable_CalendarsModelLoader;
+  Template_core_Class -> File_calendars__symboltable_CalendarsSymbolTableCreator;
+  Template_core_Class -> Template_core_Constructor;
+  Template_core_Class -> File_calendars__symboltable_CalendarsSymbolTableCreatorDelegatorBuilder;
+  Template_core_Class -> File_calendars__ast_CalendarsNodeFactory;
+  Template_core_Class -> File_calendars__symboltable_CalendarsGlobalScope;
+  Template_core_Class -> File_calendars__visitor_CalendarsParentAwareVisitor;
+  Template_core_Class -> Template_core_Annotations;
+  Template_core_Class -> File_calendars__ast_CalendarsMill;
+  Template_core_Class -> File_calendars__ast_ASTCalendars;
+  Template_core_Class -> File_calendars__ast_MCBasicsMillForCalendars;
+  Template_core_Class -> File_calendars__symboltable_CalendarsScopeBuilder;
+  Template_core_Class -> File_calendars__symboltable_CalendarsSymbolTableCreatorBuilder;
+  Template_core_Class -> File_calendars__symboltable_CalendarsSymbolTableCreatorDelegator;
+  Template_core_Class -> Template_core_Imports;
+  Template_core_Class -> File_calendars__visitor_CalendarsDelegatorVisitor;
+  Template_core_Class -> File_calendars__symboltable_CalendarsArtifactScopeBuilder;
+  Template_core_Class -> Template_core_Attribute;
+  Template_core_Class -> File_calendars__symboltable_MCLiteralsBasisSTCForCalendars;
+  Template_core_Class -> File_calendars__ast_ASTConstantsCalendars;
+  Template_core_Class -> File_calendars__symboltable_CalendarsGlobalScopeBuilder;
+  Template_core_Interface -> File_calendars__cocos_CalendarsASTCalendarsCoCo;
+  Template_core_Interface -> Template_core_Annotations;
+  Template_core_Interface -> File_calendars__visitor_CalendarsInheritanceVisitor;
+  Template_core_Interface -> File_calendars__ast_ASTAppointments;
+  Template_core_Interface -> File_calendars__visitor_CalendarsScopeVisitor;
+  Template_core_Interface -> File_calendars__cocos_CalendarsASTAppointmentsCoCo;
+  Template_core_Interface -> File_calendars__visitor_CalendarsVisitor;
+  Template_core_Interface -> Template_core_Imports;
+  Template_core_Interface -> File_calendars__cocos_CalendarsASTCalendarsNodeCoCo;
+  Template_core_Interface -> Template_core_Method;
+  Template_core_Interface -> File_calendars__ast_ASTCalendarsNode;
+  Template_core_Interface -> File_calendars__symboltable_ICalendarsScope;
+  Template_core_Interface -> File_calendars__symboltable_ICalendarsGlobalScope;
+  Template_core_Interface -> File_calendars__visitor_CalendarsSymbolVisitor;
+  Template_core_Interface -> File_calendars__symboltable_ICommonCalendarsSymbol;
+  Template_core_Method -> Template__ast_mill_InitMethod;
+  Template_core_Method -> Template__ast_ast_class_AcceptSuper;
+  Template_core_Method -> Template__symboltable_scope_SetSpanningSymbolAbsent;
+  Template_core_Method -> Template_core_EmptyBody;
+  Template_core_Method -> Template__symboltable_symboltablecreatordelegator_CreateFromAST;
+  Template_core_Method -> Template__ast_nodefactory_DoCreate;
+  Template_core_Method -> Template__symboltable_scope_SetSubScopes;
+  Template_core_Method -> Template__symboltable_artifactscope_GetFilePath;
+  Template_core_Method -> Template__ast_ast_constants_GetAllLanguages;
+  Template_core_Method -> Template__symboltable_artifactscope_GetName;
+  Template_core_Method -> Template__symboltable_modelloader_CreateSymbolTableFromAST;
+  Template_core_Method -> Template__visitor_delegator_VisitorMethods;
+  Template_core_Method -> Template__symboltable_modelloader_ResolveSymbol;
+  Template_core_Method -> Template_data_EqualAttributes;
+  Template_core_Method -> Template_methods_MethodDelegate;
+  Template_core_Method -> Template__ast_builder_Set;
+  Template_core_Method -> Template__symboltable_artifactscope_GetRemainingNameForResolveDown;
+  Template_core_Method -> Template__ast_ast_class_GetChildren;
+  Template_core_Method -> Template_methods_opt_Set;
+  Template_core_Method -> Template__ast_nodefactory_GetFactory;
+  Template_core_Method -> Template__symboltable_symboltablecreator_VisitNoSymbol;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_SerializeRelevantSubScopes;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_AddAndLinkSpanningSymbol;
+  Template_core_Method -> Template__symboltable_serialization_symbolDeSer_Serialize;
+  Template_core_Method -> Template__visitor_parentaware_GetParent;
+  Template_core_Method -> Template__ast_builder_MethodDelegate;
+  Template_core_Method -> Template__symboltable_symboltablecreatordelegator_Build;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_AddSymbols;
+  Template_core_Method -> Template__symboltable_scope_SetSpanningSymbol;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_VisitScope;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_SerializeSymbol;
+  Template_core_Method -> Template__visitor_inheritance_Handle;
+  Template_core_Method -> Template__symboltable_artifactscope_CheckIfContinueAsSubScope;
+  Template_core_Method -> Template_methods_opt_IsPresent;
+  Template_core_Method -> Template__symboltable_globalscope_CacheMethod;
+  Template_core_Method -> Template_methods_Get;
+  Template_core_Method -> Template__symboltable_modelloader_LoadSymbolsIntoScope;
+  Template_core_Method -> Template__ast_mill_BuilderDelegatorMethod;
+  Template_core_Method -> Template__symboltable_scope_RemoveSubScope;
+  Template_core_Method -> Template__ast_builder_opt_Set;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_HasSymbolsInSubScopes;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_FilterRelevantSubScopes;
+  Template_core_Method -> Template__symboltable_symTabMill_BuilderMethod;
+  Template_core_Method -> Template__symboltable_symboltablecreator_PutOnStack;
+  Template_core_Method -> Template__ast_mill_BuilderMethod;
+  Template_core_Method -> Template__ast_ast_class_Accept;
+  Template_core_Method -> Template__ast_mill_GetMillMethod;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_AddAndLinkSubScopes;
+  Template_core_Method -> Template__symboltable_symTabMill_Reset;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_SerializeLocalSymbols;
+  Template_core_Method -> Template_methods_opt_Get;
+  Template_core_Method -> Template__ast_ast_class_builder_ASTCNodeMethodDelegate;
+  Template_core_Method -> Template__visitor_scope_Traverse;
+  Template_core_Method -> Template__symboltable_scope_AddSubScope;
+  Template_core_Method -> Template__ast_builder_BuildMethod;
+  Template_core_Method -> Template__symboltable_serialization_symbolDeSer_DeserializeString;
+  Template_core_Method -> Template_methods_Set;
+  Template_core_Method -> Template__symboltable_symTabMill_InitMe;
+  Template_core_Method -> Template__visitor_delegator_SetRealThis;
+  Template_core_Method -> Template__symboltable_globalscope_Build;
+  Template_core_Method -> Template__symboltable_scope_Accept;
+  Template_core_Method -> Template__symboltable_artifactscope_Build;
+  Template_core_Method -> Template__visitor_parentaware_Travers;
+  Template_core_Method -> Template__symboltable_scope_GetSubScopes;
+  Template_core_Method -> Template__symboltable_modelloader_LoadModels;
+  Template_core_Method -> Template__ast_mill_InitMeMethod;
+  Template_core_Method -> Template__symboltable_symTabMill_GetMill;
+  Template_core_Method -> Template__ast_builder_opt_SetAbsent;
+  Template_core_Method -> Template__visitor_Handle;
+  Template_core_Method -> Template__symboltable_artifactscope_IsPresentName;
+  Template_core_Method -> Template__symboltable_scope_Build;
+  Template_core_Method -> Template__ast_mill_ProtectedBuilderMethod;
+  Template_core_Method -> Template__symboltable_modelloader_Build;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_DeserializeArtifactScope;
+  Template_core_Method -> Template_data_DeepEqualsWithComments;
+  Template_core_Method -> Template__ast_builder_IsValidMethod;
+  Template_core_Method -> Template__ast_mill_ResetMethod;
+  Template_core_Method -> Template__symboltable_symboltablecreator_CreateScope;
+  Template_core_Method -> Template__ast_nodefactory_Create;
+  Template_core_Method -> Template__visitor_delegator_SetVisitor;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_DeserializeScope;
+  Template_core_Method -> Template__ast_nodefactory_CreateDelegateMethod;
+  Template_core_Method -> Template__symboltable_symboltablecreator_CreateFromAST;
+  Template_core_Method -> Template__visitor_Traverse;
+  Template_core_Method -> Template_data_EqualsWithComments;
+  Template_core_Method -> Template__symboltable_artifactscope_GetTopLevelSymbol;
+  Template_core_Method -> Template_data_DeepCloneWithParameters;
+  Template_core_Method -> Template__symboltable_scope_SetEnclosingScope;
+  Template_core_Method -> Template__symboltable_serialization_scopeDeSer_DeserializeJsonObject;
+  Template_core_Method -> Template__symboltable_modelloader_LoadModelsIntoScope;
+  Template_core_Method -> Template_methods_opt_SetAbsent;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_VisitArtifactScope;
+  Template_core_Method -> Template__symboltable_modelloader_ShowWarningIfParsedModels;
+  Template_core_Method -> Template__ast_ast_class_symboltable_InheritedSetEnclosingScope;
+  Template_core_Method -> Template_data_DeepEqualsWithOrder;
+  Template_core_Method -> Template__symboltable_serialization_symbolTablePrinter_AddScopeSpanningSymbol;
+  Template_core_Method -> Template__symboltable_modelloader_Resolve;
+  Template_core_Enum -> Template_core_Method;
+  Template_core_Enum -> Template_core_Constructor;
+  Template_core_Enum -> Template_core_Attribute;
+  Template_core_Enum -> File_calendars__ast_CalendarsLiterals;
+  Template__symboltable_scope_SetSpanningSymbolAbsent -> Template_methods_opt_SetAbsent;
+  Template__symboltable_scope_SetSpanningSymbol -> Template_methods_opt_Set;
+  Template_parser_Parser -> Template_parser_LexerMember;
+  Template_parser_Parser -> Template_parser_ParserHeader;
+  Template_parser_Parser -> File_calendars__parser_CalendarsAntlr;
+  Template_parser_MCParser -> Template_parser_MCParserMethods;
+  Template_parser_MCParser -> File_calendars__parser_CalendarsParser;
+  Template_od_DiagramVisitor -> File_calendars__od_Calendars2OD;
+  Template__ast_builder_BuildMethod -> Template__ast_ast_class_builder_ASTCNodeInit;
+}
