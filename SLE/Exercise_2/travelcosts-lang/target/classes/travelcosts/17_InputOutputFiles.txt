@@ -1,0 +1,106 @@
+========================================================== Input files
+/Users/hhk/Documents/GitHub/Code/SLE/Exercise_2/travelcosts-lang/src/main/grammars/TravelCosts.mc4 state 50b294dfe0782e84023bc56b60bfc2f0
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/MCBasics.mc4 state b5be51fbf88ede8292333c3f78eb50bc
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/literals/MCCommonLiterals.mc4 state 793277155ff62a36d78687f2ff399594
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/literals/MCLiteralsBasis.mc4 state a6a769149f13b25a0cd6460c6ebd1319
+====================================================== User templates
+====================================================== Handwritten files
+========================================================== Output files
+travelcosts/_ast/ASTAllWorkDays.java
+travelcosts/_ast/ASTAllWorkDaysBuilder.java
+travelcosts/_ast/ASTArrival.java
+travelcosts/_ast/ASTArrivalBuilder.java
+travelcosts/_ast/ASTConstantsTravelCosts.java
+travelcosts/_ast/ASTCost.java
+travelcosts/_ast/ASTCostItem.java
+travelcosts/_ast/ASTCostItemBuilder.java
+travelcosts/_ast/ASTCostItems.java
+travelcosts/_ast/ASTCostItemsBuilder.java
+travelcosts/_ast/ASTDeparture.java
+travelcosts/_ast/ASTDepartureBuilder.java
+travelcosts/_ast/ASTDescription.java
+travelcosts/_ast/ASTDescriptionBuilder.java
+travelcosts/_ast/ASTDuration.java
+travelcosts/_ast/ASTDurationBuilder.java
+travelcosts/_ast/ASTExtraCost.java
+travelcosts/_ast/ASTExtraCostBuilder.java
+travelcosts/_ast/ASTHotelCost.java
+travelcosts/_ast/ASTHotelCostBuilder.java
+travelcosts/_ast/ASTISODate.java
+travelcosts/_ast/ASTISODateBuilder.java
+travelcosts/_ast/ASTTime.java
+travelcosts/_ast/ASTTimeBuilder.java
+travelcosts/_ast/ASTTransportCost.java
+travelcosts/_ast/ASTTransportCostBuilder.java
+travelcosts/_ast/ASTTravelCostsNode.java
+travelcosts/_ast/ASTTravelExpenseReport.java
+travelcosts/_ast/ASTTravelExpenseReportBuilder.java
+travelcosts/_ast/ASTTravelMeans.java
+travelcosts/_ast/ASTTravelNumber.java
+travelcosts/_ast/ASTTravelNumberBuilder.java
+travelcosts/_ast/ASTWorkDay.java
+travelcosts/_ast/ASTWorkDayBuilder.java
+travelcosts/_ast/MCBasicsMillForTravelCosts.java
+travelcosts/_ast/MCCommonLiteralsMillForTravelCosts.java
+travelcosts/_ast/MCLiteralsBasisMillForTravelCosts.java
+travelcosts/_ast/TravelCostsLiterals.java
+travelcosts/_ast/TravelCostsMill.java
+travelcosts/_ast/TravelCostsNodeFactory.java
+travelcosts/_cocos/TravelCostsASTAllWorkDaysCoCo.java
+travelcosts/_cocos/TravelCostsASTArrivalCoCo.java
+travelcosts/_cocos/TravelCostsASTCostCoCo.java
+travelcosts/_cocos/TravelCostsASTCostItemCoCo.java
+travelcosts/_cocos/TravelCostsASTCostItemsCoCo.java
+travelcosts/_cocos/TravelCostsASTDepartureCoCo.java
+travelcosts/_cocos/TravelCostsASTDescriptionCoCo.java
+travelcosts/_cocos/TravelCostsASTDurationCoCo.java
+travelcosts/_cocos/TravelCostsASTExtraCostCoCo.java
+travelcosts/_cocos/TravelCostsASTHotelCostCoCo.java
+travelcosts/_cocos/TravelCostsASTISODateCoCo.java
+travelcosts/_cocos/TravelCostsASTTimeCoCo.java
+travelcosts/_cocos/TravelCostsASTTransportCostCoCo.java
+travelcosts/_cocos/TravelCostsASTTravelCostsNodeCoCo.java
+travelcosts/_cocos/TravelCostsASTTravelExpenseReportCoCo.java
+travelcosts/_cocos/TravelCostsASTTravelNumberCoCo.java
+travelcosts/_cocos/TravelCostsASTWorkDayCoCo.java
+travelcosts/_cocos/TravelCostsCoCoChecker.java
+travelcosts/_od/TravelCosts2OD.java
+travelcosts/_parser/TravelCostsAntlr.g4
+travelcosts/_parser/TravelCostsParser.java
+travelcosts/_symboltable/ICommonTravelCostsSymbol.java
+travelcosts/_symboltable/ITravelCostsGlobalScope.java
+travelcosts/_symboltable/ITravelCostsScope.java
+travelcosts/_symboltable/MCCommonLiteralsSTCForTravelCosts.java
+travelcosts/_symboltable/MCLiteralsBasisSTCForTravelCosts.java
+travelcosts/_symboltable/TravelCostsArtifactScope.java
+travelcosts/_symboltable/TravelCostsArtifactScopeBuilder.java
+travelcosts/_symboltable/TravelCostsGlobalScope.java
+travelcosts/_symboltable/TravelCostsGlobalScopeBuilder.java
+travelcosts/_symboltable/TravelCostsLanguage.java
+travelcosts/_symboltable/TravelCostsModelLoader.java
+travelcosts/_symboltable/TravelCostsModelLoaderBuilder.java
+travelcosts/_symboltable/TravelCostsScope.java
+travelcosts/_symboltable/TravelCostsScopeBuilder.java
+travelcosts/_symboltable/TravelCostsSymTabMill.java
+travelcosts/_symboltable/TravelCostsSymbolTableCreator.java
+travelcosts/_symboltable/TravelCostsSymbolTableCreatorBuilder.java
+travelcosts/_symboltable/TravelCostsSymbolTableCreatorDelegator.java
+travelcosts/_symboltable/TravelCostsSymbolTableCreatorDelegatorBuilder.java
+travelcosts/_symboltable/serialization/TravelCostsScopeDeSer.java
+travelcosts/_symboltable/serialization/TravelCostsSymbolTablePrinter.java
+travelcosts/_visitor/TravelCostsDelegatorVisitor.java
+travelcosts/_visitor/TravelCostsInheritanceVisitor.java
+travelcosts/_visitor/TravelCostsParentAwareVisitor.java
+travelcosts/_visitor/TravelCostsScopeVisitor.java
+travelcosts/_visitor/TravelCostsSymbolVisitor.java
+travelcosts/_visitor/TravelCostsVisitor.java
+========================================================== Explanation
+This report is used to enable incremental generation
+Input files: the list of input files ordered by their paths.
+Types of input files are:
+- Model files
+- Handwritten sourcecode files
+- User specific script files
+- User specific template files
+Output files: the list of generated output files ordered by their paths.
+(EOF)

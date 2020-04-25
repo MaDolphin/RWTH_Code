@@ -1,0 +1,675 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram travelcosts_AST {
+  @TravelCosts!MCGrammar(2,0):ASTMCGrammar {
+    symbol = @TravelCosts!Symbol(2,0);
+    enclosingScope = @TravelCosts!ArtifactScope;
+    spanningScope = @TravelCosts!Scope;
+    r__package = [];
+    name = "TravelCosts";
+    supergrammar = [// *size: 1
+      @MCCommonLiterals!GrammarReference(2,28):ASTGrammarReference {
+        enclosingScope = @TravelCosts!Scope;
+        name = [de, monticore, literals, MCCommonLiterals];
+      }];
+    classProd = [// *size: 15
+      @TravelExpenseReport!ClassProd(6,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(7,2):ASTAlt {
+            enclosingScope = @TravelExpenseReport!Scope;
+            component = [// *size: 9
+              @Dienstreise!Terminal(7,2):ASTTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "Dienstreise";
+                iteration = 0;
+              },
+              @Name!NonTerminal(7,16):ASTNonTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(7,21):ASTTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @TravelNumber!NonTerminal(8,4):ASTNonTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "TravelNumber";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @Arrival!NonTerminal(9,4):ASTNonTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "Arrival";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(10,4):ASTBlock {
+                enclosingScope = @TravelExpenseReport!Scope;
+                alt = [// *size: 2
+                  @!Alt(10,5):ASTAlt {
+                    enclosingScope = @TravelExpenseReport!Scope;
+                    component = [// *size: 1
+                      @AllWorkDays!NonTerminal(10,5):ASTNonTerminal {
+                        enclosingScope = @TravelExpenseReport!Scope;
+                        name = "AllWorkDays";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(10,19):ASTAlt {
+                    enclosingScope = @TravelExpenseReport!Scope;
+                    component = [// *size: 1
+                      @WorkDay!NonTerminal(10,19):ASTNonTerminal {
+                        enclosingScope = @TravelExpenseReport!Scope;
+                        usageName = "workDay";
+                        name = "WorkDay";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 11;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              },
+              @Departure!NonTerminal(11,4):ASTNonTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "Departure";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @CostItems!NonTerminal(12,4):ASTNonTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "CostItems";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @RCURLY!Terminal(13,0):ASTTerminal {
+                enclosingScope = @TravelExpenseReport!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "TravelExpenseReport";
+      },
+      @TravelNumber!ClassProd(15,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(16,2):ASTAlt {
+            enclosingScope = @TravelNumber!Scope;
+            component = [// *size: 2
+              @Reisenummer!Terminal(16,2):ASTTerminal {
+                enclosingScope = @TravelNumber!Scope;
+                name = "Reisenummer";
+                iteration = 0;
+              },
+              @NatLiteral!NonTerminal(16,16):ASTNonTerminal {
+                enclosingScope = @TravelNumber!Scope;
+                usageName = "travelNo";
+                name = "NatLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "TravelNumber";
+      },
+      @Arrival!ClassProd(19,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(19,16):ASTAlt {
+            enclosingScope = @Arrival!Scope;
+            component = [// *size: 2
+              @Anreise!Terminal(19,16):ASTTerminal {
+                enclosingScope = @Arrival!Scope;
+                name = "Anreise";
+                iteration = 0;
+              },
+              @Duration!NonTerminal(19,26):ASTNonTerminal {
+                enclosingScope = @Arrival!Scope;
+                name = "Duration";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Arrival";
+      },
+      @WorkDay!ClassProd(20,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(20,16):ASTAlt {
+            enclosingScope = @WorkDay!Scope;
+            component = [// *size: 2
+              @Arbeitstag!Terminal(20,16):ASTTerminal {
+                enclosingScope = @WorkDay!Scope;
+                name = "Arbeitstag";
+                iteration = 0;
+              },
+              @Duration!NonTerminal(20,29):ASTNonTerminal {
+                enclosingScope = @WorkDay!Scope;
+                name = "Duration";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "WorkDay";
+      },
+      @AllWorkDays!ClassProd(21,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(21,16):ASTAlt {
+            enclosingScope = @AllWorkDays!Scope;
+            component = [// *size: 4
+              @Arbeitstage!Terminal(21,16):ASTTerminal {
+                enclosingScope = @AllWorkDays!Scope;
+                name = "Arbeitstage";
+                iteration = 0;
+              },
+              @Time!NonTerminal(21,30):ASTNonTerminal {
+                enclosingScope = @AllWorkDays!Scope;
+                usageName = "beginTime";
+                name = "Time";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @MINUS!Terminal(21,45):ASTTerminal {
+                enclosingScope = @AllWorkDays!Scope;
+                name = "-";
+                iteration = 0;
+              },
+              @Time!NonTerminal(21,49):ASTNonTerminal {
+                enclosingScope = @AllWorkDays!Scope;
+                usageName = "endTime";
+                name = "Time";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "AllWorkDays";
+      },
+      @Departure!ClassProd(22,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(22,16):ASTAlt {
+            enclosingScope = @Departure!Scope;
+            component = [// *size: 2
+              @Abreise!Terminal(22,16):ASTTerminal {
+                enclosingScope = @Departure!Scope;
+                name = "Abreise";
+                iteration = 0;
+              },
+              @Duration!NonTerminal(22,26):ASTNonTerminal {
+                enclosingScope = @Departure!Scope;
+                name = "Duration";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Departure";
+      },
+      @CostItems!ClassProd(25,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(25,12):ASTAlt {
+            enclosingScope = @CostItems!Scope;
+            component = [// *size: 4
+              @Kosten!Terminal(25,12):ASTTerminal {
+                enclosingScope = @CostItems!Scope;
+                name = "Kosten";
+                iteration = 0;
+              },
+              @LCURLY!Terminal(25,21):ASTTerminal {
+                enclosingScope = @CostItems!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @CostItem!NonTerminal(25,25):ASTNonTerminal {
+                enclosingScope = @CostItems!Scope;
+                usageName = "costItem";
+                name = "CostItem";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 11;
+              },
+              @RCURLY!Terminal(25,35):ASTTerminal {
+                enclosingScope = @CostItems!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CostItems";
+      },
+      @CostItem!ClassProd(29,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(29,11):ASTAlt {
+            enclosingScope = @CostItem!Scope;
+            component = [// *size: 4
+              @!Block(29,11):ASTBlock {
+                enclosingScope = @CostItem!Scope;
+                alt = [// *size: 1
+                  @!Alt(29,12):ASTAlt {
+                    enclosingScope = @CostItem!Scope;
+                    component = [// *size: 2
+                      @NatLiteral!NonTerminal(29,12):ASTNonTerminal {
+                        enclosingScope = @CostItem!Scope;
+                        usageName = "id";
+                        name = "NatLiteral";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @RPAREN!Terminal(29,26):ASTTerminal {
+                        enclosingScope = @CostItem!Scope;
+                        name = ")";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @NumericLiteral!NonTerminal(29,32):ASTNonTerminal {
+                enclosingScope = @CostItem!Scope;
+                usageName = "amount";
+                name = "NumericLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @currency!ConstantGroup(29,54):ASTConstantGroup {
+                enclosingScope = @CostItem!Scope;
+                usageName = "currency";
+                constant = [// *size: 3
+                  @€!Constant(29,64):ASTConstant {
+                    enclosingScope = @CostItem!Scope;
+                    humanName = "euro";
+                    name = "€";
+                  },
+                  @$!Constant(29,73):ASTConstant {
+                    enclosingScope = @CostItem!Scope;
+                    humanName = "dollar";
+                    name = "$";
+                  },
+                  @MINUS!Constant(29,84):ASTConstant {
+                    enclosingScope = @CostItem!Scope;
+                    humanName = "else";
+                    name = "-";
+                  }];
+                iteration = 0;
+              },
+              @Cost!NonTerminal(29,94):ASTNonTerminal {
+                enclosingScope = @CostItem!Scope;
+                name = "Cost";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CostItem";
+      },
+      @HotelCost!ClassProd(31,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        superInterfaceRule = [// *size: 1
+          @Cost!RuleReference(31,21):ASTRuleReference {
+            enclosingScope = @HotelCost!Scope;
+            name = "Cost";
+          }];
+        alt = [// *size: 1
+          @!Alt(32,4):ASTAlt {
+            enclosingScope = @HotelCost!Scope;
+            component = [// *size: 1
+              @Hotel!Terminal(32,4):ASTTerminal {
+                enclosingScope = @HotelCost!Scope;
+                name = "Hotel";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "HotelCost";
+      },
+      @TransportCost!ClassProd(34,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        superInterfaceRule = [// *size: 1
+          @Cost!RuleReference(34,25):ASTRuleReference {
+            enclosingScope = @TransportCost!Scope;
+            name = "Cost";
+          }];
+        alt = [// *size: 1
+          @!Alt(35,4):ASTAlt {
+            enclosingScope = @TransportCost!Scope;
+            component = [// *size: 3
+              @Fahrt!Terminal(35,4):ASTTerminal {
+                enclosingScope = @TransportCost!Scope;
+                name = "Fahrt";
+                iteration = 0;
+              },
+              @TravelMeans!NonTerminal(35,12):ASTNonTerminal {
+                enclosingScope = @TransportCost!Scope;
+                name = "TravelMeans";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(35,24):ASTBlock {
+                enclosingScope = @TransportCost!Scope;
+                alt = [// *size: 1
+                  @!Alt(35,25):ASTAlt {
+                    enclosingScope = @TransportCost!Scope;
+                    component = [// *size: 1
+                      @Description!NonTerminal(35,25):ASTNonTerminal {
+                        enclosingScope = @TransportCost!Scope;
+                        usageName = "description";
+                        name = "Description";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              }];
+            rightAssoc = false;
+          }];
+        name = "TransportCost";
+      },
+      @ExtraCost!ClassProd(37,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        superInterfaceRule = [// *size: 1
+          @Cost!RuleReference(37,21):ASTRuleReference {
+            enclosingScope = @ExtraCost!Scope;
+            name = "Cost";
+          }];
+        alt = [// *size: 1
+          @!Alt(38,4):ASTAlt {
+            enclosingScope = @ExtraCost!Scope;
+            component = [// *size: 2
+              @Nebenkosten!Terminal(38,4):ASTTerminal {
+                enclosingScope = @ExtraCost!Scope;
+                name = "Nebenkosten";
+                iteration = 0;
+              },
+              @Description!NonTerminal(38,18):ASTNonTerminal {
+                enclosingScope = @ExtraCost!Scope;
+                usageName = "description";
+                name = "Description";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "ExtraCost";
+      },
+      @Description!ClassProd(43,0):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(43,16):ASTAlt {
+            enclosingScope = @Description!Scope;
+            component = [// *size: 1
+              @!Block(43,16):ASTBlock {
+                enclosingScope = @Description!Scope;
+                alt = [// *size: 2
+                  @!Alt(43,17):ASTAlt {
+                    enclosingScope = @Description!Scope;
+                    component = [// *size: 1
+                      @Name!NonTerminal(43,17):ASTNonTerminal {
+                        enclosingScope = @Description!Scope;
+                        usageName = "short";
+                        name = "Name";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(43,30):ASTAlt {
+                    enclosingScope = @Description!Scope;
+                    component = [// *size: 1
+                      @StringLiteral!NonTerminal(43,30):ASTNonTerminal {
+                        enclosingScope = @Description!Scope;
+                        usageName = "long";
+                        name = "StringLiteral";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Description";
+      },
+      @ISODate!ClassProd(46,2):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(47,6):ASTAlt {
+            enclosingScope = @ISODate!Scope;
+            component = [// *size: 4
+              @!Block(47,6):ASTBlock {
+                enclosingScope = @ISODate!Scope;
+                alt = [// *size: 1
+                  @!Alt(47,8):ASTAlt {
+                    enclosingScope = @ISODate!Scope;
+                    component = [// *size: 2
+                      @NatLiteral!NonTerminal(47,8):ASTNonTerminal {
+                        enclosingScope = @ISODate!Scope;
+                        usageName = "year";
+                        name = "NatLiteral";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @MINUS!Terminal(47,24):ASTTerminal {
+                        enclosingScope = @ISODate!Scope;
+                        name = "-";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @NatLiteral!NonTerminal(48,7):ASTNonTerminal {
+                enclosingScope = @ISODate!Scope;
+                usageName = "month";
+                name = "NatLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @MINUS!Terminal(48,24):ASTTerminal {
+                enclosingScope = @ISODate!Scope;
+                name = "-";
+                iteration = 0;
+              },
+              @NatLiteral!NonTerminal(49,9):ASTNonTerminal {
+                enclosingScope = @ISODate!Scope;
+                usageName = "day";
+                name = "NatLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "ISODate";
+      },
+      @Time!ClassProd(52,2):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(53,6):ASTAlt {
+            enclosingScope = @Time!Scope;
+            component = [// *size: 3
+              @NatLiteral!NonTerminal(53,6):ASTNonTerminal {
+                enclosingScope = @Time!Scope;
+                usageName = "leadingZero";
+                name = "NatLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @NatLiteral!NonTerminal(53,30):ASTNonTerminal {
+                enclosingScope = @Time!Scope;
+                usageName = "hours";
+                name = "NatLiteral";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(53,47):ASTBlock {
+                enclosingScope = @Time!Scope;
+                alt = [// *size: 1
+                  @!Alt(53,48):ASTAlt {
+                    enclosingScope = @Time!Scope;
+                    component = [// *size: 2
+                      @COLON!Terminal(53,48):ASTTerminal {
+                        enclosingScope = @Time!Scope;
+                        name = ":";
+                        iteration = 0;
+                      },
+                      @NatLiteral!NonTerminal(53,52):ASTNonTerminal {
+                        enclosingScope = @Time!Scope;
+                        usageName = "minutes";
+                        name = "NatLiteral";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Time";
+      },
+      @Duration!ClassProd(56,2):ASTClassProd {
+        enclosingScope = @TravelCosts!Scope;
+        alt = [// *size: 1
+          @!Alt(57,6):ASTAlt {
+            enclosingScope = @Duration!Scope;
+            component = [// *size: 3
+              @ISODate!NonTerminal(57,6):ASTNonTerminal {
+                enclosingScope = @Duration!Scope;
+                usageName = "startDate";
+                name = "ISODate";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Time!NonTerminal(57,24):ASTNonTerminal {
+                enclosingScope = @Duration!Scope;
+                usageName = "startTime";
+                name = "Time";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(57,39):ASTBlock {
+                enclosingScope = @Duration!Scope;
+                alt = [// *size: 1
+                  @!Alt(57,40):ASTAlt {
+                    enclosingScope = @Duration!Scope;
+                    component = [// *size: 3
+                      @MINUS!Terminal(57,40):ASTTerminal {
+                        enclosingScope = @Duration!Scope;
+                        name = "-";
+                        iteration = 0;
+                      },
+                      @!Block(57,44):ASTBlock {
+                        enclosingScope = @Duration!Scope;
+                        alt = [// *size: 1
+                          @!Alt(57,45):ASTAlt {
+                            enclosingScope = @Duration!Scope;
+                            component = [// *size: 1
+                              @ISODate!NonTerminal(57,45):ASTNonTerminal {
+                                enclosingScope = @Duration!Scope;
+                                usageName = "endDate";
+                                name = "ISODate";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 15;
+                      },
+                      @Time!NonTerminal(57,63):ASTNonTerminal {
+                        enclosingScope = @Duration!Scope;
+                        usageName = "endTime";
+                        name = "Time";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Duration";
+      }];
+    enumProd = [// *size: 1
+      @TravelMeans!EnumProd(40,0):ASTEnumProd {
+        enclosingScope = @TravelCosts!Scope;
+        constant = [// *size: 4
+          @Zug!Constant(41,4):ASTConstant {
+            enclosingScope = @TravelMeans!Scope;
+            humanName = "train";
+            name = "Zug";
+          },
+          @Flug!Constant(41,18):ASTConstant {
+            enclosingScope = @TravelMeans!Scope;
+            humanName = "plane";
+            name = "Flug";
+          },
+          @_PNV!Constant(41,33):ASTConstant {
+            enclosingScope = @TravelMeans!Scope;
+            humanName = "publicTransport";
+            name = "ÖPNV";
+          },
+          @Taxi!Constant(41,58):ASTConstant {
+            enclosingScope = @TravelMeans!Scope;
+            humanName = "cab";
+            name = "Taxi";
+          }];
+        name = "TravelMeans";
+      }];
+    interfaceProd = [// *size: 1
+      @Cost!InterfaceProd(27,0):ASTInterfaceProd {
+        enclosingScope = @TravelCosts!Scope;
+        name = "Cost";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */
