@@ -1,6 +1,0 @@
-appointment "Mittagspause" {
-  start: 01/10/19 8:15
-  end:   9:15
-  participants: "Peter Stein", "Paula Schmidt"
-  daily
-}

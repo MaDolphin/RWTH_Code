@@ -1,6 +1,0 @@
-appointment "Kuchen" {
-  start: 01/10/19 13:00
-  end:   13:30
-  participants: "Peter"
-  once
-}
