@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OneLengthPerNote.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab.cocos</a> &gt; <span class="el_source">OneLengthPerNote.java</span></div><h1>OneLengthPerNote.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab.cocos;
+
+import de.se_rwth.commons.logging.Log;
+import guitartab._ast.ASTGuitarString;
+import guitartab._ast.ASTSixStrings;
+import guitartab.utils.IndexRange;
+import guitartab._cocos.GuitarTabASTSixStringsCoCo;
+import org.assertj.core.util.VisibleForTesting;
+
+import java.util.Optional;
+
+/**
+ * If a length line is used, then every note must have a length
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 20.03.19
+ * @since 1.0
+ */
+<span class="fc" id="L20">public class OneLengthPerNote implements GuitarTabASTSixStringsCoCo {</span>
+
+  @VisibleForTesting
+  public static final String THERE_ARE_NOTES_WITHOUT_LENGTH =
+      &quot;0xY0300 Each note must have a length&quot;;
+
+  @Override public void check(ASTSixStrings node) {
+    //Exclude tabs without length information
+<span class="fc bfc" id="L28" title="All 2 branches covered.">    if (!node.isPresentLengthLine()) {</span>
+<span class="fc" id="L29">      return;</span>
+    }
+
+    //given
+
+    //when
+<span class="fc" id="L35">    boolean lengthMissing = false;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">    for (ASTGuitarString guitarString : node.getGuitarStringList()) {</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">      for (int i = 0; i &lt; guitarString.getContentList().size(); i++) {</span>
+<span class="fc" id="L38">        Optional&lt;Integer&gt; currentFret = guitarString.getFret(i);</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (currentFret.isPresent()) {</span>
+<span class="fc" id="L40">          IndexRange range = node.getRangeOfNotesAt(i).get();</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">          lengthMissing |= !node.getLengthLine().getLengthInRange(range).isPresent();</span>
+        }
+      }
+<span class="fc" id="L44">    }</span>
+
+    //then
+<span class="fc bfc" id="L47" title="All 2 branches covered.">    if (lengthMissing) {</span>
+<span class="fc" id="L48">      Log.error(THERE_ARE_NOTES_WITHOUT_LENGTH);</span>
+    }
+<span class="fc" id="L50">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

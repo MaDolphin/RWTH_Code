@@ -1,0 +1,12 @@
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/lang/AbstractTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/prettyprint/PrettyPrinterTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/symboltable/AutomatonSymbolTableCreatorTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/parser/PrintStatesTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/cocos/AtLeastOneInitialAndFinalStateTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/parser/ParseTrafficLightTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/visitors/CountStatesTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/AutomatonToolTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/cocos/TransitionSourceExistsTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/symboltable/AutomatonSymbolSerializationTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/parser/AutomatonParserTest.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/test/java/automata/cocos/AutomataCoCosTest.java

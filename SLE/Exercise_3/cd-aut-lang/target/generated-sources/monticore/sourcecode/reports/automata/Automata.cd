@@ -1,0 +1,31 @@
+import de.monticore.types.MCBasicTypes;
+
+classdiagram Automata{
+
+  public interface ASTAutomataNode;
+
+  <<symbol, scope, startProd>>public class ASTAutomaton{
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCImportStatement> mCImportStatement;
+    protected String name;
+    <<astType="">>protected java.util.List<Automata.ASTState> state;
+    <<astType="">>protected java.util.List<Automata.ASTTransition> transition;
+  }
+
+  public class ASTState{
+    protected String name;
+    protected boolean initial;
+    protected boolean r__final;
+  }
+
+  public class ASTTransition{
+    protected String from;
+    protected String input;
+    protected String to;
+  }
+
+  enum AutomataLiterals{
+    FINAL,
+    INITIAL;
+  }
+
+}

@@ -1,0 +1,11 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+automata InvalidAut {
+
+  state A;
+  state B;
+
+  A - ab > B;
+  B - ba > A;
+  A - ac > C;
+}

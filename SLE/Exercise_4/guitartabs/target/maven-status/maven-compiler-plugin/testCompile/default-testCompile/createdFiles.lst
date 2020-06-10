@@ -1,0 +1,8 @@
+guitartab/_parser/GuitarTabParserTest.class
+guitartab/cocos/AbstractCocoTest.class
+guitartab/cocos/AllLinesHaveTheSameLengthTest.class
+guitartab/_parser/GuitarTabParserTest$Parse.class
+guitartab/cocos/FretLimitTest.class
+guitartab/cocos/CocoTestInput.class
+guitartab/AbstractTest.class
+guitartab/cocos/OneLengthPerNoteTest.class

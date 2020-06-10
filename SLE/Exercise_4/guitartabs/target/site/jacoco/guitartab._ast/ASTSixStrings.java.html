@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ASTSixStrings.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab._ast</a> &gt; <span class="el_source">ASTSixStrings.java</span></div><h1>ASTSixStrings.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab._ast;
+
+import guitartab.utils.IndexRange;
+import guitartab.utils.LineUtils;
+import guitartab.utils.Notes;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+/**
+ * A full tab containing all six strings of the guitar and, optionally, length information
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 20.03.19
+ * @since 1.0
+ */
+public class ASTSixStrings extends ASTSixStringsTOP {
+<span class="fc" id="L22">  protected ASTSixStrings() {</span>
+    // empty body
+<span class="fc" id="L24">  }</span>
+
+  protected ASTSixStrings(
+      java.util.List&lt;guitartab._ast.ASTGuitarString&gt; guitarStrings,
+      java.util.List&lt;String&gt; linebreaks,
+      Optional&lt;ASTLengthLine&gt; lengthLine
+<span class="nc" id="L30">  ) {</span>
+<span class="nc" id="L31">    setGuitarStringList(guitarStrings);</span>
+<span class="nc" id="L32">    setLinebreakList(linebreaks);</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">    if (lengthLine.isPresent()) {</span>
+<span class="nc" id="L34">      setLengthLine(lengthLine.get());</span>
+    } else {
+<span class="nc" id="L36">      setLengthLineAbsent();</span>
+    }
+
+<span class="nc" id="L39">  }</span>
+
+  /**
+   * Get start / end index of the notes at the given index across all guitar strings
+   *
+   * @param index an index one of the digits of the note
+   * @return start / end index of the notes at the given index across all guitar strings, Optional.empty if no notes found
+   */
+  public Optional&lt;IndexRange&gt; getRangeOfNotesAt(int index) {
+<span class="fc" id="L48">    List&lt;Optional&lt;IndexRange&gt;&gt; foundRanges = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">    for (ASTGuitarString string : getGuitarStringList()) {</span>
+<span class="fc" id="L50">      foundRanges.add(LineUtils.getRangeOfNumberAtIndex(index, string.getContentList()));</span>
+<span class="fc" id="L51">    }</span>
+
+<span class="fc" id="L53">    List&lt;Integer&gt; startIndices = foundRanges.stream()</span>
+<span class="fc" id="L54">        .filter(Optional::isPresent)</span>
+<span class="fc" id="L55">        .map(x -&gt; x.get().getStart())</span>
+<span class="fc" id="L56">        .collect(Collectors.toList());</span>
+
+<span class="fc" id="L58">    List&lt;Integer&gt; endIndices = foundRanges.stream()</span>
+<span class="fc" id="L59">        .filter(Optional::isPresent)</span>
+<span class="fc" id="L60">        .map(x -&gt; x.get().getStop())</span>
+<span class="fc" id="L61">        .collect(Collectors.toList());</span>
+
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">    if (startIndices.isEmpty()) {</span>
+      //No ranges found
+<span class="nc" id="L65">      return Optional.empty();</span>
+    }
+
+<span class="fc" id="L68">    IndexRange result = new IndexRange(</span>
+<span class="fc" id="L69">        startIndices.stream().mapToInt(v -&gt; v).min().orElseThrow(NoSuchElementException::new),</span>
+<span class="fc" id="L70">        endIndices.stream().mapToInt(v -&gt; v).max().orElseThrow(NoSuchElementException::new)</span>
+    );
+
+<span class="fc" id="L73">    return Optional.of(result);</span>
+  }
+
+  /**
+   * Return an ordered list of all notes (including their length) that should be played at the
+   * same time
+   *
+   * @return a ordered list of notes that should be played together
+   */
+  public List&lt;Notes&gt; getAllNotes() {
+<span class="nc" id="L83">    int lineLength = getGuitarStringList().get(0).getContentList().size();</span>
+<span class="nc" id="L84">    List&lt;Notes&gt; allNotes = new ArrayList&lt;&gt;();</span>
+
+<span class="nc bnc" id="L86" title="All 2 branches missed.">    for (int i = 0; i &lt; lineLength; i++) {</span>
+<span class="nc" id="L87">      Optional&lt;IndexRange&gt; currentRange = getRangeOfNotesAt(i);</span>
+<span class="nc" id="L88">      Notes currentChord = new Notes();</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">      if (currentRange.isPresent()) {</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">        for (int j = 0; j &lt; getGuitarStringList().size(); j++) {</span>
+<span class="nc" id="L91">          currentChord.getFrets().add(</span>
+<span class="nc" id="L92">              getGuitarStringList().get(j).getFretInRange(currentRange.get())</span>
+          );
+        }
+<span class="nc bnc" id="L95" title="All 2 branches missed.">        if (!isPresentLengthLine()) {</span>
+<span class="nc" id="L96">          currentChord.setLength(Optional.empty());</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">        } else if (getLengthLine().getLengthInRange(currentRange.get()).isPresent()) {</span>
+<span class="nc" id="L98">          currentChord.setLength(getLengthLine().getLengthInRange(currentRange.get()));</span>
+        }
+<span class="nc" id="L100">        allNotes.add(currentChord);</span>
+        // Skip the rest of the range
+<span class="nc" id="L102">        i = currentRange.get().getStop();</span>
+      }
+    }
+
+<span class="nc" id="L106">    return allNotes;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

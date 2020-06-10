@@ -1,0 +1,8 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+========================================================== Unused Handwritten Code Files
+          /Users/hhk/Documents/GitHub/SLE/Exercise_3/cd-aut-lang/src/main/java/automata/AutomataTool.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_3/cd-aut-lang/src/main/java/automata/_symboltable/AutomataSymbolTableCreator.java
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

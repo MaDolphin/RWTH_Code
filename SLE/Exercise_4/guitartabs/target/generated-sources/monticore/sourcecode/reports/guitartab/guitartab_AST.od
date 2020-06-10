@@ -1,0 +1,426 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram guitartab_AST {
+  @GuitarTab!MCGrammar(3,0):ASTMCGrammar {
+    symbol = @GuitarTab!Symbol(3,0);
+    enclosingScope = @GuitarTab!ArtifactScope;
+    spanningScope = @GuitarTab!Scope;
+    r__package = [];
+    name = "GuitarTab";
+    supergrammar = [// *size: 1
+      @MCBasics!GrammarReference(3,26):ASTGrammarReference {
+        enclosingScope = @GuitarTab!Scope;
+        name = [de, monticore, MCBasics];
+      }];
+    lexProd = [// *size: 2
+      @Digit!LexProd(7,2):ASTLexProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!LexAlt(7,16):ASTLexAlt {
+            enclosingScope = @Digit!Scope;
+            lexComponent = [// *size: 1
+              @!LexCharRange(7,16):ASTLexCharRange {
+                enclosingScope = @Digit!Scope;
+                lowerChar = "0";
+                upperChar = "9";
+                negate = false;
+              }];
+          }];
+        type = [];
+        name = "Digit";
+        fragment = false;
+        comment = false;
+      },
+      @Linebreak!LexProd(8,2):ASTLexProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!LexAlt(8,20):ASTLexAlt {
+            enclosingScope = @Linebreak!Scope;
+            lexComponent = [// *size: 1
+              @NEWLINE!LexNonTerminal(8,20):ASTLexNonTerminal {
+                enclosingScope = @Linebreak!Scope;
+                name = "NEWLINE";
+              }];
+          }];
+        type = [];
+        name = "Linebreak";
+        fragment = false;
+        comment = false;
+      }];
+    classProd = [// *size: 5
+      @Tab!ClassProd(5,2):ASTClassProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!Alt(5,8):ASTAlt {
+            enclosingScope = @Tab!Scope;
+            component = [// *size: 1
+              @!Block(5,8):ASTBlock {
+                enclosingScope = @Tab!Scope;
+                alt = [// *size: 3
+                  @!Alt(5,9):ASTAlt {
+                    enclosingScope = @Tab!Scope;
+                    component = [// *size: 1
+                      @Comment!NonTerminal(5,9):ASTNonTerminal {
+                        enclosingScope = @Tab!Scope;
+                        usageName = "comment";
+                        name = "Comment";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(5,19):ASTAlt {
+                    enclosingScope = @Tab!Scope;
+                    component = [// *size: 1
+                      @SixStrings!NonTerminal(5,19):ASTNonTerminal {
+                        enclosingScope = @Tab!Scope;
+                        usageName = "sixStrings";
+                        name = "SixStrings";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(5,32):ASTAlt {
+                    enclosingScope = @Tab!Scope;
+                    component = [// *size: 1
+                      @Linebreak!NonTerminal(5,32):ASTNonTerminal {
+                        enclosingScope = @Tab!Scope;
+                        usageName = "linebreak";
+                        name = "Linebreak";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Tab";
+      },
+      @Comment!ClassProd(10,2):ASTClassProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!Alt(10,12):ASTAlt {
+            enclosingScope = @Comment!Scope;
+            component = [// *size: 4
+              @LBRACK!Terminal(10,12):ASTTerminal {
+                enclosingScope = @Comment!Scope;
+                name = "[";
+                iteration = 0;
+              },
+              @!Block(10,16):ASTBlock {
+                enclosingScope = @Comment!Scope;
+                alt = [// *size: 2
+                  @!Alt(10,17):ASTAlt {
+                    enclosingScope = @Comment!Scope;
+                    component = [// *size: 1
+                      @Name!NonTerminal(10,17):ASTNonTerminal {
+                        enclosingScope = @Comment!Scope;
+                        usageName = "name";
+                        name = "Name";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(10,24):ASTAlt {
+                    enclosingScope = @Comment!Scope;
+                    component = [// *size: 1
+                      @WS!NonTerminal(10,24):ASTNonTerminal {
+                        enclosingScope = @Comment!Scope;
+                        usageName = "wS";
+                        name = "WS";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @RBRACK!Terminal(10,29):ASTTerminal {
+                enclosingScope = @Comment!Scope;
+                name = "]";
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(10,33):ASTNonTerminal {
+                enclosingScope = @Comment!Scope;
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Comment";
+      },
+      @SixStrings!ClassProd(13,2):ASTClassProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!Alt(14,4):ASTAlt {
+            enclosingScope = @SixStrings!Scope;
+            component = [// *size: 18
+              @e!Terminal(14,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "e";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(14,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(14,21):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "linebreak";
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @B!Terminal(15,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "B";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(15,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(15,21):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "linebreak";
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @G!Terminal(16,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "G";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(16,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(16,21):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "linebreak";
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @D!Terminal(17,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "D";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(17,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(17,21):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "linebreak";
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @A!Terminal(18,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "A";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(18,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Linebreak!NonTerminal(18,21):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "linebreak";
+                name = "Linebreak";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @E!Terminal(19,4):ASTTerminal {
+                enclosingScope = @SixStrings!Scope;
+                name = "E";
+                iteration = 0;
+              },
+              @GuitarString!NonTerminal(19,8):ASTNonTerminal {
+                enclosingScope = @SixStrings!Scope;
+                usageName = "guitarString";
+                name = "GuitarString";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(20,4):ASTBlock {
+                enclosingScope = @SixStrings!Scope;
+                alt = [// *size: 1
+                  @!Alt(20,5):ASTAlt {
+                    enclosingScope = @SixStrings!Scope;
+                    component = [// *size: 3
+                      @Linebreak!NonTerminal(20,5):ASTNonTerminal {
+                        enclosingScope = @SixStrings!Scope;
+                        usageName = "linebreak";
+                        name = "Linebreak";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @L!Terminal(20,15):ASTTerminal {
+                        enclosingScope = @SixStrings!Scope;
+                        name = "L";
+                        iteration = 0;
+                      },
+                      @LengthLine!NonTerminal(20,19):ASTNonTerminal {
+                        enclosingScope = @SixStrings!Scope;
+                        name = "LengthLine";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              }];
+            rightAssoc = false;
+          }];
+        name = "SixStrings";
+      },
+      @GuitarString!ClassProd(23,2):ASTClassProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!Alt(23,17):ASTAlt {
+            enclosingScope = @GuitarString!Scope;
+            component = [// *size: 3
+              @PIPE!Terminal(23,17):ASTTerminal {
+                enclosingScope = @GuitarString!Scope;
+                name = "|";
+                iteration = 0;
+              },
+              @!Block(23,21):ASTBlock {
+                enclosingScope = @GuitarString!Scope;
+                alt = [// *size: 2
+                  @!Alt(23,22):ASTAlt {
+                    enclosingScope = @GuitarString!Scope;
+                    component = [// *size: 1
+                      @Digit!NonTerminal(23,22):ASTNonTerminal {
+                        enclosingScope = @GuitarString!Scope;
+                        usageName = "content";
+                        name = "Digit";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(23,38):ASTAlt {
+                    enclosingScope = @GuitarString!Scope;
+                    component = [// *size: 1
+                      @MINUS!Terminal(23,38):ASTTerminal {
+                        enclosingScope = @GuitarString!Scope;
+                        usageName = "content";
+                        name = "-";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @PIPE!Terminal(23,52):ASTTerminal {
+                enclosingScope = @GuitarString!Scope;
+                name = "|";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "GuitarString";
+      },
+      @LengthLine!ClassProd(26,2):ASTClassProd {
+        enclosingScope = @GuitarTab!Scope;
+        alt = [// *size: 1
+          @!Alt(26,15):ASTAlt {
+            enclosingScope = @LengthLine!Scope;
+            component = [// *size: 3
+              @PIPE!Terminal(26,15):ASTTerminal {
+                enclosingScope = @LengthLine!Scope;
+                name = "|";
+                iteration = 0;
+              },
+              @!Block(26,19):ASTBlock {
+                enclosingScope = @LengthLine!Scope;
+                alt = [// *size: 2
+                  @!Alt(26,20):ASTAlt {
+                    enclosingScope = @LengthLine!Scope;
+                    component = [// *size: 1
+                      @Digit!NonTerminal(26,20):ASTNonTerminal {
+                        enclosingScope = @LengthLine!Scope;
+                        usageName = "content";
+                        name = "Digit";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(26,36):ASTAlt {
+                    enclosingScope = @LengthLine!Scope;
+                    component = [// *size: 1
+                      @MINUS!Terminal(26,36):ASTTerminal {
+                        enclosingScope = @LengthLine!Scope;
+                        usageName = "content";
+                        name = "-";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @PIPE!Terminal(26,50):ASTTerminal {
+                enclosingScope = @LengthLine!Scope;
+                name = "|";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "LengthLine";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

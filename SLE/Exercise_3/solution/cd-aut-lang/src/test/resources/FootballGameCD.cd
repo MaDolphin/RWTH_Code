@@ -1,0 +1,11 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+classdiagram FootballGameCD {
+
+  private class Break {
+  }
+
+  public class Extension {
+  }
+
+}

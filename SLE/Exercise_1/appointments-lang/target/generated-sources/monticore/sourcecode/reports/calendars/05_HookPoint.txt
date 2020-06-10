@@ -1,0 +1,2703 @@
+========================================================== Hookpoints
+Op    Type HP-/AHP Info
+call  EHP  HP:"JavaCopyright"
+set   ATHP EmptyBody.ftl                      @!CDMethod
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!2)
+           SetEnclosingScope.ftl
+set   ASHP Value.ftl                          @!CDAttribute
+           "= Optional.empty()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!3)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!4)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!5)
+           SetSpanningSymbol.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!6)
+           SetSpanningSymbolAbsent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!7)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!8)
+           Set.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!2)
+           "= true"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!9)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!10)
+           Set.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!3)
+           "= Optional.empty()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!11)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!12)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!13)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!14)
+           SetAbsent.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!4)
+           "= Optional.empty()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!15)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!16)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!17)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!18)
+           SetAbsent.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor
+           "super(); this.name = Optional.empty();"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!2)
+           "this.shadowing = shadowing; this.name = Optional.empty();"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!3)
+           "this(enclosingScope, false);"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!4)
+           "this.setEnclosingScope(enclosingScope); this.shadowing = shadowi[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!19)
+           "return 0;"
+set   ASHP Value.ftl                          @!CDAttribute(!5)
+           "= new java.util.ArrayList<>()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!20)
+           AddSubScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!21)
+           RemoveSubScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!22)
+           GetSubScopes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!23)
+           SetSubScopes.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!24)
+           "visitor.handle(this);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!25)
+           Accept.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!26)
+           Accept.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!27)
+           Accept.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!28)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!29)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!30)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!31)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!32)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!33)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!34)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!35)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!36)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!5)
+           "this.realBuilder = (CalendarsScopeBuilder) this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!37)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!38)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!39)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!40)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!41)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!42)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!43)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!44)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!45)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!46)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!2)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!3)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!4)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!5)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!6)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!7)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!8)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!9)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!10)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!11)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!12)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!13)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!14)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!15)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!16)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!17)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!18)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!19)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!47)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!48)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!49)
+           SetAbsent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!50)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!51)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!52)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!53)
+           SetAbsent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!54)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!55)
+           SetAbsent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!20)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!21)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!22)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!23)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!24)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!25)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!26)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!27)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!28)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!29)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!30)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!31)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!32)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!33)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!34)
+           Set.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!6)
+           "= Optional.empty()"
+set   ASHP Value.ftl                          @!CDAttribute(!7)
+           "= Optional.empty()"
+set   ASHP Value.ftl                          @!CDAttribute(!8)
+           "= Optional.empty()"
+set   ASHP Value.ftl                          @!CDAttribute(!9)
+           "= new java.util.ArrayList<>()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!56)
+           Build.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!10)
+           "= true"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!57)
+           "Log.error("0xA7013x558 The method \"addSubScope\" of interface \[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!58)
+           "Log.error("0xA7013x558 The method \"removeSubScope\" of interfac[...]"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!59)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!60)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!61)
+           GetMill.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!62)
+           InitMe.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!63)
+           "mill = new CalendarsSymTabMill();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!64)
+           Reset.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!65)
+           "return new CalendarsModelLoaderBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!66)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!67)
+           "return new CalendarsSymbolTableCreatorBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!68)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!69)
+           "return new CalendarsSymbolTableCreatorDelegatorBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!70)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!71)
+           "return new CalendarsGlobalScopeBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!72)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!73)
+           "return new CalendarsArtifactScopeBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!74)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!75)
+           "return new CalendarsScopeBuilder();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!76)
+           BuilderMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!77)
+           "return false;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!78)
+           "return this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!79)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!80)
+           Get.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!6)
+           "this.modelPath = Log.errorIfNull(modelPath); this.calendarsLangu[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!11)
+           " = new HashMap<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!81)
+           "Log.error("0xA6101x608 Global scopes do not have names."); retur[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!82)
+           "return false;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!83)
+           CacheMethod.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!84)
+           " return !modelName2ModelLoaderCache.containsKey(calculatedModelN[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!85)
+           "Log.error("0xA6100x797 GlobalScope CalendarsGlobalScope has no E[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!86)
+           "Log.error("0xA6100x745 GlobalScope CalendarsGlobalScope has no E[...]"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!7)
+           "this.realBuilder = (CalendarsGlobalScopeBuilder) this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!87)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!88)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!89)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!90)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!91)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!92)
+           Build.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!93)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!94)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!35)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!36)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!37)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!38)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!39)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!40)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!41)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!42)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!43)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!44)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!45)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!46)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!47)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!48)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!49)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!50)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!51)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!52)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!53)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!54)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!55)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!56)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!57)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!58)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!59)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!60)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!61)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!62)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!63)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!64)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!65)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!66)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!67)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!68)
+           Set.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!8)
+           "this(Optional.empty(), packageName, imports);"
+set   ATHP EmptyBody.ftl                      @!CDConstructor(!9)
+           Constructor.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!95)
+           GetName.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!96)
+           IsPresentName.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!97)
+           GetTopLevelSymbol.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!98)
+           CheckIfContinueAsSubScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!99)
+           GetFilePath.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!100)
+           GetRemainingNameForResolveDown.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!101)
+           "visitor.handle(this);"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!10)
+           "this.realBuilder = (CalendarsArtifactScopeBuilder) this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!102)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!103)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!69)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!70)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!71)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!72)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!73)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!74)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!75)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!76)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!77)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!78)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!79)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!80)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!81)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!82)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!83)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!84)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!85)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!86)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!87)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!104)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!88)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!89)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!90)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!91)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!92)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!93)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!94)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!95)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!96)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!97)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!98)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!99)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!100)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!101)
+           MethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!102)
+           Set.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!12)
+           "= new java.util.ArrayList<>()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!105)
+           Build.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!13)
+           "= Optional.empty()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!106)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!107)
+           SetAbsent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!108)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!109)
+           IsPresent.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!110)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!111)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!112)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDConstructor(!11)
+           Constructor.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!113)
+           " return new calendars._symboltable.CalendarsSymbolTableCreatorDe[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!114)
+           "return new CalendarsModelLoader(this);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!115)
+           "return new calendars._parser.CalendarsParser();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!116)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDConstructor(!12)
+           Constructor.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!117)
+           CreateSymbolTableFromAST.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!118)
+           LoadModelsIntoScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!119)
+           LoadModels.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!120)
+           LoadSymbolsIntoScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!121)
+           Resolve.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!122)
+           ResolveSymbol.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!123)
+           ShowWarningIfParsedModels.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!13)
+           "this.realBuilder = (CalendarsModelLoaderBuilder) this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!124)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!125)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!126)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!127)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!128)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!129)
+           Build.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!14)
+           "= this"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!130)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!131)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!132)
+           Get.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!14)
+           "putOnStack(Log.errorIfNull(enclosingScope));"
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!15)
+           "this.scopeStack = Log.errorIfNull((Deque<calendars._symboltable.[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!15)
+           "= new java.util.ArrayDeque<>()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!133)
+           CreateFromAST.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!134)
+           PutOnStack.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!135)
+           "return Optional.ofNullable(scopeStack.peekLast());"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!136)
+           "return Optional.ofNullable(scopeStack.pollLast());"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!137)
+           "this.scopeStack = scopeStack;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!138)
+           CreateScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!139)
+           VisitNoSymbol.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!16)
+           "= new java.util.ArrayDeque<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!140)
+           "return new CalendarsSymbolTableCreator(scopeStack);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!141)
+           "this.scopeStack = scopeStack; return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!142)
+           "this.scopeStack.add(scope); return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!143)
+           "this.scopeStack.remove(scope); return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!144)
+           "return this.scopeStack;"
+set   ATHP EmptyBody.ftl                      @!CDConstructor(!16)
+           Constructor.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!17)
+           "= new java.util.ArrayDeque<>()"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!145)
+           CreateFromAST.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!17)
+           "this.realBuilder = (CalendarsSymbolTableCreatorDelegatorBuilder)[...]"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!146)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!147)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!148)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!149)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!150)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!151)
+           Build.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!18)
+           "super(scopeStack);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!152)
+           CreateScope.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!19)
+           "super(scopeStack);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!153)
+           CreateScope.ftl
+set   ASHP Package.ftl                        @!CDClass
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass
+           ""
+set   ASHP Package.ftl                        @!CDClass(!2)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!2)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!3)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!3)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!4)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!4)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!5)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!5)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!6)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!6)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!7)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!7)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!8)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!8)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!9)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!9)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!10)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!10)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!11)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!11)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!12)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!12)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!13)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!13)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!14)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!14)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!15)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!15)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!16)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDClass(!16)
+           ""
+set   ASHP Package.ftl                        @!CDInterface
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDInterface
+           ""
+set   ASHP Package.ftl                        @!CDInterface(!2)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDInterface(!2)
+           ""
+set   ASHP Package.ftl                        @!CDInterface(!3)
+           "package calendars._symboltable;"
+set   ASHP Annotations.ftl                    @!CDInterface(!3)
+           ""
+call  ASHP Package.ftl                        @!CDClass
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass
+           ""
+call  ASHP Value.ftl                          @!CDAttribute
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!2)
+           "= true"
+call  ASHP Value.ftl                          @!CDAttribute(!3)
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!4)
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!5)
+           "= new java.util.ArrayList<>()"
+call  ASHP EmptyBody.ftl                      @!CDConstructor
+           "super(); this.name = Optional.empty();"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!2)
+           "this.shadowing = shadowing; this.name = Optional.empty();"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!3)
+           "this(enclosingScope, false);"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!4)
+           "this.setEnclosingScope(enclosingScope); this.shadowing = shadowi[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!19)
+           "return 0;"
+call  ATHP EmptyBody.ftl                      @!CDMethod
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!2)
+           SetEnclosingScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!3)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!4)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!5)
+           SetSpanningSymbol.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!6)
+           SetSpanningSymbolAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!7)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!8)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!9)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!10)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!11)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!12)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!13)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!14)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!15)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!16)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!17)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!18)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!20)
+           AddSubScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!21)
+           RemoveSubScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!22)
+           GetSubScopes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!23)
+           SetSubScopes.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!24)
+           "visitor.handle(this);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!25)
+           Accept.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!26)
+           Accept.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!27)
+           Accept.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!28)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!29)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!30)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!31)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!32)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!33)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!34)
+           "this.addSubScope((calendars._symboltable.ICalendarsScope) subScope);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!35)
+           "this.removeSubScope((calendars._symboltable.ICalendarsScope) sub[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!36)
+           "this.setEnclosingScope((calendars._symboltable.ICalendarsScope) [...]"
+call  ASHP Package.ftl                        @!CDClass(!2)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!2)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!6)
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!10)
+           "= true"
+call  ASHP Value.ftl                          @!CDAttribute(!7)
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!8)
+           "= Optional.empty()"
+call  ASHP Value.ftl                          @!CDAttribute(!9)
+           "= new java.util.ArrayList<>()"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!5)
+           "this.realBuilder = (CalendarsScopeBuilder) this;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!56)
+           Build.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!37)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!38)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!39)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!40)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!41)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!42)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!43)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!44)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!45)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!46)
+           IsPresent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!2)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!3)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!4)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!5)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!6)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!7)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!8)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!9)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!10)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!11)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!12)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!13)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!14)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!15)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!16)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!17)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!18)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!19)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!47)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!48)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!49)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!50)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!51)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!52)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!53)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!54)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!55)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!20)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!21)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!22)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!23)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!24)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!25)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!26)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!27)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!28)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!29)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!30)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!31)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!32)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!33)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!34)
+           Set.ftl
+call  ASHP Package.ftl                        @!CDClass(!3)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!3)
+           ""
+call  ATHP EmptyBody.ftl                      @!CDMethod(!61)
+           GetMill.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!62)
+           InitMe.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!63)
+           "mill = new CalendarsSymTabMill();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!64)
+           Reset.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!65)
+           "return new CalendarsModelLoaderBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!66)
+           BuilderMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!67)
+           "return new CalendarsSymbolTableCreatorBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!68)
+           BuilderMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!69)
+           "return new CalendarsSymbolTableCreatorDelegatorBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!70)
+           BuilderMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!71)
+           "return new CalendarsGlobalScopeBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!72)
+           BuilderMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!73)
+           "return new CalendarsArtifactScopeBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!74)
+           BuilderMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!75)
+           "return new CalendarsScopeBuilder();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!76)
+           BuilderMethod.ftl
+call  ASHP Package.ftl                        @!CDClass(!4)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!4)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!11)
+           " = new HashMap<>()"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!6)
+           "this.modelPath = Log.errorIfNull(modelPath); this.calendarsLangu[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!79)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!80)
+           Get.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!81)
+           "Log.error("0xA6101x608 Global scopes do not have names."); retur[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!82)
+           "return false;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!83)
+           CacheMethod.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!84)
+           " return !modelName2ModelLoaderCache.containsKey(calculatedModelN[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!85)
+           "Log.error("0xA6100x797 GlobalScope CalendarsGlobalScope has no E[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!86)
+           "Log.error("0xA6100x745 GlobalScope CalendarsGlobalScope has no E[...]"
+call  ASHP Package.ftl                        @!CDClass(!5)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!5)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!7)
+           "this.realBuilder = (CalendarsGlobalScopeBuilder) this;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!92)
+           Build.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!87)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!88)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!89)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!90)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!91)
+           Set.ftl
+call  ASHP Package.ftl                        @!CDClass(!6)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!6)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!8)
+           "this(Optional.empty(), packageName, imports);"
+call  ATHP EmptyBody.ftl                      @!CDConstructor(!9)
+           Constructor.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!93)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!94)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!35)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!36)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!37)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!38)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!39)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!40)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!41)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!42)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!43)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!44)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!45)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!46)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!47)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!48)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!49)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!50)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!51)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!52)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!53)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!54)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!55)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!56)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!57)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!58)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!59)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!60)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!61)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!62)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!63)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!64)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!65)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!66)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!67)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!68)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!95)
+           GetName.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!96)
+           IsPresentName.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!97)
+           GetTopLevelSymbol.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!98)
+           CheckIfContinueAsSubScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!99)
+           GetFilePath.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!100)
+           GetRemainingNameForResolveDown.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!101)
+           "visitor.handle(this);"
+call  ASHP Package.ftl                        @!CDClass(!7)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!7)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!12)
+           "= new java.util.ArrayList<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!13)
+           "= Optional.empty()"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!10)
+           "this.realBuilder = (CalendarsArtifactScopeBuilder) this;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!105)
+           Build.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!102)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!103)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!69)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!70)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!71)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!72)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!73)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!74)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!75)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!76)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!77)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!78)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!79)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!80)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!81)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!82)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!83)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!84)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!85)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!86)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!87)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!104)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!88)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!89)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!90)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!91)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!92)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!93)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!94)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!95)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!96)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!97)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!98)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!99)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!100)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!101)
+           MethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!102)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!106)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!107)
+           SetAbsent.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!108)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!109)
+           IsPresent.ftl
+call  ASHP Package.ftl                        @!CDClass(!8)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!8)
+           ""
+call  ATHP EmptyBody.ftl                      @!CDConstructor(!11)
+           Constructor.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!110)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!111)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!112)
+           Get.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!113)
+           " return new calendars._symboltable.CalendarsSymbolTableCreatorDe[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!114)
+           "return new CalendarsModelLoader(this);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!115)
+           "return new calendars._parser.CalendarsParser();"
+call  ASHP Package.ftl                        @!CDClass(!9)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!9)
+           ""
+call  ATHP EmptyBody.ftl                      @!CDConstructor(!12)
+           Constructor.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!116)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!117)
+           CreateSymbolTableFromAST.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!118)
+           LoadModelsIntoScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!119)
+           LoadModels.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!120)
+           LoadSymbolsIntoScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!121)
+           Resolve.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!122)
+           ResolveSymbol.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!123)
+           ShowWarningIfParsedModels.ftl
+call  ASHP Package.ftl                        @!CDClass(!10)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!10)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!13)
+           "this.realBuilder = (CalendarsModelLoaderBuilder) this;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!129)
+           Build.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!124)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!125)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!126)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!127)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!128)
+           Set.ftl
+call  ASHP Package.ftl                        @!CDClass(!11)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!11)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!15)
+           "= new java.util.ArrayDeque<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!14)
+           "= this"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!14)
+           "putOnStack(Log.errorIfNull(enclosingScope));"
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!15)
+           "this.scopeStack = Log.errorIfNull((Deque<calendars._symboltable.[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!130)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!131)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!132)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!133)
+           CreateFromAST.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!134)
+           PutOnStack.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!135)
+           "return Optional.ofNullable(scopeStack.peekLast());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!136)
+           "return Optional.ofNullable(scopeStack.pollLast());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!137)
+           "this.scopeStack = scopeStack;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!138)
+           CreateScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!139)
+           VisitNoSymbol.ftl
+call  ASHP Package.ftl                        @!CDClass(!12)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!12)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!16)
+           "= new java.util.ArrayDeque<>()"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!140)
+           "return new CalendarsSymbolTableCreator(scopeStack);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!141)
+           "this.scopeStack = scopeStack; return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!142)
+           "this.scopeStack.add(scope); return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!143)
+           "this.scopeStack.remove(scope); return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!144)
+           "return this.scopeStack;"
+call  ASHP Package.ftl                        @!CDClass(!13)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!13)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!17)
+           "= new java.util.ArrayDeque<>()"
+call  ATHP EmptyBody.ftl                      @!CDConstructor(!16)
+           Constructor.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!145)
+           CreateFromAST.ftl
+call  ASHP Package.ftl                        @!CDClass(!14)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!14)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!17)
+           "this.realBuilder = (CalendarsSymbolTableCreatorDelegatorBuilder)[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!151)
+           Build.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!146)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!147)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!148)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!149)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!150)
+           Set.ftl
+call  ASHP Package.ftl                        @!CDClass(!15)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!15)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!18)
+           "super(scopeStack);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!152)
+           CreateScope.ftl
+call  ASHP Package.ftl                        @!CDClass(!16)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDClass(!16)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!19)
+           "super(scopeStack);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!153)
+           CreateScope.ftl
+call  ASHP Package.ftl                        @!CDInterface
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDInterface
+           ""
+call  ASHP EmptyBody.ftl                      @!CDMethod(!57)
+           "Log.error("0xA7013x558 The method \"addSubScope\" of interface \[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!58)
+           "Log.error("0xA7013x558 The method \"removeSubScope\" of interfac[...]"
+call  ASHP Package.ftl                        @!CDInterface(!2)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDInterface(!2)
+           ""
+call  ASHP Package.ftl                        @!CDInterface(!3)
+           "package calendars._symboltable;"
+call  ASHP Annotations.ftl                    @!CDInterface(!3)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDMethod(!77)
+           "return false;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!78)
+           "return this;"
+set   ASHP Value.ftl                          @!CDAttribute(!53)
+           "= new de.monticore.symboltable.serialization.JsonPrinter()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!162)
+           "return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!163)
+           "return this.printer.getContent();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!164)
+           FilterRelevantSubScopes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!165)
+           HasSymbolsInSubScopes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!166)
+           AddScopeSpanningSymbol.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!167)
+           SerializeRelevantSubScopes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!168)
+           SerializeLocalSymbols.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!169)
+           VisitScope.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!170)
+           "printer.endObject();"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!171)
+           "serializeRelevantSubScopes(node);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!172)
+           SerializeSymbol.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!173)
+           VisitArtifactScope.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!174)
+           "printer.endObject();"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!175)
+           "traverse((calendars._symboltable.CalendarsScope) node);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!176)
+           "store(as, java.nio.file.Paths.get(symbolPath, as.getFilePath(lan[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!177)
+           "return "calendars._symboltable.CalendarsScope";"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!178)
+           "return "calendars._symboltable.CalendarsArtifactScope";"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!179)
+           Serialize.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!180)
+           DeserializeString.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!181)
+           DeserializeJsonObject.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!182)
+           DeserializeScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!183)
+           DeserializeArtifactScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!184)
+           AddSymbols.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!185)
+           AddAndLinkSubScopes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!186)
+           AddAndLinkSpanningSymbol.ftl
+set   ASHP Package.ftl                        @!CDClass(!17)
+           "package calendars._symboltable.serialization;"
+set   ASHP Package.ftl                        @!CDClass(!18)
+           "package calendars._symboltable.serialization;"
+call  ASHP Package.ftl                        @!CDClass(!17)
+           "package calendars._symboltable.serialization;"
+call  ASHP Value.ftl                          @!CDAttribute(!53)
+           "= new de.monticore.symboltable.serialization.JsonPrinter()"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!162)
+           "return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!163)
+           "return this.printer.getContent();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!164)
+           FilterRelevantSubScopes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!165)
+           HasSymbolsInSubScopes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!166)
+           AddScopeSpanningSymbol.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!167)
+           SerializeRelevantSubScopes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!168)
+           SerializeLocalSymbols.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!169)
+           VisitScope.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!170)
+           "printer.endObject();"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!171)
+           "serializeRelevantSubScopes(node);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!172)
+           SerializeSymbol.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!173)
+           VisitArtifactScope.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!174)
+           "printer.endObject();"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!175)
+           "traverse((calendars._symboltable.CalendarsScope) node);"
+call  ASHP Package.ftl                        @!CDClass(!18)
+           "package calendars._symboltable.serialization;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!176)
+           "store(as, java.nio.file.Paths.get(symbolPath, as.getFilePath(lan[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!177)
+           "return "calendars._symboltable.CalendarsScope";"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!178)
+           "return "calendars._symboltable.CalendarsArtifactScope";"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!179)
+           Serialize.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!180)
+           DeserializeString.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!181)
+           DeserializeJsonObject.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!182)
+           DeserializeScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!183)
+           DeserializeArtifactScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!184)
+           AddSymbols.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!185)
+           AddAndLinkSubScopes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!186)
+           AddAndLinkSpanningSymbol.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!188)
+           "return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!189)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!190)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!191)
+           Traverse.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!192)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!193)
+           Handle.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!194)
+           "return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!195)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!196)
+           "return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!197)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!198)
+           "CalendarsSymbolVisitor.super.handle(node);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!199)
+           "CalendarsSymbolVisitor.super.handle(node);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!200)
+           "CalendarsSymbolVisitor.super.handle(node);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!201)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!202)
+           Traverse.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!203)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!204)
+           Traverse.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!54)
+           "= (CalendarsDelegatorVisitor) this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!205)
+           "return realThis;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!206)
+           SetRealThis.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!55)
+           "= Optional.empty();"
+set   ASHP Value.ftl                          @!CDAttribute(!56)
+           "= Optional.empty();"
+set   ASHP Value.ftl                          @!CDAttribute(!57)
+           "= Optional.empty();"
+set   ASHP Value.ftl                          @!CDAttribute(!58)
+           "= Optional.empty();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!207)
+           SetVisitor.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!208)
+           "return mCCommonLiteralsVisitor;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!209)
+           SetVisitor.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!210)
+           "return mCBasicsVisitor;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!211)
+           SetVisitor.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!212)
+           "return mCLiteralsBasisVisitor;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!213)
+           SetVisitor.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!214)
+           "return calendarsVisitor;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!215)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!216)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!217)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!218)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!219)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!220)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!221)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!222)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!223)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!224)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!225)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!226)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!227)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!228)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!229)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!230)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!231)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!232)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!233)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!234)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!235)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!236)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!237)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!238)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!239)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!240)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!241)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!242)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!243)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!244)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!245)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!246)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!247)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!248)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!249)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!250)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!251)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!252)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!253)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!254)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!255)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!256)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!257)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!258)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!259)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!260)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!261)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!262)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!263)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!264)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!265)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!266)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!267)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!268)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!269)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!270)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!271)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!272)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!273)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!274)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!275)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!276)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!277)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!278)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!279)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!280)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!281)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!282)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!283)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!284)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!285)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!286)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!287)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!288)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!289)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!290)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!291)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!292)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!293)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!294)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!295)
+           VisitorMethods.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!296)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!297)
+           Handle.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!298)
+           Handle.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!59)
+           "= new java.util.Stack<>();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!299)
+           GetParent.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!300)
+           "return new java.util.ArrayList<>(parents);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!301)
+           Travers.ftl
+set   ASHP Package.ftl                        @!CDClass(!19)
+           "package calendars._visitor;"
+set   ASHP Package.ftl                        @!CDClass(!20)
+           "package calendars._visitor;"
+set   ASHP Package.ftl                        @!CDInterface(!4)
+           "package calendars._visitor;"
+set   ASHP Package.ftl                        @!CDInterface(!5)
+           "package calendars._visitor;"
+set   ASHP Package.ftl                        @!CDInterface(!6)
+           "package calendars._visitor;"
+set   ASHP Package.ftl                        @!CDInterface(!7)
+           "package calendars._visitor;"
+call  ASHP Package.ftl                        @!CDClass(!19)
+           "package calendars._visitor;"
+call  ASHP Value.ftl                          @!CDAttribute(!54)
+           "= (CalendarsDelegatorVisitor) this;"
+call  ASHP Value.ftl                          @!CDAttribute(!55)
+           "= Optional.empty();"
+call  ASHP Value.ftl                          @!CDAttribute(!56)
+           "= Optional.empty();"
+call  ASHP Value.ftl                          @!CDAttribute(!57)
+           "= Optional.empty();"
+call  ASHP Value.ftl                          @!CDAttribute(!58)
+           "= Optional.empty();"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!205)
+           "return realThis;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!206)
+           SetRealThis.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!207)
+           SetVisitor.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!208)
+           "return mCCommonLiteralsVisitor;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!209)
+           SetVisitor.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!210)
+           "return mCBasicsVisitor;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!211)
+           SetVisitor.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!212)
+           "return mCLiteralsBasisVisitor;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!213)
+           SetVisitor.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!214)
+           "return calendarsVisitor;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!215)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!216)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!217)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!218)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!219)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!220)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!221)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!222)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!223)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!224)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!225)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!226)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!227)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!228)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!229)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!230)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!231)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!232)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!233)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!234)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!235)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!236)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!237)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!238)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!239)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!240)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!241)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!242)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!243)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!244)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!245)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!246)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!247)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!248)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!249)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!250)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!251)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!252)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!253)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!254)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!255)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!256)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!257)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!258)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!259)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!260)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!261)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!262)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!263)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!264)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!265)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!266)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!267)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!268)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!269)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!270)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!271)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!272)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!273)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!274)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!275)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!276)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!277)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!278)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!279)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!280)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!281)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!282)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!283)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!284)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!285)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!286)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!287)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!288)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!289)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!290)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!291)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!292)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!293)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!294)
+           VisitorMethods.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!295)
+           VisitorMethods.ftl
+call  ASHP Package.ftl                        @!CDClass(!20)
+           "package calendars._visitor;"
+call  ASHP Value.ftl                          @!CDAttribute(!59)
+           "= new java.util.Stack<>();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!299)
+           GetParent.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!300)
+           "return new java.util.ArrayList<>(parents);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!301)
+           Travers.ftl
+call  ASHP Package.ftl                        @!CDInterface(!4)
+           "package calendars._visitor;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!188)
+           "return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!189)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!190)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!191)
+           Traverse.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!192)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!193)
+           Handle.ftl
+call  ASHP Package.ftl                        @!CDInterface(!5)
+           "package calendars._visitor;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!194)
+           "return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!195)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+call  ASHP Package.ftl                        @!CDInterface(!6)
+           "package calendars._visitor;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!196)
+           "return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!197)
+           " throw new UnsupportedOperationException("0xA7011x709 The setter[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!198)
+           "CalendarsSymbolVisitor.super.handle(node);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!199)
+           "CalendarsSymbolVisitor.super.handle(node);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!200)
+           "CalendarsSymbolVisitor.super.handle(node);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!201)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!202)
+           Traverse.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!203)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!204)
+           Traverse.ftl
+call  ASHP Package.ftl                        @!CDInterface(!7)
+           "package calendars._visitor;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!296)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!297)
+           Handle.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!298)
+           Handle.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!60)
+           "= this"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!319)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!320)
+           Set.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!61)
+           "= new ArrayList<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!321)
+           "this.calendars__cocos_CalendarsCoCoChecker.add(checker);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!322)
+           "node.accept(getRealThis());"
+set   ASHP Value.ftl                          @!CDAttribute(!62)
+           "= new LinkedHashSet<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!323)
+           "calendars__ast_ASTCalendarsCoCos.add(coco); return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!324)
+           "for (calendars._cocos.CalendarsASTCalendarsCoCo coco : calendars[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!63)
+           "= new LinkedHashSet<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!325)
+           "calendars__ast_ASTAppointmentsCoCos.add(coco); return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!326)
+           "for (calendars._cocos.CalendarsASTAppointmentsCoCo coco : calend[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!64)
+           "= new LinkedHashSet<>()"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!327)
+           "calendars__ast_ASTCalendarsNodeCoCos.add(coco); return this;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!328)
+           "for (calendars._cocos.CalendarsASTCalendarsNodeCoCo coco : calen[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!65)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.literals.mccomm[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!329)
+           "this.de_monticore_literals_mccommonliterals__cocos_MCCommonLiter[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!330)
+           "node.accept(getRealThis());"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!331)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!332)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!333)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!334)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!335)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!336)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!337)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!338)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!339)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!340)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!341)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!342)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!343)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!344)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!345)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!346)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!347)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!348)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!349)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!350)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!351)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!352)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!353)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!354)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!355)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!356)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!357)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!358)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!359)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!360)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!361)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!362)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!66)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.mcbasics._cocos[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!363)
+           "this.de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.add(checker);"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!364)
+           "node.accept(getRealThis());"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!365)
+           "de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.stream().findFi[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!366)
+           "de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.stream().forEac[...]"
+set   ASHP Value.ftl                          @!CDAttribute(!67)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.literals.mclite[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!367)
+           "this.de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasi[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!368)
+           "node.accept(getRealThis());"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!369)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!370)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!371)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!372)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+set   ASHP Package.ftl                        @!CDClass(!21)
+           "package calendars._cocos;"
+set   ASHP Package.ftl                        @!CDInterface(!8)
+           "package calendars._cocos;"
+set   ASHP Package.ftl                        @!CDInterface(!9)
+           "package calendars._cocos;"
+set   ASHP Package.ftl                        @!CDInterface(!10)
+           "package calendars._cocos;"
+call  ASHP Package.ftl                        @!CDClass(!21)
+           "package calendars._cocos;"
+call  ASHP Value.ftl                          @!CDAttribute(!60)
+           "= this"
+call  ASHP Value.ftl                          @!CDAttribute(!61)
+           "= new ArrayList<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!62)
+           "= new LinkedHashSet<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!63)
+           "= new LinkedHashSet<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!64)
+           "= new LinkedHashSet<>()"
+call  ASHP Value.ftl                          @!CDAttribute(!65)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.literals.mccomm[...]"
+call  ASHP Value.ftl                          @!CDAttribute(!66)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.mcbasics._cocos[...]"
+call  ASHP Value.ftl                          @!CDAttribute(!67)
+           "= new ArrayList<>(Arrays.asList(new de.monticore.literals.mclite[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!319)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!320)
+           Set.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!321)
+           "this.calendars__cocos_CalendarsCoCoChecker.add(checker);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!322)
+           "node.accept(getRealThis());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!323)
+           "calendars__ast_ASTCalendarsCoCos.add(coco); return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!324)
+           "for (calendars._cocos.CalendarsASTCalendarsCoCo coco : calendars[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!325)
+           "calendars__ast_ASTAppointmentsCoCos.add(coco); return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!326)
+           "for (calendars._cocos.CalendarsASTAppointmentsCoCo coco : calend[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!327)
+           "calendars__ast_ASTCalendarsNodeCoCos.add(coco); return this;"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!328)
+           "for (calendars._cocos.CalendarsASTCalendarsNodeCoCo coco : calen[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!329)
+           "this.de_monticore_literals_mccommonliterals__cocos_MCCommonLiter[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!330)
+           "node.accept(getRealThis());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!331)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!332)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!333)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!334)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!335)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!336)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!337)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!338)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!339)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!340)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!341)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!342)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!343)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!344)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!345)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!346)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!347)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!348)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!349)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!350)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!351)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!352)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!353)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!354)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!355)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!356)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!357)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!358)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!359)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!360)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!361)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!362)
+           "de_monticore_literals_mccommonliterals__cocos_MCCommonLiteralsCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!363)
+           "this.de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.add(checker);"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!364)
+           "node.accept(getRealThis());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!365)
+           "de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.stream().findFi[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!366)
+           "de_monticore_mcbasics__cocos_MCBasicsCoCoChecker.stream().forEac[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!367)
+           "this.de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasi[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!368)
+           "node.accept(getRealThis());"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!369)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!370)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!371)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+call  ASHP EmptyBody.ftl                      @!CDMethod(!372)
+           "de_monticore_literals_mcliteralsbasis__cocos_MCLiteralsBasisCoCo[...]"
+call  ASHP Package.ftl                        @!CDInterface(!8)
+           "package calendars._cocos;"
+call  ASHP Package.ftl                        @!CDInterface(!9)
+           "package calendars._cocos;"
+call  ASHP Package.ftl                        @!CDInterface(!10)
+           "package calendars._cocos;"
+set   ASHP EmptyBody.ftl                      @!CDMethod(!376)
+           " return deepEquals(o, true);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!377)
+           DeepEqualsWithOrder.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!378)
+           " return deepEqualsWithComments(o, true);"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!379)
+           DeepEqualsWithComments.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!380)
+           EqualAttributes.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!381)
+           EqualsWithComments.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!382)
+           " return deepClone(_construct());"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!383)
+           DeepCloneWithParameters.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!384)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!385)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!386)
+           Accept.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!387)
+           AcceptSuper.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!388)
+           AcceptSuper.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!389)
+           AcceptSuper.ftl
+set   ASHP EmptyBody.ftl                      @!CDMethod(!390)
+           "return calendars._ast.CalendarsNodeFactory.createASTCalendars();"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!391)
+           GetChildren.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!392)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!393)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!394)
+           InheritedSetEnclosingScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!395)
+           InheritedSetEnclosingScope.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!396)
+           InheritedSetEnclosingScope.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!23)
+           "this.realBuilder = (ASTCalendarsBuilder) this;"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!397)
+           BuildMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!398)
+           IsValidMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!399)
+           Get.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!400)
+           Set.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!103)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!104)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!105)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!106)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!107)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!108)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!109)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!110)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!111)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!112)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!113)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!114)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!115)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!116)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!117)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!118)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!119)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!120)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!121)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!122)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!123)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!124)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!125)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!126)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!127)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!128)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!129)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!130)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!131)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!132)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!133)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!134)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!135)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(1,0!136)
+           ASTCNodeMethodDelegate.ftl
+set   ATHP BuildInit.ftl                      @!CDMethod(!397)
+           ASTCNodeInit.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!401)
+           GetFactory.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!402)
+           Create.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!403)
+           DoCreate.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!404)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!405)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!406)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!407)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!408)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!409)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!410)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!411)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!412)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!413)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!414)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!415)
+           CreateDelegateMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!416)
+           GetMillMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!417)
+           InitMeMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!418)
+           InitMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!419)
+           ResetMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!420)
+           BuilderMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!421)
+           ProtectedBuilderMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!422)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!423)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!424)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!425)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!426)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!427)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!428)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!429)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!430)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!431)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!432)
+           BuilderDelegatorMethod.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!433)
+           BuilderDelegatorMethod.ftl
+set   ASHP Value.ftl                          @!CDAttribute(!68)
+           "= "Calendars""
+set   ASHP Value.ftl                          @!CDAttribute(!69)
+           "= 0"
+set   ASHP Value.ftl                          @!CDAttribute(!70)
+           "= {"de.monticore.literals.MCCommonLiterals", "de.monticore.MCBas[...]"
+set   ATHP EmptyBody.ftl                      @!CDMethod(!434)
+           GetAllLanguages.ftl
+set   ATHP EmptyBody.ftl                      @!CDMethod(!435)
+           Get.ftl
+set   ASHP EmptyBody.ftl                      @!CDConstructor(!24)
+           "this.intValue = intValue;"
+set   ASHP Package.ftl                        @!CDClass(!22)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!22)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!23)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!23)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!24)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!24)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!25)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!25)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!26)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!26)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!27)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!27)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!28)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!28)
+           ""
+set   ASHP Package.ftl                        @!CDClass(!29)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDClass(!29)
+           ""
+set   ASHP Package.ftl                        @!CDInterface(!11)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDInterface(!11)
+           ""
+set   ASHP Package.ftl                        @!CDInterface(!12)
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDInterface(!12)
+           ""
+set   ASHP Package.ftl                        @!CDEnum
+           "package calendars._ast;"
+set   ASHP Annotations.ftl                    @!CDEnum
+           ""
+call  ASHP Package.ftl                        @!CDClass(!22)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!22)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDMethod(!376)
+           " return deepEquals(o, true);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!377)
+           DeepEqualsWithOrder.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!378)
+           " return deepEqualsWithComments(o, true);"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!379)
+           DeepEqualsWithComments.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!380)
+           EqualAttributes.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!381)
+           EqualsWithComments.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!382)
+           " return deepClone(_construct());"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!383)
+           DeepCloneWithParameters.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!384)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!385)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!386)
+           Accept.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!387)
+           AcceptSuper.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!388)
+           AcceptSuper.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!389)
+           AcceptSuper.ftl
+call  ASHP EmptyBody.ftl                      @!CDMethod(!390)
+           "return calendars._ast.CalendarsNodeFactory.createASTCalendars();"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!391)
+           GetChildren.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!392)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!393)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!394)
+           InheritedSetEnclosingScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!395)
+           InheritedSetEnclosingScope.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!396)
+           InheritedSetEnclosingScope.ftl
+call  ASHP Package.ftl                        @!CDClass(!23)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!23)
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!23)
+           "this.realBuilder = (ASTCalendarsBuilder) this;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!397)
+           BuildMethod.ftl
+call  ATHP BuildInit.ftl                      @!CDMethod(!397)
+           ASTCNodeInit.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!398)
+           IsValidMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!399)
+           Get.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!400)
+           Set.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!103)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!104)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!105)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!106)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!107)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!108)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!109)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!110)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!111)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!112)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!113)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!114)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!115)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!116)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!117)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!118)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!119)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!120)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!121)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!122)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!123)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!124)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!125)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!126)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!127)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!128)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!129)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!130)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!131)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!132)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!133)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!134)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!135)
+           ASTCNodeMethodDelegate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(1,0!136)
+           ASTCNodeMethodDelegate.ftl
+call  ASHP Package.ftl                        @!CDClass(!24)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!24)
+           ""
+call  ATHP EmptyBody.ftl                      @!CDMethod(!401)
+           GetFactory.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!402)
+           Create.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!403)
+           DoCreate.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!404)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!405)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!406)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!407)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!408)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!409)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!410)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!411)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!412)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!413)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!414)
+           CreateDelegateMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!415)
+           CreateDelegateMethod.ftl
+call  ASHP Package.ftl                        @!CDClass(!25)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!25)
+           ""
+call  ATHP EmptyBody.ftl                      @!CDMethod(!416)
+           GetMillMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!417)
+           InitMeMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!418)
+           InitMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!419)
+           ResetMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!420)
+           BuilderMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!421)
+           ProtectedBuilderMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!422)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!423)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!424)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!425)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!426)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!427)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!428)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!429)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!430)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!431)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!432)
+           BuilderDelegatorMethod.ftl
+call  ATHP EmptyBody.ftl                      @!CDMethod(!433)
+           BuilderDelegatorMethod.ftl
+call  ASHP Package.ftl                        @!CDClass(!26)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!26)
+           ""
+call  ASHP Package.ftl                        @!CDClass(!27)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!27)
+           ""
+call  ASHP Package.ftl                        @!CDClass(!28)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!28)
+           ""
+call  ASHP Package.ftl                        @!CDClass(!29)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDClass(!29)
+           ""
+call  ASHP Value.ftl                          @!CDAttribute(!68)
+           "= "Calendars""
+call  ASHP Value.ftl                          @!CDAttribute(!69)
+           "= 0"
+call  ASHP Value.ftl                          @!CDAttribute(!70)
+           "= {"de.monticore.literals.MCCommonLiterals", "de.monticore.MCBas[...]"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!434)
+           GetAllLanguages.ftl
+call  ASHP Package.ftl                        @!CDInterface(!11)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDInterface(!11)
+           ""
+call  ASHP Package.ftl                        @!CDInterface(!12)
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDInterface(!12)
+           ""
+call  ASHP Package.ftl                        @!CDEnum
+           "package calendars._ast;"
+call  ASHP Annotations.ftl                    @!CDEnum
+           ""
+call  ASHP EmptyBody.ftl                      @!CDConstructor(!24)
+           "this.intValue = intValue;"
+call  ATHP EmptyBody.ftl                      @!CDMethod(!435)
+           Get.ftl
+call  EHP  HP:"JavaCopyright"
+========================================================== Explanation
+The events are the following:
+  - set         hook point assignment
+  - setr        template replacement by hook points
+  - setb        assignment of hook points that are called before the template 
+  - seta        assignment of hook points that are called after the template 
+  - call        hook point execution
+  - callr       execution of hook points that replaced a template
+  - callb       execution of hook points that are called before the template
+  - calla       execution of hook points that are called after the template
+Hookpoints: 
+  - SHP         StringHookPoint
+  - THP         TemplateHookPoint
+  - CHP         CodeHookPoint
+  - EHP         EmptyHookPoint = HookPoint is null
+  - ASHP        AST StringHookPoint
+  - ATHP        AST TemplateHookPoint
+  - ACHP        AST CodeHookPoint
+(EOF)

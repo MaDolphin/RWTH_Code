@@ -1,0 +1,21 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+import FootballGameCD.*;
+
+automata FootballGameAut {
+
+  state Play;
+  state NoGame;
+
+  NoGame - openingWistle > Play;
+
+  Play - moreTime > Extension;
+  Play - breakWistle > Break;
+  Play - closeWistle > NoGame;
+
+  Extension - breakWistle > Break;
+  Extension - closeWistle > NoGame;
+
+  Break - openingWistle > Play;
+
+}

@@ -1,0 +1,183 @@
+========================================================== Used Templates
+#Calls:   Template Name
+10x       ASTCNodeInit.ftl
+340x      ASTCNodeMethodDelegate.ftl
+17x       Accept.ftl
+70x       AcceptSuper.ftl
+1x        AddAndLinkSpanningSymbol.ftl
+1x        AddAndLinkSubScopes.ftl
+1x        AddScopeSpanningSymbol.ftl
+1x        AddSubScope.ftl
+1x        AddSymbols.ftl
+5x        AddToScope.ftl
+1x        AddToScopeAndLinkWithNode.ftl
+24x       Annotations.ftl
+283x      Attribute.ftl
+7x        Build.ftl
+10x       BuildMethod.ftl
+26x       BuilderDelegatorMethod.ftl
+18x       BuilderMethod.ftl
+1x        CacheMethod.ftl
+5x        CalculateModelNamesFor.ftl
+1x        CheckIfContinueAsSubScope.ftl
+60x       Class.ftl
+8x        Constants.ftl
+59x       Constructor.ftl
+1x        ContinueAsSubScope.ftl
+6x        ContinueWithEnclosingScope.ftl
+10x       Create.ftl
+26x       CreateDelegateMethod.ftl
+2x        CreateFromAST.ftl
+7x        CreateScope.ftl
+1x        CreateSymbolTableFromAST.ftl
+10x       DeepCloneWithParameters.ftl
+10x       DeepEqualsWithComments.ftl
+10x       DeepEqualsWithOrder.ftl
+1x        DeserializeArtifactScope.ftl
+2x        DeserializeJsonObject.ftl
+1x        DeserializeScope.ftl
+2x        DeserializeString.ftl
+2x        DeserializeSymbol.ftl
+1x        DetermineFullName.ftl
+1x        DeterminePackageName.ftl
+1x        DiagramVisitor.ftl
+10x       DoCreate.ftl
+61x       EmptyBody.ftl
+8x        EmptyConstants.ftl
+1x        Enum.ftl
+10x       EqualAttributes.ftl
+10x       EqualsWithComments.ftl
+1x        Filter.ftl
+1x        FilterRelevantSubScopes.ftl
+178x      Get.ftl
+1x        GetAllLanguages.ftl
+10x       GetChildren.ftl
+1x        GetFactory.ftl
+1x        GetFilePath.ftl
+1x        GetMill.ftl
+1x        GetMillMethod.ftl
+1x        GetName.ftl
+1x        GetParent.ftl
+1x        GetRemainingNameForResolveDown.ftl
+1x        GetSubScopes.ftl
+1x        GetSymbol.ftl
+1x        GetSymbolSize.ftl
+1x        GetTopLevelSymbol.ftl
+31x       Handle.ftl
+1x        HasSymbolsInSubScopes.ftl
+86x       Imports.ftl
+70x       InheritedSetEnclosingScope.ftl
+1x        InitMe.ftl
+1x        InitMeMethod.ftl
+1x        InitMethod.ftl
+26x       Interface.ftl
+22x       IsPresent.ftl
+1x        IsPresentName.ftl
+1x        IsSymbolLoaded.ftl
+16x       IsValidMethod.ftl
+1x        LexerMember.ftl
+1x        LoadModels.ftl
+5x        LoadModelsFor.ftl
+1x        LoadModelsIntoScope.ftl
+1x        LoadSymbol.ftl
+1x        LoadSymbolsIntoScope.ftl
+1x        MCParser.ftl
+47x       MCParserMethods.ftl
+3287x     Method.ftl
+1376x     MethodDelegate.ftl
+2x        NameSetter.ftl
+1x        Parser.ftl
+1x        ParserHeader.ftl
+10x       ProtectedBuilderMethod.ftl
+1x        PutOnStack.ftl
+1x        RemoveSubScope.ftl
+1x        Reset.ftl
+1x        ResetMethod.ftl
+1x        Resolve.ftl
+5x        ResolveAdapted.ftl
+7x        ResolveDelegate.ftl
+1x        ResolveDownMany.ftl
+6x        ResolveMany.ftl
+1x        ResolveManyLocally.ftl
+1x        ResolveSymbol.ftl
+2x        Serialize.ftl
+1x        SerializeLocalSymbols.ftl
+1x        SerializeRelevantSubScopes.ftl
+2x        SerializeSymbol.ftl
+172x      Set.ftl
+22x       SetAbsent.ftl
+1x        SetEnclosingScope.ftl
+1x        SetLinkBetweenSpannedScopeAndNode.ftl
+1x        SetLinkBetweenSymbolAndNode.ftl
+1x        SetRealThis.ftl
+1x        SetSpanningSymbol.ftl
+1x        SetSpanningSymbolAbsent.ftl
+1x        SetSubScopes.ftl
+8x        SetVisitor.ftl
+1x        ShowWarningIfParsedModels.ftl
+10x       Travers.ftl
+12x       Traverse.ftl
+153x      Value.ftl
+1x        Visit.ftl
+9x        VisitNoSymbol.ftl
+1x        VisitScope.ftl
+1x        VisitSymbol.ftl
+215x      VisitorMethods.ftl
+========================================================== Unused Templates
+_ast/ast_class/refSymbolMethods/Get.ftl
+_ast/ast_class/refSymbolMethods/GetDefinition.ftl
+_ast/ast_class/refSymbolMethods/GetDefinitionList.ftl
+_ast/ast_class/refSymbolMethods/GetSymbol.ftl
+_ast/ast_class/refSymbolMethods/GetSymbolList.ftl
+_ast/ast_class/refSymbolMethods/IsPresent.ftl
+_ast/ast_class/refSymbolMethods/IsPresentDefinition.ftl
+_ast/ast_class/refSymbolMethods/IsPresentSymbol.ftl
+_ast/ast_class/refSymbolMethods/MethodDelegate.ftl
+_ast/ast_constants/ASTConstantsConstructor.ftl
+_ast/builder/BuildInit.ftl
+_ast/mill/ProtectedBuilderForSuperMethod.ftl
+_ast/nodefactory/CreateWithParams.ftl
+_ast/nodefactory/DoCreateWithParams.ftl
+_ast_emf/ast_class/EGet.ftl
+_ast_emf/ast_class/EIsSet.ftl
+_ast_emf/ast_class/ESet.ftl
+_ast_emf/ast_class/EToString.ftl
+_ast_emf/ast_class/EUnset.ftl
+_ast_emf/ast_class/Set.ftl
+_ast_emf/emf_package/CreatePackageContents.ftl
+_ast_emf/emf_package/EmfPackage.ftl
+_ast_emf/emf_package/GetASTESuperPackages.ftl
+_ast_emf/emf_package/InitMethod.ftl
+_ast_emf/emf_package/InitializePackageContents.ftl
+_ast_emf/factory/EmfCreate.ftl
+_ast_emf/factory/GetFactory.ftl
+_cocos/AddCoCo.ftl
+_cocos/Visit.ftl
+_symboltable/AcceptTop.ftl
+_symboltable/scope/AcceptOwn.ftl
+_symboltable/scope/SetSpanningSymbolOpt.ftl
+_symboltable/serialization/PrintComplexAttribute.ftl
+_symboltable/serialization/PrintListAttribute.ftl
+_symboltable/serialization/PrintOptionalAttribute.ftl
+_symboltable/serialization/PrintSimpleAttribute.ftl
+_symboltable/serialization/symbolTablePrinter/SerializeOptAttribute.ftl
+_symboltable/serialization/symbolTablePrinter/SerializeSimpleListAttribute.ftl
+_symboltable/serialization/symbolTablePrinter/VisitArtifactScope.ftl
+_symboltable/symboltablecreator/SetLinkBetweenSpannedScopeAndNodeScope.ftl
+_symboltable/symboltablecreator/VisitScope.ftl
+core/Package.ftl
+data/ConstructorAttributesSetter.ftl
+de/monticore/generating/templateengine/freemarker/Aliases.ftl
+types/TypeResolver.ftl
+========================================================== Used USTemplates
+#Calls:   Template Name
+========================================================== Unused USTemplates
+========================================================== Explanation
+Used Templates: the list of standard template being used.
+Used USTemplates: the list of user specifc templates being used.
+- #Executions: how often the template was called/included
+Unused Templates: the list of templates which have not been executed
+Unused USTemplates: the list of user specifc templates which
+                    have not been executed.
+All lists are sorted
+(EOF)

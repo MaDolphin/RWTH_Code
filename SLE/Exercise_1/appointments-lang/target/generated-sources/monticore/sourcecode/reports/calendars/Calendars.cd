@@ -1,0 +1,15 @@
+import de.monticore.literals.MCCommonLiterals;
+
+classdiagram Calendars{
+
+  public interface ASTAppointments;
+
+  public interface ASTCalendarsNode;
+
+  <<startProd>>public class ASTCalendars{
+    protected String name;
+  }
+
+  enum CalendarsLiterals;
+
+}

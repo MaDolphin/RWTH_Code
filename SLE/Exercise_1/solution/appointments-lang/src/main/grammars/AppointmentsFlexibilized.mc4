@@ -1,0 +1,27 @@
+// (c) https://github.com/MontiCore/monticore
+grammar AppointmentsFlexibilized extends de.monticore.literals.MCCommonLiterals {
+
+  start Appointment;
+
+  Appointment =
+    "appointment" name:String "{"
+      Element*
+      /*Start
+      End
+      "participants" ":" participant:String("," participant:String)*
+      repetition:["once"|"weekly"|"daily"]?
+      Break?*/
+    "}"
+  ;
+
+  interface Element;
+
+  Start implements Element = "start" ":" Date? Time;
+  End  implements Element = "end" ":" Date? Time;
+  Date  = day:NatLiteral "/" month:NatLiteral  "/" year:NatLiteral ;
+  Time  = hour:NatLiteral ":" min:NatLiteral;
+  Break  implements Element = "break" "{" Start End "}";
+
+  Participants implements Element = "participants" ":" participant:String("," participant:String)*;
+  Repetition implements Element = repetition:["once"|"weekly"|"daily"];
+}

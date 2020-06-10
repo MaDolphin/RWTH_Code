@@ -1,0 +1,35 @@
+import de.monticore.MCBasics;
+
+classdiagram GuitarTab{
+
+  public interface ASTGuitarTabNode;
+
+  <<startProd>>public class ASTTab{
+    <<astType="">>protected java.util.List<GuitarTab.ASTComment> comment;
+    <<astType="">>protected java.util.List<GuitarTab.ASTSixStrings> sixStrings;
+    protected java.util.List<String> linebreak;
+  }
+
+  public class ASTComment{
+    protected java.util.List<String> name;
+    protected java.util.List<String> wS;
+    protected String linebreak;
+  }
+
+  public class ASTSixStrings{
+    <<astType="">>protected java.util.List<GuitarTab.ASTGuitarString> guitarString;
+    protected java.util.List<String> linebreak;
+    <<astType="">>protected Optional<GuitarTab.ASTLengthLine> lengthLine;
+  }
+
+  public class ASTGuitarString{
+    protected java.util.List<String> content;
+  }
+
+  public class ASTLengthLine{
+    protected java.util.List<String> content;
+  }
+
+  enum GuitarTabLiterals;
+
+}

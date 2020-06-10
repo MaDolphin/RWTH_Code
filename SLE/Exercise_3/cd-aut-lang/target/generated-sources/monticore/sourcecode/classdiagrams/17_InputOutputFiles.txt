@@ -1,0 +1,112 @@
+========================================================== Input files
+/Users/hhk/Documents/GitHub/SLE/Exercise_3/cd-aut-lang/src/main/grammars/ClassDiagrams.mc4 state 26f806616b56c6ff4a0619472ed3f3db
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/MCBasics.mc4 state b5be51fbf88ede8292333c3f78eb50bc
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/literals/MCCommonLiterals.mc4 state 793277155ff62a36d78687f2ff399594
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/literals/MCLiteralsBasis.mc4 state a6a769149f13b25a0cd6460c6ebd1319
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/types/MCBasicTypes.mc4 state aae6563dbe02b43ad00bae01da249cc1
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/types/MCCollectionTypes.mc4 state 74888f0359f504bfe5ed50e1b6514332
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/types/MCSimpleGenericTypes.mc4 state 87ecac1710b5aaf57e4183c94b1c3451
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/types/TypeSymbols.mc4 state 60686317d7152755e72f489c8a9507bb
+====================================================== User templates
+====================================================== Handwritten files
+========================================================== Output files
+classdiagrams/_ast/ASTCDAttribute.java
+classdiagrams/_ast/ASTCDAttributeBuilder.java
+classdiagrams/_ast/ASTCDClass.java
+classdiagrams/_ast/ASTCDClassBuilder.java
+classdiagrams/_ast/ASTCDCompilationUnit.java
+classdiagrams/_ast/ASTCDCompilationUnitBuilder.java
+classdiagrams/_ast/ASTCDConstructor.java
+classdiagrams/_ast/ASTCDConstructorBuilder.java
+classdiagrams/_ast/ASTCDDefinition.java
+classdiagrams/_ast/ASTCDDefinitionBuilder.java
+classdiagrams/_ast/ASTCDField.java
+classdiagrams/_ast/ASTCDInterface.java
+classdiagrams/_ast/ASTCDInterfaceBuilder.java
+classdiagrams/_ast/ASTCDMethOrConstr.java
+classdiagrams/_ast/ASTCDMethod.java
+classdiagrams/_ast/ASTCDMethodBuilder.java
+classdiagrams/_ast/ASTCDParameter.java
+classdiagrams/_ast/ASTCDParameterBuilder.java
+classdiagrams/_ast/ASTCDType.java
+classdiagrams/_ast/ASTClassDiagramsNode.java
+classdiagrams/_ast/ASTConstantsClassDiagrams.java
+classdiagrams/_ast/ASTModifier.java
+classdiagrams/_ast/ASTModifierBuilder.java
+classdiagrams/_ast/ASTTImplements.java
+classdiagrams/_ast/ASTTImplementsBuilder.java
+classdiagrams/_ast/ClassDiagramsLiterals.java
+classdiagrams/_ast/ClassDiagramsMill.java
+classdiagrams/_ast/ClassDiagramsNodeFactory.java
+classdiagrams/_ast/MCBasicTypesMillForClassDiagrams.java
+classdiagrams/_ast/MCBasicsMillForClassDiagrams.java
+classdiagrams/_ast/MCCollectionTypesMillForClassDiagrams.java
+classdiagrams/_ast/MCCommonLiteralsMillForClassDiagrams.java
+classdiagrams/_ast/MCLiteralsBasisMillForClassDiagrams.java
+classdiagrams/_ast/MCSimpleGenericTypesMillForClassDiagrams.java
+classdiagrams/_ast/TypeSymbolsMillForClassDiagrams.java
+classdiagrams/_cocos/ClassDiagramsASTCDAttributeCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDClassCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDCompilationUnitCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDConstructorCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDDefinitionCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDFieldCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDInterfaceCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDMethOrConstrCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDMethodCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDParameterCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTCDTypeCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTClassDiagramsNodeCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTModifierCoCo.java
+classdiagrams/_cocos/ClassDiagramsASTTImplementsCoCo.java
+classdiagrams/_cocos/ClassDiagramsCoCoChecker.java
+classdiagrams/_od/ClassDiagrams2OD.java
+classdiagrams/_parser/ClassDiagramsAntlr.g4
+classdiagrams/_parser/ClassDiagramsParser.java
+classdiagrams/_symboltable/CDDefinitionSymbol.java
+classdiagrams/_symboltable/CDDefinitionSymbolBuilder.java
+classdiagrams/_symboltable/CDDefinitionSymbolLoader.java
+classdiagrams/_symboltable/CDDefinitionSymbolLoaderBuilder.java
+classdiagrams/_symboltable/ClassDiagramsArtifactScope.java
+classdiagrams/_symboltable/ClassDiagramsArtifactScopeBuilder.java
+classdiagrams/_symboltable/ClassDiagramsGlobalScope.java
+classdiagrams/_symboltable/ClassDiagramsGlobalScopeBuilder.java
+classdiagrams/_symboltable/ClassDiagramsLanguage.java
+classdiagrams/_symboltable/ClassDiagramsModelLoader.java
+classdiagrams/_symboltable/ClassDiagramsModelLoaderBuilder.java
+classdiagrams/_symboltable/ClassDiagramsScope.java
+classdiagrams/_symboltable/ClassDiagramsScopeBuilder.java
+classdiagrams/_symboltable/ClassDiagramsSymTabMill.java
+classdiagrams/_symboltable/ClassDiagramsSymbolTableCreator.java
+classdiagrams/_symboltable/ClassDiagramsSymbolTableCreatorBuilder.java
+classdiagrams/_symboltable/ClassDiagramsSymbolTableCreatorDelegator.java
+classdiagrams/_symboltable/ClassDiagramsSymbolTableCreatorDelegatorBuilder.java
+classdiagrams/_symboltable/ICDDefinitionSymbolResolvingDelegate.java
+classdiagrams/_symboltable/IClassDiagramsGlobalScope.java
+classdiagrams/_symboltable/IClassDiagramsScope.java
+classdiagrams/_symboltable/ICommonClassDiagramsSymbol.java
+classdiagrams/_symboltable/MCBasicTypesSTCForClassDiagrams.java
+classdiagrams/_symboltable/MCCollectionTypesSTCForClassDiagrams.java
+classdiagrams/_symboltable/MCCommonLiteralsSTCForClassDiagrams.java
+classdiagrams/_symboltable/MCLiteralsBasisSTCForClassDiagrams.java
+classdiagrams/_symboltable/MCSimpleGenericTypesSTCForClassDiagrams.java
+classdiagrams/_symboltable/TypeSymbolsSTCForClassDiagrams.java
+classdiagrams/_symboltable/serialization/CDDefinitionSymbolDeSer.java
+classdiagrams/_symboltable/serialization/ClassDiagramsScopeDeSer.java
+classdiagrams/_symboltable/serialization/ClassDiagramsSymbolTablePrinter.java
+classdiagrams/_visitor/ClassDiagramsDelegatorVisitor.java
+classdiagrams/_visitor/ClassDiagramsInheritanceVisitor.java
+classdiagrams/_visitor/ClassDiagramsParentAwareVisitor.java
+classdiagrams/_visitor/ClassDiagramsScopeVisitor.java
+classdiagrams/_visitor/ClassDiagramsSymbolVisitor.java
+classdiagrams/_visitor/ClassDiagramsVisitor.java
+========================================================== Explanation
+This report is used to enable incremental generation
+Input files: the list of input files ordered by their paths.
+Types of input files are:
+- Model files
+- Handwritten sourcecode files
+- User specific script files
+- User specific template files
+Output files: the list of generated output files ordered by their paths.
+(EOF)

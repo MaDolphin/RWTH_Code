@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ASTGuitarString.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab._ast</a> &gt; <span class="el_source">ASTGuitarString.java</span></div><h1>ASTGuitarString.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab._ast;
+
+import guitartab.utils.IndexRange;
+import guitartab.utils.LineUtils;
+
+import java.util.Optional;
+
+/**
+ * A single tab line intended to show notes to play on a guitar
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 20.03.19
+ * @since 1.0
+ */
+public class ASTGuitarString extends ASTGuitarStringTOP {
+
+<span class="fc" id="L18">  protected  ASTGuitarString () {</span>
+    // empty body
+<span class="fc" id="L20">  }</span>
+
+<span class="nc" id="L22">  protected  ASTGuitarString (java.util.List&lt;String&gt; contents) {</span>
+<span class="nc" id="L23">    setContentList(contents);</span>
+<span class="nc" id="L24">  }</span>
+
+  /**
+   * Returns the fret at the given index as integer.
+   * @param index the index at which to search for a fret
+   * @return fret at the given position
+   */
+  public Optional&lt;Integer&gt; getFret(int index) {
+<span class="fc" id="L32">    return LineUtils.getNumber(index, getContentList());</span>
+  }
+
+  /**
+   * Returns the first fret information found within the given range
+   * @param start index at which to start searching
+   * @param end index at which to stop searching
+   * @return the first fret information found within the given range, Optional.empty if none found
+   */
+  public Optional&lt;Integer&gt; getFretInRange(int start, int end) {
+<span class="nc" id="L42">    return LineUtils.getNumber(new IndexRange(start, end), getContentList());</span>
+  }
+
+  public Optional&lt;Integer&gt; getFretInRange(IndexRange range) {
+<span class="nc" id="L46">    return getFretInRange(range.getStart(), range.getStop());</span>
+  }
+
+  /**
+   * Returns the index range of the fret information at the given index
+   * @param index index of one of the digits of the fret number
+   * @return start / end index of the digits of the fret
+   */
+  public Optional&lt;IndexRange&gt; getRangeOfFret(int index) {
+<span class="nc" id="L55">    return LineUtils.getRangeOfNumberAtIndex(index, getContentList());</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

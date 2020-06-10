@@ -1,0 +1,70 @@
+========================================================== Input files
+/Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/grammars/GuitarTab.mc4 state e30f54a6e83cda6dc3fa6f4834ee4d9f
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/MCBasics.mc4 state b5be51fbf88ede8292333c3f78eb50bc
+====================================================== User templates
+====================================================== Handwritten files
+/Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java sub guitartab/_ast/ASTSixStrings.java
+/Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java sub guitartab/_ast/ASTGuitarString.java
+/Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java sub guitartab/_ast/ASTLengthLine.java
+========================================================== Output files
+guitartab/_ast/ASTComment.java
+guitartab/_ast/ASTCommentBuilder.java
+guitartab/_ast/ASTConstantsGuitarTab.java
+guitartab/_ast/ASTGuitarStringBuilder.java
+guitartab/_ast/ASTGuitarStringTOP.java
+guitartab/_ast/ASTGuitarTabNode.java
+guitartab/_ast/ASTLengthLineBuilder.java
+guitartab/_ast/ASTLengthLineTOP.java
+guitartab/_ast/ASTSixStringsBuilder.java
+guitartab/_ast/ASTSixStringsTOP.java
+guitartab/_ast/ASTTab.java
+guitartab/_ast/ASTTabBuilder.java
+guitartab/_ast/GuitarTabLiterals.java
+guitartab/_ast/GuitarTabMill.java
+guitartab/_ast/GuitarTabNodeFactory.java
+guitartab/_ast/MCBasicsMillForGuitarTab.java
+guitartab/_cocos/GuitarTabASTCommentCoCo.java
+guitartab/_cocos/GuitarTabASTGuitarStringCoCo.java
+guitartab/_cocos/GuitarTabASTGuitarTabNodeCoCo.java
+guitartab/_cocos/GuitarTabASTLengthLineCoCo.java
+guitartab/_cocos/GuitarTabASTSixStringsCoCo.java
+guitartab/_cocos/GuitarTabASTTabCoCo.java
+guitartab/_cocos/GuitarTabCoCoChecker.java
+guitartab/_od/GuitarTab2OD.java
+guitartab/_parser/GuitarTabAntlr.g4
+guitartab/_parser/GuitarTabParser.java
+guitartab/_symboltable/GuitarTabArtifactScope.java
+guitartab/_symboltable/GuitarTabArtifactScopeBuilder.java
+guitartab/_symboltable/GuitarTabGlobalScope.java
+guitartab/_symboltable/GuitarTabGlobalScopeBuilder.java
+guitartab/_symboltable/GuitarTabLanguage.java
+guitartab/_symboltable/GuitarTabModelLoader.java
+guitartab/_symboltable/GuitarTabModelLoaderBuilder.java
+guitartab/_symboltable/GuitarTabScope.java
+guitartab/_symboltable/GuitarTabScopeBuilder.java
+guitartab/_symboltable/GuitarTabSymTabMill.java
+guitartab/_symboltable/GuitarTabSymbolTableCreator.java
+guitartab/_symboltable/GuitarTabSymbolTableCreatorBuilder.java
+guitartab/_symboltable/GuitarTabSymbolTableCreatorDelegator.java
+guitartab/_symboltable/GuitarTabSymbolTableCreatorDelegatorBuilder.java
+guitartab/_symboltable/ICommonGuitarTabSymbol.java
+guitartab/_symboltable/IGuitarTabGlobalScope.java
+guitartab/_symboltable/IGuitarTabScope.java
+guitartab/_symboltable/serialization/GuitarTabScopeDeSer.java
+guitartab/_symboltable/serialization/GuitarTabSymbolTablePrinter.java
+guitartab/_visitor/GuitarTabDelegatorVisitor.java
+guitartab/_visitor/GuitarTabInheritanceVisitor.java
+guitartab/_visitor/GuitarTabParentAwareVisitor.java
+guitartab/_visitor/GuitarTabScopeVisitor.java
+guitartab/_visitor/GuitarTabSymbolVisitor.java
+guitartab/_visitor/GuitarTabVisitor.java
+========================================================== Explanation
+This report is used to enable incremental generation
+Input files: the list of input files ordered by their paths.
+Types of input files are:
+- Model files
+- Handwritten sourcecode files
+- User specific script files
+- User specific template files
+Output files: the list of generated output files ordered by their paths.
+(EOF)

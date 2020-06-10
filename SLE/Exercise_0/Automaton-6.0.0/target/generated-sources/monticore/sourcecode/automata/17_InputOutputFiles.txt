@@ -1,0 +1,78 @@
+========================================================== Input files
+/Users/hhk/Downloads/Automaton-6.0.0/src/main/grammars/Automata.mc4 state 67fbb71b2810e9cc1390a34929c01525
+/Users/hhk/.m2/repository/de/monticore/monticore-grammar/6.0.0/monticore-grammar-6.0.0-grammars.jar sub de/monticore/MCBasics.mc4 state b5be51fbf88ede8292333c3f78eb50bc
+====================================================== User templates
+====================================================== Handwritten files
+/Users/hhk/Downloads/Automaton-6.0.0/src/main/java sub automata/_symboltable/AutomatonSymbol.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/main/java sub automata/_symboltable/AutomataLanguage.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/main/java sub automata/_ast/ASTAutomaton.java
+/Users/hhk/Downloads/Automaton-6.0.0/src/main/java sub automata/_ast/ASTState.java
+========================================================== Output files
+automata/_ast/ASTAutomataNode.java
+automata/_ast/ASTAutomatonBuilder.java
+automata/_ast/ASTAutomatonTOP.java
+automata/_ast/ASTConstantsAutomata.java
+automata/_ast/ASTStateBuilder.java
+automata/_ast/ASTStateTOP.java
+automata/_ast/ASTTransition.java
+automata/_ast/ASTTransitionBuilder.java
+automata/_ast/AutomataLiterals.java
+automata/_ast/AutomataMill.java
+automata/_ast/AutomataNodeFactory.java
+automata/_ast/MCBasicsMillForAutomata.java
+automata/_cocos/AutomataASTAutomataNodeCoCo.java
+automata/_cocos/AutomataASTAutomatonCoCo.java
+automata/_cocos/AutomataASTStateCoCo.java
+automata/_cocos/AutomataASTTransitionCoCo.java
+automata/_cocos/AutomataCoCoChecker.java
+automata/_od/Automata2OD.java
+automata/_parser/AutomataAntlr.g4
+automata/_parser/AutomataParser.java
+automata/_symboltable/AutomataArtifactScope.java
+automata/_symboltable/AutomataArtifactScopeBuilder.java
+automata/_symboltable/AutomataGlobalScope.java
+automata/_symboltable/AutomataGlobalScopeBuilder.java
+automata/_symboltable/AutomataLanguageBuilder.java
+automata/_symboltable/AutomataLanguageTOP.java
+automata/_symboltable/AutomataModelLoader.java
+automata/_symboltable/AutomataModelLoaderBuilder.java
+automata/_symboltable/AutomataScope.java
+automata/_symboltable/AutomataScopeBuilder.java
+automata/_symboltable/AutomataSymTabMill.java
+automata/_symboltable/AutomataSymbolTableCreator.java
+automata/_symboltable/AutomataSymbolTableCreatorBuilder.java
+automata/_symboltable/AutomataSymbolTableCreatorDelegator.java
+automata/_symboltable/AutomataSymbolTableCreatorDelegatorBuilder.java
+automata/_symboltable/AutomatonSymbolBuilder.java
+automata/_symboltable/AutomatonSymbolLoader.java
+automata/_symboltable/AutomatonSymbolLoaderBuilder.java
+automata/_symboltable/AutomatonSymbolTOP.java
+automata/_symboltable/IAutomataGlobalScope.java
+automata/_symboltable/IAutomataScope.java
+automata/_symboltable/IAutomatonSymbolResolvingDelegate.java
+automata/_symboltable/ICommonAutomataSymbol.java
+automata/_symboltable/IStateSymbolResolvingDelegate.java
+automata/_symboltable/StateSymbol.java
+automata/_symboltable/StateSymbolBuilder.java
+automata/_symboltable/StateSymbolLoader.java
+automata/_symboltable/StateSymbolLoaderBuilder.java
+automata/_symboltable/serialization/AutomataScopeDeSer.java
+automata/_symboltable/serialization/AutomataSymbolTablePrinter.java
+automata/_symboltable/serialization/AutomatonSymbolDeSer.java
+automata/_symboltable/serialization/StateSymbolDeSer.java
+automata/_visitor/AutomataDelegatorVisitor.java
+automata/_visitor/AutomataInheritanceVisitor.java
+automata/_visitor/AutomataParentAwareVisitor.java
+automata/_visitor/AutomataScopeVisitor.java
+automata/_visitor/AutomataSymbolVisitor.java
+automata/_visitor/AutomataVisitor.java
+========================================================== Explanation
+This report is used to enable incremental generation
+Input files: the list of input files ordered by their paths.
+Types of input files are:
+- Model files
+- Handwritten sourcecode files
+- User specific script files
+- User specific template files
+Output files: the list of generated output files ordered by their paths.
+(EOF)

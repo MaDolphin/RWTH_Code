@@ -1,0 +1,19 @@
+Tina`s calendar:
+
+appointment "Konferenz" {
+  start : 01/10/19 8:15
+  end   : 02/10/19 16:15
+  participants: "Peter Stein", "Paula Schmidt", "Tina Berg (Personal)"
+  weekly
+}
+
+appointment "Workshop" {
+  start : 10/02/20 8:15
+  end   : 16:15
+  participants: "Peter Stein", "Paula Schmidt", "Tina Berg (Personal)"
+  weekly
+  break {
+    start : 11:30
+    end   : 12:00
+  }
+}

@@ -1,0 +1,14 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+import PingPongCD.*;
+
+automata PingPongAut {
+
+  NoGame - startGame > Ping;
+
+  Ping - stopGame > NoGame;
+  Pong - stopGame > NoGame;
+
+  Ping - returnBall > Pong;
+  Pong - returnBall > Ping;
+}

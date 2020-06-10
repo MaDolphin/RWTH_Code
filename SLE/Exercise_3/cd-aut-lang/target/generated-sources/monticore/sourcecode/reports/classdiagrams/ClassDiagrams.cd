@@ -1,0 +1,104 @@
+import de.monticore.types.MCSimpleGenericTypes;
+import de.monticore.literals.MCCommonLiterals;
+
+classdiagram ClassDiagrams{
+
+  public interface ASTCDType{
+    protected String name;
+  }
+
+  public interface ASTCDField{
+    protected String name;
+  }
+
+  public interface ASTCDMethOrConstr{
+    protected String name;
+  }
+
+  public interface ASTClassDiagramsNode;
+
+  <<startProd>>public class ASTCDCompilationUnit{
+    protected java.util.List<String> r__package;
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCImportStatement> mCImportStatement;
+    <<astType="">>protected ClassDiagrams.ASTCDDefinition cDDefinition;
+  }
+
+  <<symbol, scope>>public class ASTCDDefinition{
+    <<astType="">>protected Optional<ClassDiagrams.ASTModifier> modifier;
+    protected String name;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDClass> cDClass;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDInterface> cDInterface;
+  }
+
+  public class ASTCDClass implements ClassDiagrams.ASTCDType{
+    <<astType="">>protected Optional<ClassDiagrams.ASTModifier> modifier;
+    <<astType="">>protected Optional<de.monticore.types.MCBasicTypes.ASTMCObjectType> superclass;
+    <<astType="">>protected Optional<ClassDiagrams.ASTTImplements> tImplements;
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCObjectType> r__interface;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDAttribute> cDAttribute;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDConstructor> cDConstructor;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDMethod> cDMethod;
+    protected String name;
+  }
+
+  public class ASTTImplements{
+    protected String name;
+  }
+
+  public class ASTCDInterface implements ClassDiagrams.ASTCDType{
+    <<astType="">>protected Optional<ClassDiagrams.ASTModifier> modifier;
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCObjectType> r__interface;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDAttribute> cDAttribute;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDMethod> cDMethod;
+    protected String name;
+  }
+
+  public class ASTCDAttribute implements ClassDiagrams.ASTCDField{
+    <<astType="">>protected Optional<ClassDiagrams.ASTModifier> modifier;
+    <<astType="">>protected de.monticore.types.MCBasicTypes.ASTMCType mCType;
+    protected String name;
+  }
+
+  public class ASTCDConstructor implements ClassDiagrams.ASTCDMethOrConstr{
+    <<astType="">>protected ClassDiagrams.ASTModifier modifier;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDParameter> cDParameter;
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCQualifiedName> exception;
+    protected String name;
+  }
+
+  public class ASTCDMethod implements ClassDiagrams.ASTCDMethOrConstr{
+    <<astType="">>protected ClassDiagrams.ASTModifier modifier;
+    <<astType="">>protected de.monticore.types.MCBasicTypes.ASTMCReturnType mCReturnType;
+    <<astType="">>protected java.util.List<ClassDiagrams.ASTCDParameter> cDParameter;
+    <<astType="">>protected java.util.List<de.monticore.types.MCBasicTypes.ASTMCQualifiedName> exception;
+    protected String name;
+  }
+
+  public class ASTCDParameter implements ClassDiagrams.ASTCDField{
+    <<astType="">>protected de.monticore.types.MCBasicTypes.ASTMCType mCType;
+    protected String name;
+    protected boolean ellipsis;
+  }
+
+  public class ASTModifier{
+    protected boolean r__abstract;
+    protected boolean r__final;
+    protected boolean r__static;
+    protected boolean r__private;
+    protected boolean r__protected;
+    protected boolean r__public;
+    protected boolean r__derived;
+  }
+
+  enum ClassDiagramsLiterals{
+    ABSTRACT,
+    DERIVED,
+    FINAL,
+    POINTPOINTPOINT,
+    PRIVATE,
+    PROTECTED,
+    PUBLIC,
+    STATIC;
+  }
+
+}

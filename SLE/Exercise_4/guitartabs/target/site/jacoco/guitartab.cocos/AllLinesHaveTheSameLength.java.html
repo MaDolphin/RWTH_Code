@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AllLinesHaveTheSameLength.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab.cocos</a> &gt; <span class="el_source">AllLinesHaveTheSameLength.java</span></div><h1>AllLinesHaveTheSameLength.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab.cocos;
+
+import de.se_rwth.commons.logging.Log;
+import guitartab._ast.ASTSixStrings;
+import guitartab._ast.ASTGuitarString;
+import guitartab._cocos.GuitarTabASTGuitarStringCoCo;
+import guitartab._cocos.GuitarTabASTSixStringsCoCo;
+import org.assertj.core.util.VisibleForTesting;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * Checks that all lines, i.e. strings, within a tab have the same length.
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 20.03.19
+ * @since 1.0
+ */
+<span class="fc" id="L22">public class AllLinesHaveTheSameLength implements GuitarTabASTSixStringsCoCo {</span>
+
+  @VisibleForTesting
+  public static final String LINES_HAVE_DIFFERENT_LENGTHS =
+      &quot;0xY0100 All lines within a tab must have the same length&quot;;
+
+  @Override public void check(ASTSixStrings node) {
+    //given
+<span class="fc" id="L30">    List&lt;String&gt; firstLine = node.getGuitarString(0).getContentList();</span>
+<span class="fc" id="L31">    int lengthOfFirstLine = firstLine.size();</span>
+
+    //when / then
+<span class="fc bfc" id="L34" title="All 2 branches covered.">    for (ASTGuitarString string : node.getGuitarStringList()) {</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">      if (string.getContentList().size() != lengthOfFirstLine) {</span>
+<span class="fc" id="L36">        Log.error(LINES_HAVE_DIFFERENT_LENGTHS);</span>
+      }
+<span class="fc" id="L38">    }</span>
+
+<span class="fc bfc" id="L40" title="All 2 branches covered.">    if (node.isPresentLengthLine()) {</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">      if (node.getLengthLine().getContentList().size() != lengthOfFirstLine) {</span>
+<span class="fc" id="L42">        Log.error(LINES_HAVE_DIFFERENT_LENGTHS);</span>
+      }
+    }
+<span class="fc" id="L45">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

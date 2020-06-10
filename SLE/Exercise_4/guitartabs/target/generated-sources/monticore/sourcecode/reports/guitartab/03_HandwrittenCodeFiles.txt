@@ -1,0 +1,16 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+1x        /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/_ast/ASTGuitarString.java
+1x        /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/_ast/ASTLengthLine.java
+1x        /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/_ast/ASTSixStrings.java
+========================================================== Unused Handwritten Code Files
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/cocos/AllLinesHaveTheSameLength.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/cocos/FretLimit.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/cocos/OneLengthPerNote.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/generator/MidiPythonGenerator.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/utils/IndexRange.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/utils/LineUtils.java
+          /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/src/main/java/guitartab/utils/Notes.java
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

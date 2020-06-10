@@ -1,0 +1,17 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+1x        /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/_ast/ASTState.java
+1x        /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/_ast/ASTAutomaton.java
+2x        /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/_symboltable/AutomatonSymbol.java
+2x        /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/_symboltable/AutomataLanguage.java
+========================================================== Unused Handwritten Code Files
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/AutomataTool.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/cocos/AtLeastOneInitialAndFinalState.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/cocos/AutomataCoCos.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/cocos/StateNameStartsWithCapitalLetter.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/cocos/TransitionSourceExists.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/prettyprint/PrettyPrinter.java
+          /Users/hhk/Downloads/Automaton-6.0.0/src/main/java/automata/visitors/CountStates.java
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

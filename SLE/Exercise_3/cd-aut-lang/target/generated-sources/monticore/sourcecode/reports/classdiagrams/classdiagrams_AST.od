@@ -1,0 +1,1231 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram classdiagrams_AST {
+  @ClassDiagrams!MCGrammar(3,0):ASTMCGrammar {
+    symbol = @ClassDiagrams!Symbol(3,0);
+    enclosingScope = @ClassDiagrams!ArtifactScope;
+    spanningScope = @ClassDiagrams!Scope;
+    r__package = [];
+    name = "ClassDiagrams";
+    supergrammar = [// *size: 2
+      @MCSimpleGenericTypes!GrammarReference(3,30):ASTGrammarReference {
+        enclosingScope = @ClassDiagrams!Scope;
+        name = [de, monticore, types, MCSimpleGenericTypes];
+      },
+      @MCCommonLiterals!GrammarReference(4,7):ASTGrammarReference {
+        enclosingScope = @ClassDiagrams!Scope;
+        name = [de, monticore, literals, MCCommonLiterals];
+      }];
+    classProd = [// *size: 10
+      @CDCompilationUnit!ClassProd(11,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(12,4):ASTAlt {
+            enclosingScope = @CDCompilationUnit!Scope;
+            component = [// *size: 3
+              @!Block(12,4):ASTBlock {
+                enclosingScope = @CDCompilationUnit!Scope;
+                alt = [// *size: 1
+                  @!Alt(12,5):ASTAlt {
+                    enclosingScope = @CDCompilationUnit!Scope;
+                    component = [// *size: 3
+                      @package!Terminal(12,5):ASTTerminal {
+                        enclosingScope = @CDCompilationUnit!Scope;
+                        name = "package";
+                        iteration = 0;
+                      },
+                      @!Block(1,0):ASTBlock {
+                        enclosingScope = @CDCompilationUnit!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,1):ASTAlt {
+                            enclosingScope = @CDCompilationUnit!Scope;
+                            component = [// *size: 2
+                              @Name!NonTerminal(1,1):ASTNonTerminal {
+                                enclosingScope = @CDCompilationUnit!Scope;
+                                usageName = "package";
+                                name = "Name";
+                                genSymbol = false;
+                                plusKeywords = true;
+                                iteration = 0;
+                              },
+                              @!Block(1,17):ASTBlock {
+                                enclosingScope = @CDCompilationUnit!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(1,18):ASTAlt {
+                                    enclosingScope = @CDCompilationUnit!Scope;
+                                    component = [// *size: 2
+                                      @POINT!Terminal(1,18):ASTTerminal {
+                                        enclosingScope = @CDCompilationUnit!Scope;
+                                        name = ".";
+                                        iteration = 0;
+                                      },
+                                      @Name!NonTerminal(1,22):ASTNonTerminal {
+                                        enclosingScope = @CDCompilationUnit!Scope;
+                                        usageName = "package";
+                                        name = "Name";
+                                        genSymbol = false;
+                                        plusKeywords = true;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      },
+                      @SEMI!Terminal(12,39):ASTTerminal {
+                        enclosingScope = @CDCompilationUnit!Scope;
+                        name = ";";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @!Block(13,4):ASTBlock {
+                enclosingScope = @CDCompilationUnit!Scope;
+                alt = [// *size: 1
+                  @!Alt(13,5):ASTAlt {
+                    enclosingScope = @CDCompilationUnit!Scope;
+                    component = [// *size: 1
+                      @MCImportStatement!NonTerminal(13,5):ASTNonTerminal {
+                        enclosingScope = @CDCompilationUnit!Scope;
+                        usageName = "mCImportStatement";
+                        name = "MCImportStatement";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @CDDefinition!NonTerminal(14,4):ASTNonTerminal {
+                enclosingScope = @CDCompilationUnit!Scope;
+                name = "CDDefinition";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDCompilationUnit";
+      },
+      @CDDefinition!ClassProd(24,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        symbolDefinition = [// *size: 2
+          @!SymbolDefinition(24,2):ASTSymbolDefinition {
+            enclosingScope = @CDDefinition!Scope;
+            genSymbol = true;
+            genScope = false;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          },
+          @!SymbolDefinition(24,9):ASTSymbolDefinition {
+            enclosingScope = @CDDefinition!Scope;
+            genSymbol = false;
+            genScope = true;
+            no_shadowing = false;
+            exporting = false;
+            ordered = false;
+          }];
+        alt = [// *size: 1
+          @!Alt(24,30):ASTAlt {
+            enclosingScope = @CDDefinition!Scope;
+            component = [// *size: 6
+              @Modifier!NonTerminal(24,30):ASTNonTerminal {
+                enclosingScope = @CDDefinition!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @classdiagram!Terminal(24,40):ASTTerminal {
+                enclosingScope = @CDDefinition!Scope;
+                name = "classdiagram";
+                iteration = 0;
+              },
+              @Name!NonTerminal(24,55):ASTNonTerminal {
+                enclosingScope = @CDDefinition!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(24,60):ASTTerminal {
+                enclosingScope = @CDDefinition!Scope;
+                name = "{";
+                iteration = 0;
+              },
+              @!Block(25,2):ASTBlock {
+                enclosingScope = @CDDefinition!Scope;
+                alt = [// *size: 2
+                  @!Alt(25,6):ASTAlt {
+                    enclosingScope = @CDDefinition!Scope;
+                    component = [// *size: 1
+                      @CDClass!NonTerminal(25,6):ASTNonTerminal {
+                        enclosingScope = @CDDefinition!Scope;
+                        usageName = "cDClass";
+                        name = "CDClass";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(26,6):ASTAlt {
+                    enclosingScope = @CDDefinition!Scope;
+                    component = [// *size: 1
+                      @CDInterface!NonTerminal(26,6):ASTNonTerminal {
+                        enclosingScope = @CDDefinition!Scope;
+                        usageName = "cDInterface";
+                        name = "CDInterface";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              },
+              @RCURLY!Terminal(26,20):ASTTerminal {
+                enclosingScope = @CDDefinition!Scope;
+                name = "}";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDDefinition";
+      },
+      @CDClass!ClassProd(44,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDType!RuleReference(44,21):ASTRuleReference {
+            enclosingScope = @CDClass!Scope;
+            name = "CDType";
+          }];
+        alt = [// *size: 1
+          @!Alt(44,30):ASTAlt {
+            enclosingScope = @CDClass!Scope;
+            component = [// *size: 6
+              @Modifier!NonTerminal(44,30):ASTNonTerminal {
+                enclosingScope = @CDClass!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @class!Terminal(44,41):ASTTerminal {
+                enclosingScope = @CDClass!Scope;
+                name = "class";
+                iteration = 0;
+              },
+              @Name!NonTerminal(44,49):ASTNonTerminal {
+                enclosingScope = @CDClass!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(45,2):ASTBlock {
+                enclosingScope = @CDClass!Scope;
+                alt = [// *size: 1
+                  @!Alt(45,4):ASTAlt {
+                    enclosingScope = @CDClass!Scope;
+                    component = [// *size: 2
+                      @extends!Terminal(45,4):ASTTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        name = "extends";
+                        iteration = 0;
+                      },
+                      @MCObjectType!NonTerminal(45,15):ASTNonTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        usageName = "superclass";
+                        name = "MCObjectType";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @!Block(46,2):ASTBlock {
+                enclosingScope = @CDClass!Scope;
+                alt = [// *size: 1
+                  @!Alt(46,4):ASTAlt {
+                    enclosingScope = @CDClass!Scope;
+                    component = [// *size: 2
+                      @TImplements!NonTerminal(46,4):ASTNonTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        name = "TImplements";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @!Block(1,0!2):ASTBlock {
+                        enclosingScope = @CDClass!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,1!2):ASTAlt {
+                            enclosingScope = @CDClass!Scope;
+                            component = [// *size: 2
+                              @MCObjectType!NonTerminal(1,1):ASTNonTerminal {
+                                enclosingScope = @CDClass!Scope;
+                                usageName = "interface";
+                                name = "MCObjectType";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              },
+                              @!Block(1,26):ASTBlock {
+                                enclosingScope = @CDClass!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(1,27):ASTAlt {
+                                    enclosingScope = @CDClass!Scope;
+                                    component = [// *size: 2
+                                      @COMMA!Terminal(1,27):ASTTerminal {
+                                        enclosingScope = @CDClass!Scope;
+                                        name = ",";
+                                        iteration = 0;
+                                      },
+                                      @MCObjectType!NonTerminal(1,31):ASTNonTerminal {
+                                        enclosingScope = @CDClass!Scope;
+                                        usageName = "interface";
+                                        name = "MCObjectType";
+                                        genSymbol = false;
+                                        plusKeywords = false;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @!Block(47,2):ASTBlock {
+                enclosingScope = @CDClass!Scope;
+                alt = [// *size: 2
+                  @!Alt(47,4):ASTAlt {
+                    enclosingScope = @CDClass!Scope;
+                    component = [// *size: 3
+                      @LCURLY!Terminal(47,4):ASTTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        name = "{";
+                        iteration = 0;
+                      },
+                      @!Block(48,4):ASTBlock {
+                        enclosingScope = @CDClass!Scope;
+                        alt = [// *size: 3
+                          @!Alt(48,6):ASTAlt {
+                            enclosingScope = @CDClass!Scope;
+                            component = [// *size: 1
+                              @CDAttribute!NonTerminal(48,6):ASTNonTerminal {
+                                enclosingScope = @CDClass!Scope;
+                                usageName = "cDAttribute";
+                                name = "CDAttribute";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          },
+                          @!Alt(49,6):ASTAlt {
+                            enclosingScope = @CDClass!Scope;
+                            component = [// *size: 1
+                              @CDConstructor!NonTerminal(49,6):ASTNonTerminal {
+                                enclosingScope = @CDClass!Scope;
+                                usageName = "cDConstructor";
+                                name = "CDConstructor";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          },
+                          @!Alt(50,6):ASTAlt {
+                            enclosingScope = @CDClass!Scope;
+                            component = [// *size: 1
+                              @CDMethod!NonTerminal(50,6):ASTNonTerminal {
+                                enclosingScope = @CDClass!Scope;
+                                usageName = "cDMethod";
+                                name = "CDMethod";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 18;
+                      },
+                      @RCURLY!Terminal(51,4):ASTTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        name = "}";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(52,4):ASTAlt {
+                    enclosingScope = @CDClass!Scope;
+                    component = [// *size: 1
+                      @SEMI!Terminal(52,4):ASTTerminal {
+                        enclosingScope = @CDClass!Scope;
+                        name = ";";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDClass";
+      },
+      @TImplements!ClassProd(55,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(55,16):ASTAlt {
+            enclosingScope = @TImplements!Scope;
+            component = [// *size: 2
+              @!SemanticpredicateOrAction(55,16):ASTSemanticpredicateOrAction {
+                enclosingScope = @TImplements!Scope;
+                expressionPredicate = @!ExpressionPredicate(55,18):ASTExpressionPredicate {
+                  enclosingScope = @TImplements!Scope;
+                  expression = @!CallExpression(55,47):ASTCallExpression {
+                    enclosingScope = @TImplements!Scope;
+                    name = "null";
+                    expression = @!FieldAccessExpression(55,40):ASTFieldAccessExpression {
+                      enclosingScope = @TImplements!Scope;
+                      expression = @!CallExpression(55,38):ASTCallExpression {
+                        enclosingScope = @TImplements!Scope;
+                        name = "null";
+                        expression = @!FieldAccessExpression(55,30):ASTFieldAccessExpression {
+                          enclosingScope = @TImplements!Scope;
+                          expression = @!CallExpression(55,27):ASTCallExpression {
+                            enclosingScope = @TImplements!Scope;
+                            name = "null";
+                            expression = @!FieldAccessExpression(55,24):ASTFieldAccessExpression {
+                              enclosingScope = @TImplements!Scope;
+                              expression = @!NameExpression(55,18):ASTNameExpression {
+                                enclosingScope = @TImplements!Scope;
+                                name = "_input";
+                              };
+                              name = "LT";
+                            };
+                            arguments = @!Arguments(55,27):ASTArguments {
+                              enclosingScope = @TImplements!Scope;
+                              expression = [// *size: 1
+                                @!LiteralExpression(55,28):ASTLiteralExpression {
+                                  enclosingScope = @TImplements!Scope;
+                                  literal = @!NatLiteral(55,28):ASTNatLiteral {
+                                    enclosingScope = @TImplements!Scope;
+                                    digits = "1";
+                                  };
+                                }];
+                            };
+                          };
+                          name = "getText";
+                        };
+                        arguments = @!Arguments(55,38):ASTArguments {
+                          enclosingScope = @TImplements!Scope;
+                        };
+                      };
+                      name = "equals";
+                    };
+                    arguments = @!Arguments(55,47):ASTArguments {
+                      enclosingScope = @TImplements!Scope;
+                      expression = [// *size: 1
+                        @!LiteralExpression(55,48):ASTLiteralExpression {
+                          enclosingScope = @TImplements!Scope;
+                          literal = @!StringLiteral(55,48):ASTStringLiteral {
+                            enclosingScope = @TImplements!Scope;
+                            source = "implements";
+                          };
+                        }];
+                    };
+                  };
+                };
+                predicate = true;
+              },
+              @Name!NonTerminal(55,65):ASTNonTerminal {
+                enclosingScope = @TImplements!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "TImplements";
+      },
+      @CDInterface!ClassProd(65,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDType!RuleReference(65,25):ASTRuleReference {
+            enclosingScope = @CDInterface!Scope;
+            name = "CDType";
+          }];
+        alt = [// *size: 1
+          @!Alt(65,34):ASTAlt {
+            enclosingScope = @CDInterface!Scope;
+            component = [// *size: 5
+              @Modifier!NonTerminal(65,34):ASTNonTerminal {
+                enclosingScope = @CDInterface!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @interface!Terminal(65,44):ASTTerminal {
+                enclosingScope = @CDInterface!Scope;
+                name = "interface";
+                iteration = 0;
+              },
+              @Name!NonTerminal(65,56):ASTNonTerminal {
+                enclosingScope = @CDInterface!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(66,4):ASTBlock {
+                enclosingScope = @CDInterface!Scope;
+                alt = [// *size: 1
+                  @!Alt(66,6):ASTAlt {
+                    enclosingScope = @CDInterface!Scope;
+                    component = [// *size: 2
+                      @extends!Terminal(66,6):ASTTerminal {
+                        enclosingScope = @CDInterface!Scope;
+                        name = "extends";
+                        iteration = 0;
+                      },
+                      @!Block(1,0!3):ASTBlock {
+                        enclosingScope = @CDInterface!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,1!3):ASTAlt {
+                            enclosingScope = @CDInterface!Scope;
+                            component = [// *size: 2
+                              @MCObjectType!NonTerminal(1,1!2):ASTNonTerminal {
+                                enclosingScope = @CDInterface!Scope;
+                                usageName = "interface";
+                                name = "MCObjectType";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              },
+                              @!Block(1,26!2):ASTBlock {
+                                enclosingScope = @CDInterface!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(1,27!2):ASTAlt {
+                                    enclosingScope = @CDInterface!Scope;
+                                    component = [// *size: 2
+                                      @COMMA!Terminal(1,27!2):ASTTerminal {
+                                        enclosingScope = @CDInterface!Scope;
+                                        name = ",";
+                                        iteration = 0;
+                                      },
+                                      @MCObjectType!NonTerminal(1,31!2):ASTNonTerminal {
+                                        enclosingScope = @CDInterface!Scope;
+                                        usageName = "interface";
+                                        name = "MCObjectType";
+                                        genSymbol = false;
+                                        plusKeywords = false;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @!Block(67,4):ASTBlock {
+                enclosingScope = @CDInterface!Scope;
+                alt = [// *size: 2
+                  @!Alt(67,6):ASTAlt {
+                    enclosingScope = @CDInterface!Scope;
+                    component = [// *size: 3
+                      @LCURLY!Terminal(67,6):ASTTerminal {
+                        enclosingScope = @CDInterface!Scope;
+                        name = "{";
+                        iteration = 0;
+                      },
+                      @!Block(68,6):ASTBlock {
+                        enclosingScope = @CDInterface!Scope;
+                        alt = [// *size: 2
+                          @!Alt(68,8):ASTAlt {
+                            enclosingScope = @CDInterface!Scope;
+                            component = [// *size: 1
+                              @CDAttribute!NonTerminal(68,8):ASTNonTerminal {
+                                enclosingScope = @CDInterface!Scope;
+                                usageName = "cDAttribute";
+                                name = "CDAttribute";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          },
+                          @!Alt(69,8):ASTAlt {
+                            enclosingScope = @CDInterface!Scope;
+                            component = [// *size: 1
+                              @CDMethod!NonTerminal(69,8):ASTNonTerminal {
+                                enclosingScope = @CDInterface!Scope;
+                                usageName = "cDMethod";
+                                name = "CDMethod";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 18;
+                      },
+                      @RCURLY!Terminal(70,6):ASTTerminal {
+                        enclosingScope = @CDInterface!Scope;
+                        name = "}";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(71,6):ASTAlt {
+                    enclosingScope = @CDInterface!Scope;
+                    component = [// *size: 1
+                      @SEMI!Terminal(71,6):ASTTerminal {
+                        enclosingScope = @CDInterface!Scope;
+                        name = ";";
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDInterface";
+      },
+      @CDAttribute!ClassProd(79,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDField!RuleReference(79,25):ASTRuleReference {
+            enclosingScope = @CDAttribute!Scope;
+            name = "CDField";
+          }];
+        alt = [// *size: 1
+          @!Alt(79,35):ASTAlt {
+            enclosingScope = @CDAttribute!Scope;
+            component = [// *size: 4
+              @Modifier!NonTerminal(79,35):ASTNonTerminal {
+                enclosingScope = @CDAttribute!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 15;
+              },
+              @MCType!NonTerminal(79,45):ASTNonTerminal {
+                enclosingScope = @CDAttribute!Scope;
+                name = "MCType";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Name!NonTerminal(79,52):ASTNonTerminal {
+                enclosingScope = @CDAttribute!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @SEMI!Terminal(79,57):ASTTerminal {
+                enclosingScope = @CDAttribute!Scope;
+                name = ";";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDAttribute";
+      },
+      @CDConstructor!ClassProd(86,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDMethOrConstr!RuleReference(86,27):ASTRuleReference {
+            enclosingScope = @CDConstructor!Scope;
+            name = "CDMethOrConstr";
+          }];
+        alt = [// *size: 1
+          @!Alt(87,4):ASTAlt {
+            enclosingScope = @CDConstructor!Scope;
+            component = [// *size: 7
+              @Modifier!NonTerminal(87,4):ASTNonTerminal {
+                enclosingScope = @CDConstructor!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Name!NonTerminal(88,5):ASTNonTerminal {
+                enclosingScope = @CDConstructor!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LPAREN!Terminal(88,10):ASTTerminal {
+                enclosingScope = @CDConstructor!Scope;
+                name = "(";
+                iteration = 0;
+              },
+              @!Block(1,0!4):ASTBlock {
+                enclosingScope = @CDConstructor!Scope;
+                alt = [// *size: 1
+                  @!Alt(1,2):ASTAlt {
+                    enclosingScope = @CDConstructor!Scope;
+                    component = [// *size: 2
+                      @CDParameter!NonTerminal(1,2):ASTNonTerminal {
+                        enclosingScope = @CDConstructor!Scope;
+                        usageName = "cDParameter";
+                        name = "CDParameter";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @!Block(1,15):ASTBlock {
+                        enclosingScope = @CDConstructor!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,16):ASTAlt {
+                            enclosingScope = @CDConstructor!Scope;
+                            component = [// *size: 2
+                              @COMMA!Terminal(1,16):ASTTerminal {
+                                enclosingScope = @CDConstructor!Scope;
+                                name = ",";
+                                iteration = 0;
+                              },
+                              @CDParameter!NonTerminal(1,21):ASTNonTerminal {
+                                enclosingScope = @CDConstructor!Scope;
+                                usageName = "cDParameter";
+                                name = "CDParameter";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 18;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @RPAREN!Terminal(88,36):ASTTerminal {
+                enclosingScope = @CDConstructor!Scope;
+                name = ")";
+                iteration = 0;
+              },
+              @!Block(89,4):ASTBlock {
+                enclosingScope = @CDConstructor!Scope;
+                alt = [// *size: 1
+                  @!Alt(89,5):ASTAlt {
+                    enclosingScope = @CDConstructor!Scope;
+                    component = [// *size: 2
+                      @throws!Terminal(89,5):ASTTerminal {
+                        enclosingScope = @CDConstructor!Scope;
+                        name = "throws";
+                        iteration = 0;
+                      },
+                      @!Block(1,0!5):ASTBlock {
+                        enclosingScope = @CDConstructor!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,1!4):ASTAlt {
+                            enclosingScope = @CDConstructor!Scope;
+                            component = [// *size: 2
+                              @MCQualifiedName!NonTerminal(1,1):ASTNonTerminal {
+                                enclosingScope = @CDConstructor!Scope;
+                                usageName = "exception";
+                                name = "MCQualifiedName";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              },
+                              @!Block(1,29):ASTBlock {
+                                enclosingScope = @CDConstructor!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(1,30):ASTAlt {
+                                    enclosingScope = @CDConstructor!Scope;
+                                    component = [// *size: 2
+                                      @COMMA!Terminal(1,30):ASTTerminal {
+                                        enclosingScope = @CDConstructor!Scope;
+                                        name = ",";
+                                        iteration = 0;
+                                      },
+                                      @MCQualifiedName!NonTerminal(1,34):ASTNonTerminal {
+                                        enclosingScope = @CDConstructor!Scope;
+                                        usageName = "exception";
+                                        name = "MCQualifiedName";
+                                        genSymbol = false;
+                                        plusKeywords = false;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @SEMI!Terminal(90,4):ASTTerminal {
+                enclosingScope = @CDConstructor!Scope;
+                name = ";";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDConstructor";
+      },
+      @CDMethod!ClassProd(100,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDMethOrConstr!RuleReference(100,22):ASTRuleReference {
+            enclosingScope = @CDMethod!Scope;
+            name = "CDMethOrConstr";
+          }];
+        alt = [// *size: 1
+          @!Alt(101,4):ASTAlt {
+            enclosingScope = @CDMethod!Scope;
+            component = [// *size: 8
+              @Modifier!NonTerminal(101,4):ASTNonTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = "Modifier";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @MCReturnType!NonTerminal(102,4):ASTNonTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = "MCReturnType";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @Name!NonTerminal(103,5):ASTNonTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LPAREN!Terminal(103,10):ASTTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = "(";
+                iteration = 0;
+              },
+              @!Block(1,0!6):ASTBlock {
+                enclosingScope = @CDMethod!Scope;
+                alt = [// *size: 1
+                  @!Alt(1,2!2):ASTAlt {
+                    enclosingScope = @CDMethod!Scope;
+                    component = [// *size: 2
+                      @CDParameter!NonTerminal(1,2!2):ASTNonTerminal {
+                        enclosingScope = @CDMethod!Scope;
+                        usageName = "cDParameter";
+                        name = "CDParameter";
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      },
+                      @!Block(1,15!2):ASTBlock {
+                        enclosingScope = @CDMethod!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,16!2):ASTAlt {
+                            enclosingScope = @CDMethod!Scope;
+                            component = [// *size: 2
+                              @COMMA!Terminal(1,16!2):ASTTerminal {
+                                enclosingScope = @CDMethod!Scope;
+                                name = ",";
+                                iteration = 0;
+                              },
+                              @CDParameter!NonTerminal(1,21!2):ASTNonTerminal {
+                                enclosingScope = @CDMethod!Scope;
+                                usageName = "cDParameter";
+                                name = "CDParameter";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 18;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @RPAREN!Terminal(103,36):ASTTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = ")";
+                iteration = 0;
+              },
+              @!Block(104,4):ASTBlock {
+                enclosingScope = @CDMethod!Scope;
+                alt = [// *size: 1
+                  @!Alt(104,5):ASTAlt {
+                    enclosingScope = @CDMethod!Scope;
+                    component = [// *size: 2
+                      @throws!Terminal(104,5):ASTTerminal {
+                        enclosingScope = @CDMethod!Scope;
+                        name = "throws";
+                        iteration = 0;
+                      },
+                      @!Block(1,0!7):ASTBlock {
+                        enclosingScope = @CDMethod!Scope;
+                        alt = [// *size: 1
+                          @!Alt(1,1!5):ASTAlt {
+                            enclosingScope = @CDMethod!Scope;
+                            component = [// *size: 2
+                              @MCQualifiedName!NonTerminal(1,1!2):ASTNonTerminal {
+                                enclosingScope = @CDMethod!Scope;
+                                usageName = "exception";
+                                name = "MCQualifiedName";
+                                genSymbol = false;
+                                plusKeywords = false;
+                                iteration = 0;
+                              },
+                              @!Block(1,29!2):ASTBlock {
+                                enclosingScope = @CDMethod!Scope;
+                                alt = [// *size: 1
+                                  @!Alt(1,30!2):ASTAlt {
+                                    enclosingScope = @CDMethod!Scope;
+                                    component = [// *size: 2
+                                      @COMMA!Terminal(1,30!2):ASTTerminal {
+                                        enclosingScope = @CDMethod!Scope;
+                                        name = ",";
+                                        iteration = 0;
+                                      },
+                                      @MCQualifiedName!NonTerminal(1,34!2):ASTNonTerminal {
+                                        enclosingScope = @CDMethod!Scope;
+                                        usageName = "exception";
+                                        name = "MCQualifiedName";
+                                        genSymbol = false;
+                                        plusKeywords = false;
+                                        iteration = 0;
+                                      }];
+                                    rightAssoc = false;
+                                  }];
+                                iteration = 18;
+                              }];
+                            rightAssoc = false;
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @SEMI!Terminal(105,4):ASTTerminal {
+                enclosingScope = @CDMethod!Scope;
+                name = ";";
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDMethod";
+      },
+      @CDParameter!ClassProd(113,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        superInterfaceRule = [// *size: 1
+          @CDField!RuleReference(113,25):ASTRuleReference {
+            enclosingScope = @CDParameter!Scope;
+            name = "CDField";
+          }];
+        alt = [// *size: 1
+          @!Alt(114,2):ASTAlt {
+            enclosingScope = @CDParameter!Scope;
+            component = [// *size: 3
+              @MCType!NonTerminal(114,2):ASTNonTerminal {
+                enclosingScope = @CDParameter!Scope;
+                name = "MCType";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(114,9):ASTBlock {
+                enclosingScope = @CDParameter!Scope;
+                alt = [// *size: 1
+                  @!Alt(114,10):ASTAlt {
+                    enclosingScope = @CDParameter!Scope;
+                    component = [// *size: 1
+                      @Ellipsis!ConstantGroup(114,10):ASTConstantGroup {
+                        enclosingScope = @CDParameter!Scope;
+                        usageName = "Ellipsis";
+                        constant = [// *size: 1
+                          @POINTPOINTPOINT!Constant(114,20):ASTConstant {
+                            enclosingScope = @CDParameter!Scope;
+                            name = "...";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 15;
+              },
+              @Name!NonTerminal(114,29):ASTNonTerminal {
+                enclosingScope = @CDParameter!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDParameter";
+      },
+      @Modifier!ClassProd(116,2):ASTClassProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(117,4):ASTAlt {
+            enclosingScope = @Modifier!Scope;
+            component = [// *size: 1
+              @!Block(117,4):ASTBlock {
+                enclosingScope = @Modifier!Scope;
+                alt = [// *size: 11
+                  @!Alt(117,5):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(117,5):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @abstract!Constant(117,6):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "abstract";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(118,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(118,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @final!Constant(118,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "final";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(119,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(119,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @static!Constant(119,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "static";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(120,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(120,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @private!Constant(120,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "private";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(120,22):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(120,22):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @MINUS!Constant(120,23):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            humanName = "private";
+                            name = "-";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(121,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(121,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @protected!Constant(121,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "protected";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(121,24):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(121,24):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @HASH!Constant(121,25):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            humanName = "protected";
+                            name = "#";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(122,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(122,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @public!Constant(122,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "public";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(122,21):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(122,21):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @PLUS!Constant(122,22):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            humanName = "public";
+                            name = "+";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(123,8):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(123,8):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @derived!Constant(123,9):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            name = "derived";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(123,22):ASTAlt {
+                    enclosingScope = @Modifier!Scope;
+                    component = [// *size: 1
+                      @!ConstantGroup(123,22):ASTConstantGroup {
+                        enclosingScope = @Modifier!Scope;
+                        constant = [// *size: 1
+                          @SLASH!Constant(123,23):ASTConstant {
+                            enclosingScope = @Modifier!Scope;
+                            humanName = "derived";
+                            name = "/";
+                          }];
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 18;
+              }];
+            rightAssoc = false;
+          }];
+        name = "Modifier";
+      }];
+    interfaceProd = [// *size: 3
+      @CDType!InterfaceProd(28,2):ASTInterfaceProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(28,21):ASTAlt {
+            enclosingScope = @CDType!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(28,21):ASTNonTerminal {
+                enclosingScope = @CDType!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDType";
+      },
+      @CDField!InterfaceProd(30,2):ASTInterfaceProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(30,22):ASTAlt {
+            enclosingScope = @CDField!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(30,22):ASTNonTerminal {
+                enclosingScope = @CDField!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDField";
+      },
+      @CDMethOrConstr!InterfaceProd(32,2):ASTInterfaceProd {
+        enclosingScope = @ClassDiagrams!Scope;
+        alt = [// *size: 1
+          @!Alt(32,29):ASTAlt {
+            enclosingScope = @CDMethOrConstr!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(32,29):ASTNonTerminal {
+                enclosingScope = @CDMethOrConstr!Scope;
+                name = "Name";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = "CDMethOrConstr";
+      }];
+    component = false;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

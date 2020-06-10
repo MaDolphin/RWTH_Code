@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Notes.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab.utils</a> &gt; <span class="el_source">Notes.java</span></div><h1>Notes.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab.utils;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * Notes that should be played together
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 22.03.2019
+ * @since 1.0
+ */
+<span class="nc" id="L15">public class Notes {</span>
+
+  /**
+   * Should contain 6 values. One for each string of the guitar. Ordered from high pitch to low
+   * pitch (E-B-G-D-A-E)
+   */
+<span class="nc" id="L21">  private List&lt;Optional&lt;Integer&gt;&gt; frets = new ArrayList&lt;&gt;();</span>
+
+  /**
+   * Length information given in &quot;fraction of a bar&quot;
+   */
+<span class="nc" id="L26">  private Optional&lt;Integer&gt; length = Optional.empty();</span>
+
+  /* ============================================================ */
+  /* ====================== GENERATED CODE ====================== */
+  /* ============================================================ */
+
+  public List&lt;Optional&lt;Integer&gt;&gt; getFrets() {
+<span class="nc" id="L33">    return frets;</span>
+  }
+
+  public Optional&lt;Integer&gt; getLength() {
+<span class="nc" id="L37">    return length;</span>
+  }
+
+  public void setLength(Optional&lt;Integer&gt; length) {
+<span class="nc" id="L41">    this.length = length;</span>
+<span class="nc" id="L42">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

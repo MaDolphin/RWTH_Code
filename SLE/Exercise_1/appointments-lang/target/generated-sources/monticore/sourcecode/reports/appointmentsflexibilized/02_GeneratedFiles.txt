@@ -1,0 +1,142 @@
+========================================================== Generated Files
+Filename                                AST-Node
+AppointmentsFlexibilizedAntlr.g4        @AppointmentsFlexibilized!MCGrammar(2,0)
+                                        Parser.ftl
+AppointmentsFlexibilizedParser.java     @AppointmentsFlexibilized!MCGrammar(2,0)
+                                        MCParser.ftl
+AppointmentsFlexibilizedScope.java      @!CDClass
+                                        Class.ftl
+AppointmentsFlexibilizedScopeBuilder.java  @!CDClass(!2)
+                                        Class.ftl
+AppointmentsFlexibilizedSymTabMill.java @!CDClass(!3)
+                                        Class.ftl
+AppointmentsFlexibilizedGlobalScope.java@!CDClass(!4)
+                                        Class.ftl
+AppointmentsFlexibilizedGlobalScopeBuilder.java  @!CDClass(!5)
+                                        Class.ftl
+AppointmentsFlexibilizedArtifactScope.java  @!CDClass(!6)
+                                        Class.ftl
+AppointmentsFlexibilizedArtifactScopeBuilder.java  @!CDClass(!7)
+                                        Class.ftl
+AppointmentsFlexibilizedLanguage.java   @!CDClass(!8)
+                                        Class.ftl
+AppointmentsFlexibilizedModelLoader.java@!CDClass(!9)
+                                        Class.ftl
+AppointmentsFlexibilizedModelLoaderBuilder.java  @!CDClass(!10)
+                                        Class.ftl
+AppointmentsFlexibilizedSymbolTableCreator.java  @!CDClass(!11)
+                                        Class.ftl
+AppointmentsFlexibilizedSymbolTableCreatorBuilder.java  @!CDClass(!12)
+                                        Class.ftl
+AppointmentsFlexibilizedSymbolTableCreatorDelegator.java  @!CDClass(!13)
+                                        Class.ftl
+AppointmentsFlexibilizedSymbolTableCreatorDelegatorBuilder.java  @!CDClass(!14)
+                                        Class.ftl
+MCCommonLiteralsSTCForAppointmentsFlexibilized.java  @!CDClass(!15)
+                                        Class.ftl
+MCLiteralsBasisSTCForAppointmentsFlexibilized.java  @!CDClass(!16)
+                                        Class.ftl
+IAppointmentsFlexibilizedScope.java     @!CDInterface
+                                        Interface.ftl
+ICommonAppointmentsFlexibilizedSymbol.java  @!CDInterface(!2)
+                                        Interface.ftl
+IAppointmentsFlexibilizedGlobalScope.java  @!CDInterface(!3)
+                                        Interface.ftl
+AppointmentsFlexibilizedSymbolTablePrinter.java  @!CDClass(!17)
+                                        Class.ftl
+AppointmentsFlexibilizedScopeDeSer.java @!CDClass(!18)
+                                        Class.ftl
+AppointmentsFlexibilizedDelegatorVisitor.java  @!CDClass(!19)
+                                        Class.ftl
+AppointmentsFlexibilizedParentAwareVisitor.java  @!CDClass(!20)
+                                        Class.ftl
+AppointmentsFlexibilizedVisitor.java    @!CDInterface(!4)
+                                        Interface.ftl
+AppointmentsFlexibilizedSymbolVisitor.java  @!CDInterface(!5)
+                                        Interface.ftl
+AppointmentsFlexibilizedScopeVisitor.java  @!CDInterface(!6)
+                                        Interface.ftl
+AppointmentsFlexibilizedInheritanceVisitor.java  @!CDInterface(!7)
+                                        Interface.ftl
+AppointmentsFlexibilizedCoCoChecker.java@!CDClass(!21)
+                                        Class.ftl
+AppointmentsFlexibilizedASTAppointmentCoCo.java  @!CDInterface(!8)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTStartCoCo.java  @!CDInterface(!9)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTEndCoCo.java @!CDInterface(!10)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTDateCoCo.java@!CDInterface(!11)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTTimeCoCo.java@!CDInterface(!12)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTBreakCoCo.java  @!CDInterface(!13)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTParticipantsCoCo.java  @!CDInterface(!14)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTFrequencyCoCo.java  @!CDInterface(!15)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTICoCo.java   @!CDInterface(!16)
+                                        Interface.ftl
+AppointmentsFlexibilizedASTAppointmentsFlexibilizedNodeCoCo.java  @!CDInterface(!17)
+                                        Interface.ftl
+ASTAppointment.java                     @!CDClass(!22)
+                                        Class.ftl
+ASTStart.java                           @!CDClass(!23)
+                                        Class.ftl
+ASTEnd.java                             @!CDClass(!24)
+                                        Class.ftl
+ASTDate.java                            @!CDClass(!25)
+                                        Class.ftl
+ASTTime.java                            @!CDClass(!26)
+                                        Class.ftl
+ASTBreak.java                           @!CDClass(!27)
+                                        Class.ftl
+ASTParticipants.java                    @!CDClass(!28)
+                                        Class.ftl
+ASTFrequency.java                       @!CDClass(!29)
+                                        Class.ftl
+ASTAppointmentBuilder.java              @!CDClass(!30)
+                                        Class.ftl
+ASTStartBuilder.java                    @!CDClass(!31)
+                                        Class.ftl
+ASTEndBuilder.java                      @!CDClass(!32)
+                                        Class.ftl
+ASTDateBuilder.java                     @!CDClass(!33)
+                                        Class.ftl
+ASTTimeBuilder.java                     @!CDClass(!34)
+                                        Class.ftl
+ASTBreakBuilder.java                    @!CDClass(!35)
+                                        Class.ftl
+ASTParticipantsBuilder.java             @!CDClass(!36)
+                                        Class.ftl
+ASTFrequencyBuilder.java                @!CDClass(!37)
+                                        Class.ftl
+AppointmentsFlexibilizedNodeFactory.java@!CDClass(!38)
+                                        Class.ftl
+AppointmentsFlexibilizedMill.java       @!CDClass(!39)
+                                        Class.ftl
+MCCommonLiteralsMillForAppointmentsFlexibilized.java  @!CDClass(!40)
+                                        Class.ftl
+MCBasicsMillForAppointmentsFlexibilized.java  @!CDClass(!41)
+                                        Class.ftl
+MCLiteralsBasisMillForAppointmentsFlexibilized.java  @!CDClass(!42)
+                                        Class.ftl
+ASTConstantsAppointmentsFlexibilized.java  @!CDClass(!43)
+                                        Class.ftl
+ASTI.java                               @!CDInterface(!18)
+                                        Interface.ftl
+ASTAppointmentsFlexibilizedNode.java    @!CDInterface(!19)
+                                        Interface.ftl
+AppointmentsFlexibilizedLiterals.java   @!CDEnum
+                                        Enum.ftl
+AppointmentsFlexibilized2OD.java        @!CDCompilationUnit
+                                        DiagramVisitor.ftl
+========================================================== Explanation
+Generated Files: the list of generated files in the order they are generated.
+Each file knows:
+- Template       responsible for the file creation
+- AST            Node which is passed to the template as ast variable
+- Model Position If the ast node is created as a direct result of parsing a model,
+                 the position of the model element is reported in the form <Line, Column>
+(EOF)

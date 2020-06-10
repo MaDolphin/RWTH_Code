@@ -1,0 +1,27 @@
+// (c) https://github.com/MontiCore/monticore
+
+grammar GuitarTab extends de.monticore.MCBasics {
+
+  Tab = (Comment | SixStrings | Linebreak)*;
+
+  token Digit = '0'..'9';
+  token Linebreak = NEWLINE;
+
+  Comment = "[" (Name | WS)* "]" Linebreak;
+
+  /** One tabulator - each line represents one guitar string */
+  SixStrings =
+    "e" GuitarString Linebreak
+    "B" GuitarString Linebreak
+    "G" GuitarString Linebreak
+    "D" GuitarString Linebreak
+    "A" GuitarString Linebreak
+    "E" GuitarString
+    (Linebreak "L" LengthLine)? // Optionally define the length of each note
+  ;
+
+  GuitarString = "|" (content:Digit | content:"-")* "|";
+
+  // Lengthlines use other CoCos
+  LengthLine = "|" (content:Digit | content:"-")* "|";
+}

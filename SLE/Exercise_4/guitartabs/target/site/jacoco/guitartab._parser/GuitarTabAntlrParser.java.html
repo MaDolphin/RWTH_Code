@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GuitarTabAntlrParser.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab._parser</a> &gt; <span class="el_source">GuitarTabAntlrParser.java</span></div><h1>GuitarTabAntlrParser.java</h1><pre class="source lang-java linenums">// Generated from /Users/hhk/Documents/GitHub/SLE/Exercise_4/guitartabs/target/generated-sources/monticore/sourcecode/guitartab/_parser/GuitarTabAntlr.g4 by ANTLR 4.7.1
+
+package guitartab._parser;
+import de.monticore.antlr4.MCParser;
+
+import org.antlr.v4.runtime.atn.*;
+import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
+import org.antlr.v4.runtime.tree.*;
+import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
+
+@SuppressWarnings({&quot;all&quot;, &quot;warnings&quot;, &quot;unchecked&quot;, &quot;unused&quot;, &quot;cast&quot;})
+public class GuitarTabAntlrParser extends MCParser {
+<span class="fc" id="L17">	static { RuntimeMetaData.checkVersion(&quot;4.7.1&quot;, RuntimeMetaData.VERSION); }</span>
+
+	protected static final DFA[] _decisionToDFA;
+<span class="fc" id="L20">	protected static final PredictionContextCache _sharedContextCache =</span>
+		new PredictionContextCache();
+	public static final int
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, LBRACK=8, PIPE=9, 
+		RBRACK=10, MINUS=11, Digit=12, Linebreak=13, Name=14, WS=15, SL_COMMENT=16, 
+		ML_COMMENT=17;
+	public static final int
+		RULE_tab_eof = 0, RULE_tab = 1, RULE_comment_eof = 2, RULE_comment = 3, 
+		RULE_sixStrings_eof = 4, RULE_sixStrings = 5, RULE_guitarString_eof = 6, 
+		RULE_guitarString = 7, RULE_lengthLine_eof = 8, RULE_lengthLine = 9;
+<span class="fc" id="L30">	public static final String[] ruleNames = {</span>
+		&quot;tab_eof&quot;, &quot;tab&quot;, &quot;comment_eof&quot;, &quot;comment&quot;, &quot;sixStrings_eof&quot;, &quot;sixStrings&quot;, 
+		&quot;guitarString_eof&quot;, &quot;guitarString&quot;, &quot;lengthLine_eof&quot;, &quot;lengthLine&quot;
+	};
+
+<span class="fc" id="L35">	private static final String[] _LITERAL_NAMES = {</span>
+		null, &quot;'e'&quot;, &quot;'B'&quot;, &quot;'G'&quot;, &quot;'D'&quot;, &quot;'A'&quot;, &quot;'E'&quot;, &quot;'L'&quot;, &quot;'['&quot;, &quot;'|'&quot;, &quot;']'&quot;, 
+		&quot;'-'&quot;
+	};
+<span class="fc" id="L39">	private static final String[] _SYMBOLIC_NAMES = {</span>
+		null, null, null, null, null, null, null, null, &quot;LBRACK&quot;, &quot;PIPE&quot;, &quot;RBRACK&quot;, 
+		&quot;MINUS&quot;, &quot;Digit&quot;, &quot;Linebreak&quot;, &quot;Name&quot;, &quot;WS&quot;, &quot;SL_COMMENT&quot;, &quot;ML_COMMENT&quot;
+	};
+<span class="fc" id="L43">	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);</span>
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
+	static {
+<span class="fc" id="L51">		tokenNames = new String[_SYMBOLIC_NAMES.length];</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">		for (int i = 0; i &lt; tokenNames.length; i++) {</span>
+<span class="fc" id="L53">			tokenNames[i] = VOCABULARY.getLiteralName(i);</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">			if (tokenNames[i] == null) {</span>
+<span class="fc" id="L55">				tokenNames[i] = VOCABULARY.getSymbolicName(i);</span>
+			}
+
+<span class="fc bfc" id="L58" title="All 2 branches covered.">			if (tokenNames[i] == null) {</span>
+<span class="fc" id="L59">				tokenNames[i] = &quot;&lt;INVALID&gt;&quot;;</span>
+			}
+		}
+	}
+
+	@Override
+	@Deprecated
+	public String[] getTokenNames() {
+<span class="nc" id="L67">		return tokenNames;</span>
+	}
+
+	@Override
+
+	public Vocabulary getVocabulary() {
+<span class="nc" id="L73">		return VOCABULARY;</span>
+	}
+
+	@Override
+<span class="nc" id="L77">	public String getGrammarFileName() { return &quot;GuitarTabAntlr.g4&quot;; }</span>
+
+	@Override
+<span class="nc" id="L80">	public String[] getRuleNames() { return ruleNames; }</span>
+
+	@Override
+<span class="nc" id="L83">	public String getSerializedATN() { return _serializedATN; }</span>
+
+	@Override
+<span class="fc" id="L86">	public ATN getATN() { return _ATN; }</span>
+
+
+
+	  // convert function for Name
+	private String convertName(Token t)  {
+<span class="fc" id="L92">	    return t.getText();</span>
+	}
+
+	  // convert function for NEWLINE
+	private String convertNEWLINE(Token t)  {
+<span class="nc" id="L97">	    return t.getText();</span>
+	}
+
+	  // convert function for WS
+	private String convertWS(Token t)  {
+<span class="nc" id="L102">	    return t.getText();</span>
+	}
+
+	  // convert function for SL_COMMENT
+	private String convertSL_COMMENT(Token t)  {
+<span class="nc" id="L107">	    return t.getText();</span>
+	}
+
+	  // convert function for ML_COMMENT
+	private String convertML_COMMENT(Token t)  {
+<span class="nc" id="L112">	    return t.getText();</span>
+	}
+
+	  // convert function for Digit
+	private String convertDigit(Token t)  {
+<span class="fc" id="L117">	    return t.getText();</span>
+	}
+
+	  // convert function for Linebreak
+	private String convertLinebreak(Token t)  {
+<span class="fc" id="L122">	    return t.getText();</span>
+	}
+
+
+	public GuitarTabAntlrParser(TokenStream input) {
+<span class="fc" id="L127">		super(input);</span>
+<span class="fc" id="L128">		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);</span>
+<span class="fc" id="L129">	}</span>
+	public static class Tab_eofContext extends ParserRuleContext {
+<span class="fc" id="L131">		public guitartab._ast.ASTTab ret = null;</span>
+		public TabContext tmp;
+<span class="nc" id="L133">		public TerminalNode EOF() { return getToken(GuitarTabAntlrParser.EOF, 0); }</span>
+		public TabContext tab() {
+<span class="nc" id="L135">			return getRuleContext(TabContext.class,0);</span>
+		}
+		public Tab_eofContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L138">			super(parent, invokingState);</span>
+<span class="fc" id="L139">		}</span>
+<span class="nc" id="L140">		@Override public int getRuleIndex() { return RULE_tab_eof; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L143" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterTab_eof(this);</span>
+<span class="nc" id="L144">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L147" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitTab_eof(this);</span>
+<span class="nc" id="L148">		}</span>
+	}
+
+	public final Tab_eofContext tab_eof() throws RecognitionException {
+<span class="fc" id="L152">		Tab_eofContext _localctx = new Tab_eofContext(_ctx, getState());</span>
+<span class="fc" id="L153">		enterRule(_localctx, 0, RULE_tab_eof);</span>
+		try {
+<span class="fc" id="L155">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L157">			setState(20);</span>
+<span class="fc" id="L158">			((Tab_eofContext)_localctx).tmp = tab();</span>
+<span class="fc" id="L159">			((Tab_eofContext)_localctx).ret =  ((Tab_eofContext)_localctx).tmp.ret;</span>
+<span class="fc" id="L160">			setState(22);</span>
+<span class="fc" id="L161">			match(EOF);</span>
+			}
+		}
+<span class="nc" id="L164">		catch (RecognitionException re) {</span>
+<span class="nc" id="L165">			_localctx.exception = re;</span>
+<span class="nc" id="L166">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L167">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L170">			exitRule();</span>
+		}
+<span class="fc" id="L172">		return _localctx;</span>
+	}
+
+	public static class TabContext extends ParserRuleContext {
+<span class="fc" id="L176">		public guitartab._ast.ASTTab ret = null;</span>
+		public CommentContext tmp0;
+		public SixStringsContext tmp1;
+		public Token tmp2;
+		public List&lt;CommentContext&gt; comment() {
+<span class="nc" id="L181">			return getRuleContexts(CommentContext.class);</span>
+		}
+		public CommentContext comment(int i) {
+<span class="nc" id="L184">			return getRuleContext(CommentContext.class,i);</span>
+		}
+		public List&lt;SixStringsContext&gt; sixStrings() {
+<span class="nc" id="L187">			return getRuleContexts(SixStringsContext.class);</span>
+		}
+		public SixStringsContext sixStrings(int i) {
+<span class="nc" id="L190">			return getRuleContext(SixStringsContext.class,i);</span>
+		}
+<span class="nc" id="L192">		public List&lt;TerminalNode&gt; Linebreak() { return getTokens(GuitarTabAntlrParser.Linebreak); }</span>
+		public TerminalNode Linebreak(int i) {
+<span class="nc" id="L194">			return getToken(GuitarTabAntlrParser.Linebreak, i);</span>
+		}
+		public TabContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L197">			super(parent, invokingState);</span>
+<span class="fc" id="L198">		}</span>
+<span class="nc" id="L199">		@Override public int getRuleIndex() { return RULE_tab; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L202" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterTab(this);</span>
+<span class="nc" id="L203">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L206" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitTab(this);</span>
+<span class="nc" id="L207">		}</span>
+	}
+
+	public final TabContext tab() throws RecognitionException {
+<span class="fc" id="L211">		TabContext _localctx = new TabContext(_ctx, getState());</span>
+<span class="fc" id="L212">		enterRule(_localctx, 2, RULE_tab);</span>
+		// ret is normally returned, a is used to be compatible with rule using the return construct
+<span class="fc" id="L214">		guitartab._ast.ASTTab _aNode = null;</span>
+<span class="fc" id="L215">		_aNode=guitartab._ast.GuitarTabNodeFactory.createASTTab();</span>
+<span class="fc" id="L216">		((TabContext)_localctx).ret = _aNode;</span>
+<span class="fc" id="L217">		_aNode.set_SourcePositionStart( computeStartPosition(_input.LT(1)));</span>
+<span class="fc" id="L218">		setActiveASTNode(_aNode);</span>
+
+		int _la;
+		try {
+<span class="fc" id="L222">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L224">			setState(34);</span>
+<span class="fc" id="L225">			_errHandler.sync(this);</span>
+<span class="fc" id="L226">			_la = _input.LA(1);</span>
+<span class="pc bpc" id="L227" title="1 of 4 branches missed.">			while ((((_la) &amp; ~0x3f) == 0 &amp;&amp; ((1L &lt;&lt; _la) &amp; ((1L &lt;&lt; T__0) | (1L &lt;&lt; LBRACK) | (1L &lt;&lt; Linebreak))) != 0)) {</span>
+				{
+<span class="fc" id="L229">				setState(32);</span>
+<span class="fc" id="L230">				_errHandler.sync(this);</span>
+<span class="pc bpc" id="L231" title="1 of 4 branches missed.">				switch (_input.LA(1)) {</span>
+				case LBRACK:
+					{
+<span class="fc" id="L234">					setState(24);</span>
+<span class="fc" id="L235">					((TabContext)_localctx).tmp0 = comment();</span>
+<span class="fc" id="L236">					addToIteratedAttributeIfNotNull(_aNode.getCommentList(), _localctx.tmp0.ret);</span>
+					}
+<span class="fc" id="L238">					break;</span>
+				case T__0:
+					{
+<span class="fc" id="L241">					setState(27);</span>
+<span class="fc" id="L242">					((TabContext)_localctx).tmp1 = sixStrings();</span>
+<span class="fc" id="L243">					addToIteratedAttributeIfNotNull(_aNode.getSixStringsList(), _localctx.tmp1.ret);</span>
+					}
+<span class="fc" id="L245">					break;</span>
+				case Linebreak:
+					{
+					{
+<span class="fc" id="L249">					setState(30);</span>
+<span class="fc" id="L250">					((TabContext)_localctx).tmp2 = match(Linebreak);</span>
+<span class="fc" id="L251">					 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((TabContext)_localctx).tmp2));</span>
+					}
+					}
+<span class="fc" id="L254">					break;</span>
+				default:
+<span class="nc" id="L256">					throw new NoViableAltException(this);</span>
+				}
+				}
+<span class="fc" id="L259">				setState(36);</span>
+<span class="fc" id="L260">				_errHandler.sync(this);</span>
+<span class="fc" id="L261">				_la = _input.LA(1);</span>
+			}
+			}
+<span class="fc" id="L264">			_ctx.stop = _input.LT(-1);</span>
+<span class="fc" id="L265">			_aNode.set_SourcePositionEnd(computeEndPosition(_input.LT(-1)));</span>
+		}
+<span class="nc" id="L267">		catch (RecognitionException re) {</span>
+<span class="nc" id="L268">			_localctx.exception = re;</span>
+<span class="nc" id="L269">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L270">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L273">			exitRule();</span>
+		}
+<span class="fc" id="L275">		return _localctx;</span>
+	}
+
+	public static class Comment_eofContext extends ParserRuleContext {
+<span class="nc" id="L279">		public guitartab._ast.ASTComment ret = null;</span>
+		public CommentContext tmp;
+<span class="nc" id="L281">		public TerminalNode EOF() { return getToken(GuitarTabAntlrParser.EOF, 0); }</span>
+		public CommentContext comment() {
+<span class="nc" id="L283">			return getRuleContext(CommentContext.class,0);</span>
+		}
+		public Comment_eofContext(ParserRuleContext parent, int invokingState) {
+<span class="nc" id="L286">			super(parent, invokingState);</span>
+<span class="nc" id="L287">		}</span>
+<span class="nc" id="L288">		@Override public int getRuleIndex() { return RULE_comment_eof; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L291" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterComment_eof(this);</span>
+<span class="nc" id="L292">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L295" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitComment_eof(this);</span>
+<span class="nc" id="L296">		}</span>
+	}
+
+	public final Comment_eofContext comment_eof() throws RecognitionException {
+<span class="nc" id="L300">		Comment_eofContext _localctx = new Comment_eofContext(_ctx, getState());</span>
+<span class="nc" id="L301">		enterRule(_localctx, 4, RULE_comment_eof);</span>
+		try {
+<span class="nc" id="L303">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="nc" id="L305">			setState(37);</span>
+<span class="nc" id="L306">			((Comment_eofContext)_localctx).tmp = comment();</span>
+<span class="nc" id="L307">			((Comment_eofContext)_localctx).ret =  ((Comment_eofContext)_localctx).tmp.ret;</span>
+<span class="nc" id="L308">			setState(39);</span>
+<span class="nc" id="L309">			match(EOF);</span>
+			}
+		}
+<span class="nc" id="L312">		catch (RecognitionException re) {</span>
+<span class="nc" id="L313">			_localctx.exception = re;</span>
+<span class="nc" id="L314">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L315">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="nc" id="L318">			exitRule();</span>
+		}
+<span class="nc" id="L320">		return _localctx;</span>
+	}
+
+	public static class CommentContext extends ParserRuleContext {
+<span class="fc" id="L324">		public guitartab._ast.ASTComment ret = null;</span>
+		public Token tmp0;
+		public Token tmp1;
+		public Token tmp2;
+<span class="nc" id="L328">		public TerminalNode LBRACK() { return getToken(GuitarTabAntlrParser.LBRACK, 0); }</span>
+<span class="nc" id="L329">		public TerminalNode RBRACK() { return getToken(GuitarTabAntlrParser.RBRACK, 0); }</span>
+<span class="nc" id="L330">		public TerminalNode Linebreak() { return getToken(GuitarTabAntlrParser.Linebreak, 0); }</span>
+<span class="nc" id="L331">		public List&lt;TerminalNode&gt; Name() { return getTokens(GuitarTabAntlrParser.Name); }</span>
+		public TerminalNode Name(int i) {
+<span class="nc" id="L333">			return getToken(GuitarTabAntlrParser.Name, i);</span>
+		}
+<span class="nc" id="L335">		public List&lt;TerminalNode&gt; WS() { return getTokens(GuitarTabAntlrParser.WS); }</span>
+		public TerminalNode WS(int i) {
+<span class="nc" id="L337">			return getToken(GuitarTabAntlrParser.WS, i);</span>
+		}
+		public CommentContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L340">			super(parent, invokingState);</span>
+<span class="fc" id="L341">		}</span>
+<span class="nc" id="L342">		@Override public int getRuleIndex() { return RULE_comment; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L345" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterComment(this);</span>
+<span class="nc" id="L346">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L349" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitComment(this);</span>
+<span class="nc" id="L350">		}</span>
+	}
+
+	public final CommentContext comment() throws RecognitionException {
+<span class="fc" id="L354">		CommentContext _localctx = new CommentContext(_ctx, getState());</span>
+<span class="fc" id="L355">		enterRule(_localctx, 6, RULE_comment);</span>
+		// ret is normally returned, a is used to be compatible with rule using the return construct
+<span class="fc" id="L357">		guitartab._ast.ASTComment _aNode = null;</span>
+<span class="fc" id="L358">		_aNode=guitartab._ast.GuitarTabNodeFactory.createASTComment();</span>
+<span class="fc" id="L359">		((CommentContext)_localctx).ret = _aNode;</span>
+<span class="fc" id="L360">		_aNode.set_SourcePositionStart( computeStartPosition(_input.LT(1)));</span>
+<span class="fc" id="L361">		setActiveASTNode(_aNode);</span>
+
+		int _la;
+		try {
+<span class="fc" id="L365">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L367">			setState(41);</span>
+<span class="fc" id="L368">			match(LBRACK);</span>
+<span class="fc" id="L369">			setState(48);</span>
+<span class="fc" id="L370">			_errHandler.sync(this);</span>
+<span class="fc" id="L371">			_la = _input.LA(1);</span>
+<span class="pc bpc" id="L372" title="1 of 4 branches missed.">			while (_la==Name || _la==WS) {</span>
+				{
+<span class="fc" id="L374">				setState(46);</span>
+<span class="fc" id="L375">				_errHandler.sync(this);</span>
+<span class="pc bpc" id="L376" title="2 of 3 branches missed.">				switch (_input.LA(1)) {</span>
+				case Name:
+					{
+					{
+<span class="fc" id="L380">					setState(42);</span>
+<span class="fc" id="L381">					((CommentContext)_localctx).tmp0 = match(Name);</span>
+<span class="fc" id="L382">					 addToIteratedAttributeIfNotNull(_aNode.getNameList(), convertName(((CommentContext)_localctx).tmp0));</span>
+					}
+					}
+<span class="fc" id="L385">					break;</span>
+				case WS:
+					{
+					{
+<span class="nc" id="L389">					setState(44);</span>
+<span class="nc" id="L390">					((CommentContext)_localctx).tmp1 = match(WS);</span>
+<span class="nc" id="L391">					 addToIteratedAttributeIfNotNull(_aNode.getWSList(), convertWS(((CommentContext)_localctx).tmp1));</span>
+					}
+					}
+<span class="nc" id="L394">					break;</span>
+				default:
+<span class="nc" id="L396">					throw new NoViableAltException(this);</span>
+				}
+				}
+<span class="fc" id="L399">				setState(50);</span>
+<span class="fc" id="L400">				_errHandler.sync(this);</span>
+<span class="fc" id="L401">				_la = _input.LA(1);</span>
+			}
+<span class="fc" id="L403">			setState(51);</span>
+<span class="fc" id="L404">			match(RBRACK);</span>
+			{
+<span class="fc" id="L406">			setState(52);</span>
+<span class="fc" id="L407">			((CommentContext)_localctx).tmp2 = match(Linebreak);</span>
+<span class="fc" id="L408">			_aNode.setLinebreak(convertLinebreak(((CommentContext)_localctx).tmp2));</span>
+			}
+			}
+<span class="fc" id="L411">			_ctx.stop = _input.LT(-1);</span>
+<span class="fc" id="L412">			_aNode.set_SourcePositionEnd(computeEndPosition(_input.LT(-1)));</span>
+		}
+<span class="nc" id="L414">		catch (RecognitionException re) {</span>
+<span class="nc" id="L415">			_localctx.exception = re;</span>
+<span class="nc" id="L416">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L417">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L420">			exitRule();</span>
+		}
+<span class="fc" id="L422">		return _localctx;</span>
+	}
+
+	public static class SixStrings_eofContext extends ParserRuleContext {
+<span class="nc" id="L426">		public guitartab._ast.ASTSixStrings ret = null;</span>
+		public SixStringsContext tmp;
+<span class="nc" id="L428">		public TerminalNode EOF() { return getToken(GuitarTabAntlrParser.EOF, 0); }</span>
+		public SixStringsContext sixStrings() {
+<span class="nc" id="L430">			return getRuleContext(SixStringsContext.class,0);</span>
+		}
+		public SixStrings_eofContext(ParserRuleContext parent, int invokingState) {
+<span class="nc" id="L433">			super(parent, invokingState);</span>
+<span class="nc" id="L434">		}</span>
+<span class="nc" id="L435">		@Override public int getRuleIndex() { return RULE_sixStrings_eof; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L438" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterSixStrings_eof(this);</span>
+<span class="nc" id="L439">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L442" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitSixStrings_eof(this);</span>
+<span class="nc" id="L443">		}</span>
+	}
+
+	public final SixStrings_eofContext sixStrings_eof() throws RecognitionException {
+<span class="nc" id="L447">		SixStrings_eofContext _localctx = new SixStrings_eofContext(_ctx, getState());</span>
+<span class="nc" id="L448">		enterRule(_localctx, 8, RULE_sixStrings_eof);</span>
+		try {
+<span class="nc" id="L450">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="nc" id="L452">			setState(55);</span>
+<span class="nc" id="L453">			((SixStrings_eofContext)_localctx).tmp = sixStrings();</span>
+<span class="nc" id="L454">			((SixStrings_eofContext)_localctx).ret =  ((SixStrings_eofContext)_localctx).tmp.ret;</span>
+<span class="nc" id="L455">			setState(57);</span>
+<span class="nc" id="L456">			match(EOF);</span>
+			}
+		}
+<span class="nc" id="L459">		catch (RecognitionException re) {</span>
+<span class="nc" id="L460">			_localctx.exception = re;</span>
+<span class="nc" id="L461">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L462">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="nc" id="L465">			exitRule();</span>
+		}
+<span class="nc" id="L467">		return _localctx;</span>
+	}
+
+	public static class SixStringsContext extends ParserRuleContext {
+<span class="fc" id="L471">		public guitartab._ast.ASTSixStrings ret = null;</span>
+		public GuitarStringContext tmp0;
+		public Token tmp1;
+		public GuitarStringContext tmp2;
+		public Token tmp3;
+		public GuitarStringContext tmp4;
+		public Token tmp5;
+		public GuitarStringContext tmp6;
+		public Token tmp7;
+		public GuitarStringContext tmp8;
+		public Token tmp9;
+		public GuitarStringContext tmp10;
+		public Token tmp11;
+		public LengthLineContext tmp12;
+		public List&lt;GuitarStringContext&gt; guitarString() {
+<span class="nc" id="L486">			return getRuleContexts(GuitarStringContext.class);</span>
+		}
+		public GuitarStringContext guitarString(int i) {
+<span class="nc" id="L489">			return getRuleContext(GuitarStringContext.class,i);</span>
+		}
+<span class="nc" id="L491">		public List&lt;TerminalNode&gt; Linebreak() { return getTokens(GuitarTabAntlrParser.Linebreak); }</span>
+		public TerminalNode Linebreak(int i) {
+<span class="nc" id="L493">			return getToken(GuitarTabAntlrParser.Linebreak, i);</span>
+		}
+		public LengthLineContext lengthLine() {
+<span class="nc" id="L496">			return getRuleContext(LengthLineContext.class,0);</span>
+		}
+		public SixStringsContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L499">			super(parent, invokingState);</span>
+<span class="fc" id="L500">		}</span>
+<span class="nc" id="L501">		@Override public int getRuleIndex() { return RULE_sixStrings; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L504" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterSixStrings(this);</span>
+<span class="nc" id="L505">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L508" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitSixStrings(this);</span>
+<span class="nc" id="L509">		}</span>
+	}
+
+	public final SixStringsContext sixStrings() throws RecognitionException {
+<span class="fc" id="L513">		SixStringsContext _localctx = new SixStringsContext(_ctx, getState());</span>
+<span class="fc" id="L514">		enterRule(_localctx, 10, RULE_sixStrings);</span>
+		// ret is normally returned, a is used to be compatible with rule using the return construct
+<span class="fc" id="L516">		guitartab._ast.ASTSixStrings _aNode = null;</span>
+<span class="fc" id="L517">		_aNode=guitartab._ast.GuitarTabNodeFactory.createASTSixStrings();</span>
+<span class="fc" id="L518">		((SixStringsContext)_localctx).ret = _aNode;</span>
+<span class="fc" id="L519">		_aNode.set_SourcePositionStart( computeStartPosition(_input.LT(1)));</span>
+<span class="fc" id="L520">		setActiveASTNode(_aNode);</span>
+
+		try {
+<span class="fc" id="L523">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L525">			setState(59);</span>
+<span class="fc" id="L526">			match(T__0);</span>
+<span class="fc" id="L527">			setState(60);</span>
+<span class="fc" id="L528">			((SixStringsContext)_localctx).tmp0 = guitarString();</span>
+<span class="fc" id="L529">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp0.ret);</span>
+			{
+<span class="fc" id="L531">			setState(62);</span>
+<span class="fc" id="L532">			((SixStringsContext)_localctx).tmp1 = match(Linebreak);</span>
+<span class="fc" id="L533">			 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp1));</span>
+			}
+<span class="fc" id="L535">			setState(65);</span>
+<span class="fc" id="L536">			match(T__1);</span>
+<span class="fc" id="L537">			setState(66);</span>
+<span class="fc" id="L538">			((SixStringsContext)_localctx).tmp2 = guitarString();</span>
+<span class="fc" id="L539">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp2.ret);</span>
+			{
+<span class="fc" id="L541">			setState(68);</span>
+<span class="fc" id="L542">			((SixStringsContext)_localctx).tmp3 = match(Linebreak);</span>
+<span class="fc" id="L543">			 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp3));</span>
+			}
+<span class="fc" id="L545">			setState(71);</span>
+<span class="fc" id="L546">			match(T__2);</span>
+<span class="fc" id="L547">			setState(72);</span>
+<span class="fc" id="L548">			((SixStringsContext)_localctx).tmp4 = guitarString();</span>
+<span class="fc" id="L549">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp4.ret);</span>
+			{
+<span class="fc" id="L551">			setState(74);</span>
+<span class="fc" id="L552">			((SixStringsContext)_localctx).tmp5 = match(Linebreak);</span>
+<span class="fc" id="L553">			 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp5));</span>
+			}
+<span class="fc" id="L555">			setState(77);</span>
+<span class="fc" id="L556">			match(T__3);</span>
+<span class="fc" id="L557">			setState(78);</span>
+<span class="fc" id="L558">			((SixStringsContext)_localctx).tmp6 = guitarString();</span>
+<span class="fc" id="L559">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp6.ret);</span>
+			{
+<span class="fc" id="L561">			setState(80);</span>
+<span class="fc" id="L562">			((SixStringsContext)_localctx).tmp7 = match(Linebreak);</span>
+<span class="fc" id="L563">			 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp7));</span>
+			}
+<span class="fc" id="L565">			setState(83);</span>
+<span class="fc" id="L566">			match(T__4);</span>
+<span class="fc" id="L567">			setState(84);</span>
+<span class="fc" id="L568">			((SixStringsContext)_localctx).tmp8 = guitarString();</span>
+<span class="fc" id="L569">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp8.ret);</span>
+			{
+<span class="fc" id="L571">			setState(86);</span>
+<span class="fc" id="L572">			((SixStringsContext)_localctx).tmp9 = match(Linebreak);</span>
+<span class="fc" id="L573">			 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp9));</span>
+			}
+<span class="fc" id="L575">			setState(89);</span>
+<span class="fc" id="L576">			match(T__5);</span>
+<span class="fc" id="L577">			setState(90);</span>
+<span class="fc" id="L578">			((SixStringsContext)_localctx).tmp10 = guitarString();</span>
+<span class="fc" id="L579">			addToIteratedAttributeIfNotNull(_aNode.getGuitarStringList(), _localctx.tmp10.ret);</span>
+<span class="fc" id="L580">			setState(99);</span>
+<span class="fc" id="L581">			_errHandler.sync(this);</span>
+<span class="fc bfc" id="L582" title="All 2 branches covered.">			switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {</span>
+			case 1:
+				{
+				{
+<span class="fc" id="L586">				setState(92);</span>
+<span class="fc" id="L587">				((SixStringsContext)_localctx).tmp11 = match(Linebreak);</span>
+<span class="fc" id="L588">				 addToIteratedAttributeIfNotNull(_aNode.getLinebreakList(), convertLinebreak(((SixStringsContext)_localctx).tmp11));</span>
+				}
+<span class="fc" id="L590">				setState(95);</span>
+<span class="fc" id="L591">				match(T__6);</span>
+<span class="fc" id="L592">				setState(96);</span>
+<span class="fc" id="L593">				((SixStringsContext)_localctx).tmp12 = lengthLine();</span>
+<span class="fc" id="L594">				_aNode.setLengthLine(_localctx.tmp12.ret);</span>
+				}
+				break;
+			}
+			}
+<span class="fc" id="L599">			_ctx.stop = _input.LT(-1);</span>
+<span class="fc" id="L600">			_aNode.set_SourcePositionEnd(computeEndPosition(_input.LT(-1)));</span>
+		}
+<span class="nc" id="L602">		catch (RecognitionException re) {</span>
+<span class="nc" id="L603">			_localctx.exception = re;</span>
+<span class="nc" id="L604">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L605">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L608">			exitRule();</span>
+		}
+<span class="fc" id="L610">		return _localctx;</span>
+	}
+
+	public static class GuitarString_eofContext extends ParserRuleContext {
+<span class="nc" id="L614">		public guitartab._ast.ASTGuitarString ret = null;</span>
+		public GuitarStringContext tmp;
+<span class="nc" id="L616">		public TerminalNode EOF() { return getToken(GuitarTabAntlrParser.EOF, 0); }</span>
+		public GuitarStringContext guitarString() {
+<span class="nc" id="L618">			return getRuleContext(GuitarStringContext.class,0);</span>
+		}
+		public GuitarString_eofContext(ParserRuleContext parent, int invokingState) {
+<span class="nc" id="L621">			super(parent, invokingState);</span>
+<span class="nc" id="L622">		}</span>
+<span class="nc" id="L623">		@Override public int getRuleIndex() { return RULE_guitarString_eof; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L626" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterGuitarString_eof(this);</span>
+<span class="nc" id="L627">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L630" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitGuitarString_eof(this);</span>
+<span class="nc" id="L631">		}</span>
+	}
+
+	public final GuitarString_eofContext guitarString_eof() throws RecognitionException {
+<span class="nc" id="L635">		GuitarString_eofContext _localctx = new GuitarString_eofContext(_ctx, getState());</span>
+<span class="nc" id="L636">		enterRule(_localctx, 12, RULE_guitarString_eof);</span>
+		try {
+<span class="nc" id="L638">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="nc" id="L640">			setState(101);</span>
+<span class="nc" id="L641">			((GuitarString_eofContext)_localctx).tmp = guitarString();</span>
+<span class="nc" id="L642">			((GuitarString_eofContext)_localctx).ret =  ((GuitarString_eofContext)_localctx).tmp.ret;</span>
+<span class="nc" id="L643">			setState(103);</span>
+<span class="nc" id="L644">			match(EOF);</span>
+			}
+		}
+<span class="nc" id="L647">		catch (RecognitionException re) {</span>
+<span class="nc" id="L648">			_localctx.exception = re;</span>
+<span class="nc" id="L649">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L650">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="nc" id="L653">			exitRule();</span>
+		}
+<span class="nc" id="L655">		return _localctx;</span>
+	}
+
+	public static class GuitarStringContext extends ParserRuleContext {
+<span class="fc" id="L659">		public guitartab._ast.ASTGuitarString ret = null;</span>
+		public Token tmp0;
+<span class="nc" id="L661">		public List&lt;TerminalNode&gt; PIPE() { return getTokens(GuitarTabAntlrParser.PIPE); }</span>
+		public TerminalNode PIPE(int i) {
+<span class="nc" id="L663">			return getToken(GuitarTabAntlrParser.PIPE, i);</span>
+		}
+<span class="nc" id="L665">		public List&lt;TerminalNode&gt; MINUS() { return getTokens(GuitarTabAntlrParser.MINUS); }</span>
+		public TerminalNode MINUS(int i) {
+<span class="nc" id="L667">			return getToken(GuitarTabAntlrParser.MINUS, i);</span>
+		}
+<span class="nc" id="L669">		public List&lt;TerminalNode&gt; Digit() { return getTokens(GuitarTabAntlrParser.Digit); }</span>
+		public TerminalNode Digit(int i) {
+<span class="nc" id="L671">			return getToken(GuitarTabAntlrParser.Digit, i);</span>
+		}
+		public GuitarStringContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L674">			super(parent, invokingState);</span>
+<span class="fc" id="L675">		}</span>
+<span class="nc" id="L676">		@Override public int getRuleIndex() { return RULE_guitarString; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L679" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterGuitarString(this);</span>
+<span class="nc" id="L680">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L683" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitGuitarString(this);</span>
+<span class="nc" id="L684">		}</span>
+	}
+
+	public final GuitarStringContext guitarString() throws RecognitionException {
+<span class="fc" id="L688">		GuitarStringContext _localctx = new GuitarStringContext(_ctx, getState());</span>
+<span class="fc" id="L689">		enterRule(_localctx, 14, RULE_guitarString);</span>
+		// ret is normally returned, a is used to be compatible with rule using the return construct
+<span class="fc" id="L691">		guitartab._ast.ASTGuitarString _aNode = null;</span>
+<span class="fc" id="L692">		_aNode=guitartab._ast.GuitarTabNodeFactory.createASTGuitarString();</span>
+<span class="fc" id="L693">		((GuitarStringContext)_localctx).ret = _aNode;</span>
+<span class="fc" id="L694">		_aNode.set_SourcePositionStart( computeStartPosition(_input.LT(1)));</span>
+<span class="fc" id="L695">		setActiveASTNode(_aNode);</span>
+
+		int _la;
+		try {
+<span class="fc" id="L699">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L701">			setState(105);</span>
+<span class="fc" id="L702">			match(PIPE);</span>
+<span class="fc" id="L703">			setState(112);</span>
+<span class="fc" id="L704">			_errHandler.sync(this);</span>
+<span class="fc" id="L705">			_la = _input.LA(1);</span>
+<span class="fc bfc" id="L706" title="All 4 branches covered.">			while (_la==MINUS || _la==Digit) {</span>
+				{
+<span class="fc" id="L708">				setState(110);</span>
+<span class="fc" id="L709">				_errHandler.sync(this);</span>
+<span class="pc bpc" id="L710" title="1 of 3 branches missed.">				switch (_input.LA(1)) {</span>
+				case Digit:
+					{
+					{
+<span class="fc" id="L714">					setState(106);</span>
+<span class="fc" id="L715">					((GuitarStringContext)_localctx).tmp0 = match(Digit);</span>
+<span class="fc" id="L716">					 addToIteratedAttributeIfNotNull(_aNode.getContentList(), convertDigit(((GuitarStringContext)_localctx).tmp0));</span>
+					}
+					}
+<span class="fc" id="L719">					break;</span>
+				case MINUS:
+					{
+<span class="fc" id="L722">					setState(108);</span>
+<span class="fc" id="L723">					match(MINUS);</span>
+<span class="fc" id="L724">					_aNode.getContentList().add(&quot;-&quot;);</span>
+					}
+<span class="fc" id="L726">					break;</span>
+				default:
+<span class="nc" id="L728">					throw new NoViableAltException(this);</span>
+				}
+				}
+<span class="fc" id="L731">				setState(114);</span>
+<span class="fc" id="L732">				_errHandler.sync(this);</span>
+<span class="fc" id="L733">				_la = _input.LA(1);</span>
+			}
+<span class="fc" id="L735">			setState(115);</span>
+<span class="fc" id="L736">			match(PIPE);</span>
+			}
+<span class="fc" id="L738">			_ctx.stop = _input.LT(-1);</span>
+<span class="fc" id="L739">			_aNode.set_SourcePositionEnd(computeEndPosition(_input.LT(-1)));</span>
+		}
+<span class="nc" id="L741">		catch (RecognitionException re) {</span>
+<span class="nc" id="L742">			_localctx.exception = re;</span>
+<span class="nc" id="L743">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L744">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L747">			exitRule();</span>
+		}
+<span class="fc" id="L749">		return _localctx;</span>
+	}
+
+	public static class LengthLine_eofContext extends ParserRuleContext {
+<span class="nc" id="L753">		public guitartab._ast.ASTLengthLine ret = null;</span>
+		public LengthLineContext tmp;
+<span class="nc" id="L755">		public TerminalNode EOF() { return getToken(GuitarTabAntlrParser.EOF, 0); }</span>
+		public LengthLineContext lengthLine() {
+<span class="nc" id="L757">			return getRuleContext(LengthLineContext.class,0);</span>
+		}
+		public LengthLine_eofContext(ParserRuleContext parent, int invokingState) {
+<span class="nc" id="L760">			super(parent, invokingState);</span>
+<span class="nc" id="L761">		}</span>
+<span class="nc" id="L762">		@Override public int getRuleIndex() { return RULE_lengthLine_eof; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L765" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterLengthLine_eof(this);</span>
+<span class="nc" id="L766">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L769" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitLengthLine_eof(this);</span>
+<span class="nc" id="L770">		}</span>
+	}
+
+	public final LengthLine_eofContext lengthLine_eof() throws RecognitionException {
+<span class="nc" id="L774">		LengthLine_eofContext _localctx = new LengthLine_eofContext(_ctx, getState());</span>
+<span class="nc" id="L775">		enterRule(_localctx, 16, RULE_lengthLine_eof);</span>
+		try {
+<span class="nc" id="L777">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="nc" id="L779">			setState(117);</span>
+<span class="nc" id="L780">			((LengthLine_eofContext)_localctx).tmp = lengthLine();</span>
+<span class="nc" id="L781">			((LengthLine_eofContext)_localctx).ret =  ((LengthLine_eofContext)_localctx).tmp.ret;</span>
+<span class="nc" id="L782">			setState(119);</span>
+<span class="nc" id="L783">			match(EOF);</span>
+			}
+		}
+<span class="nc" id="L786">		catch (RecognitionException re) {</span>
+<span class="nc" id="L787">			_localctx.exception = re;</span>
+<span class="nc" id="L788">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L789">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="nc" id="L792">			exitRule();</span>
+		}
+<span class="nc" id="L794">		return _localctx;</span>
+	}
+
+	public static class LengthLineContext extends ParserRuleContext {
+<span class="fc" id="L798">		public guitartab._ast.ASTLengthLine ret = null;</span>
+		public Token tmp0;
+<span class="nc" id="L800">		public List&lt;TerminalNode&gt; PIPE() { return getTokens(GuitarTabAntlrParser.PIPE); }</span>
+		public TerminalNode PIPE(int i) {
+<span class="nc" id="L802">			return getToken(GuitarTabAntlrParser.PIPE, i);</span>
+		}
+<span class="nc" id="L804">		public List&lt;TerminalNode&gt; MINUS() { return getTokens(GuitarTabAntlrParser.MINUS); }</span>
+		public TerminalNode MINUS(int i) {
+<span class="nc" id="L806">			return getToken(GuitarTabAntlrParser.MINUS, i);</span>
+		}
+<span class="nc" id="L808">		public List&lt;TerminalNode&gt; Digit() { return getTokens(GuitarTabAntlrParser.Digit); }</span>
+		public TerminalNode Digit(int i) {
+<span class="nc" id="L810">			return getToken(GuitarTabAntlrParser.Digit, i);</span>
+		}
+		public LengthLineContext(ParserRuleContext parent, int invokingState) {
+<span class="fc" id="L813">			super(parent, invokingState);</span>
+<span class="fc" id="L814">		}</span>
+<span class="nc" id="L815">		@Override public int getRuleIndex() { return RULE_lengthLine; }</span>
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L818" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).enterLengthLine(this);</span>
+<span class="nc" id="L819">		}</span>
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+<span class="nc bnc" id="L822" title="All 2 branches missed.">			if ( listener instanceof GuitarTabAntlrListener ) ((GuitarTabAntlrListener)listener).exitLengthLine(this);</span>
+<span class="nc" id="L823">		}</span>
+	}
+
+	public final LengthLineContext lengthLine() throws RecognitionException {
+<span class="fc" id="L827">		LengthLineContext _localctx = new LengthLineContext(_ctx, getState());</span>
+<span class="fc" id="L828">		enterRule(_localctx, 18, RULE_lengthLine);</span>
+		// ret is normally returned, a is used to be compatible with rule using the return construct
+<span class="fc" id="L830">		guitartab._ast.ASTLengthLine _aNode = null;</span>
+<span class="fc" id="L831">		_aNode=guitartab._ast.GuitarTabNodeFactory.createASTLengthLine();</span>
+<span class="fc" id="L832">		((LengthLineContext)_localctx).ret = _aNode;</span>
+<span class="fc" id="L833">		_aNode.set_SourcePositionStart( computeStartPosition(_input.LT(1)));</span>
+<span class="fc" id="L834">		setActiveASTNode(_aNode);</span>
+
+		int _la;
+		try {
+<span class="fc" id="L838">			enterOuterAlt(_localctx, 1);</span>
+			{
+<span class="fc" id="L840">			setState(121);</span>
+<span class="fc" id="L841">			match(PIPE);</span>
+<span class="fc" id="L842">			setState(128);</span>
+<span class="fc" id="L843">			_errHandler.sync(this);</span>
+<span class="fc" id="L844">			_la = _input.LA(1);</span>
+<span class="fc bfc" id="L845" title="All 4 branches covered.">			while (_la==MINUS || _la==Digit) {</span>
+				{
+<span class="fc" id="L847">				setState(126);</span>
+<span class="fc" id="L848">				_errHandler.sync(this);</span>
+<span class="pc bpc" id="L849" title="1 of 3 branches missed.">				switch (_input.LA(1)) {</span>
+				case Digit:
+					{
+					{
+<span class="fc" id="L853">					setState(122);</span>
+<span class="fc" id="L854">					((LengthLineContext)_localctx).tmp0 = match(Digit);</span>
+<span class="fc" id="L855">					 addToIteratedAttributeIfNotNull(_aNode.getContentList(), convertDigit(((LengthLineContext)_localctx).tmp0));</span>
+					}
+					}
+<span class="fc" id="L858">					break;</span>
+				case MINUS:
+					{
+<span class="fc" id="L861">					setState(124);</span>
+<span class="fc" id="L862">					match(MINUS);</span>
+<span class="fc" id="L863">					_aNode.getContentList().add(&quot;-&quot;);</span>
+					}
+<span class="fc" id="L865">					break;</span>
+				default:
+<span class="nc" id="L867">					throw new NoViableAltException(this);</span>
+				}
+				}
+<span class="fc" id="L870">				setState(130);</span>
+<span class="fc" id="L871">				_errHandler.sync(this);</span>
+<span class="fc" id="L872">				_la = _input.LA(1);</span>
+			}
+<span class="fc" id="L874">			setState(131);</span>
+<span class="fc" id="L875">			match(PIPE);</span>
+			}
+<span class="fc" id="L877">			_ctx.stop = _input.LT(-1);</span>
+<span class="fc" id="L878">			_aNode.set_SourcePositionEnd(computeEndPosition(_input.LT(-1)));</span>
+		}
+<span class="nc" id="L880">		catch (RecognitionException re) {</span>
+<span class="nc" id="L881">			_localctx.exception = re;</span>
+<span class="nc" id="L882">			_errHandler.reportError(this, re);</span>
+<span class="nc" id="L883">			_errHandler.recover(this, re);</span>
+		}
+		finally {
+<span class="fc" id="L886">			exitRule();</span>
+		}
+<span class="fc" id="L888">		return _localctx;</span>
+	}
+
+	public static final String _serializedATN =
+		&quot;\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\23\u0088\4\2\t\2&quot;+
+		&quot;\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13&quot;+
+		&quot;\t\13\3\2\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\3\7\3#\n\3\f\3\16&quot;+
+		&quot;\3&amp;\13\3\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\7\5\61\n\5\f\5\16\5\64\13&quot;+
+		&quot;\5\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7&quot;+
+		&quot;\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3&quot;+
+		&quot;\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\5\7f\n\7\3\b\3&quot;+
+		&quot;\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\7\tq\n\t\f\t\16\tt\13\t\3\t\3\t\3\n\3\n&quot;+
+		&quot;\3\n\3\n\3\13\3\13\3\13\3\13\3\13\7\13\u0081\n\13\f\13\16\13\u0084\13&quot;+
+		&quot;\13\3\13\3\13\3\13\2\2\f\2\4\6\b\n\f\16\20\22\24\2\2\2\u0087\2\26\3\2&quot;+
+		&quot;\2\2\4$\3\2\2\2\6\'\3\2\2\2\b+\3\2\2\2\n9\3\2\2\2\f=\3\2\2\2\16g\3\2\2&quot;+
+		&quot;\2\20k\3\2\2\2\22w\3\2\2\2\24{\3\2\2\2\26\27\5\4\3\2\27\30\b\2\1\2\30&quot;+
+		&quot;\31\7\2\2\3\31\3\3\2\2\2\32\33\5\b\5\2\33\34\b\3\1\2\34#\3\2\2\2\35\36&quot;+
+		&quot;\5\f\7\2\36\37\b\3\1\2\37#\3\2\2\2 !\7\17\2\2!#\b\3\1\2\&quot;\32\3\2\2\2\&quot;&quot;+
+		&quot;\35\3\2\2\2\&quot; \3\2\2\2#&amp;\3\2\2\2$\&quot;\3\2\2\2$%\3\2\2\2%\5\3\2\2\2&amp;$\3\2&quot;+
+		&quot;\2\2\'(\5\b\5\2()\b\4\1\2)*\7\2\2\3*\7\3\2\2\2+\62\7\n\2\2,-\7\20\2\2&quot;+
+		&quot;-\61\b\5\1\2./\7\21\2\2/\61\b\5\1\2\60,\3\2\2\2\60.\3\2\2\2\61\64\3\2&quot;+
+		&quot;\2\2\62\60\3\2\2\2\62\63\3\2\2\2\63\65\3\2\2\2\64\62\3\2\2\2\65\66\7\f&quot;+
+		&quot;\2\2\66\67\7\17\2\2\678\b\5\1\28\t\3\2\2\29:\5\f\7\2:;\b\6\1\2;&lt;\7\2\2&quot;+
+		&quot;\3&lt;\13\3\2\2\2=&gt;\7\3\2\2&gt;?\5\20\t\2?@\b\7\1\2@A\7\17\2\2AB\b\7\1\2BC\3&quot;+
+		&quot;\2\2\2CD\7\4\2\2DE\5\20\t\2EF\b\7\1\2FG\7\17\2\2GH\b\7\1\2HI\3\2\2\2I&quot;+
+		&quot;J\7\5\2\2JK\5\20\t\2KL\b\7\1\2LM\7\17\2\2MN\b\7\1\2NO\3\2\2\2OP\7\6\2&quot;+
+		&quot;\2PQ\5\20\t\2QR\b\7\1\2RS\7\17\2\2ST\b\7\1\2TU\3\2\2\2UV\7\7\2\2VW\5\20&quot;+
+		&quot;\t\2WX\b\7\1\2XY\7\17\2\2YZ\b\7\1\2Z[\3\2\2\2[\\\7\b\2\2\\]\5\20\t\2]&quot;+
+		&quot;e\b\7\1\2^_\7\17\2\2_`\b\7\1\2`a\3\2\2\2ab\7\t\2\2bc\5\24\13\2cd\b\7\1&quot;+
+		&quot;\2df\3\2\2\2e^\3\2\2\2ef\3\2\2\2f\r\3\2\2\2gh\5\20\t\2hi\b\b\1\2ij\7\2&quot;+
+		&quot;\2\3j\17\3\2\2\2kr\7\13\2\2lm\7\16\2\2mq\b\t\1\2no\7\r\2\2oq\b\t\1\2p&quot;+
+		&quot;l\3\2\2\2pn\3\2\2\2qt\3\2\2\2rp\3\2\2\2rs\3\2\2\2su\3\2\2\2tr\3\2\2\2&quot;+
+		&quot;uv\7\13\2\2v\21\3\2\2\2wx\5\24\13\2xy\b\n\1\2yz\7\2\2\3z\23\3\2\2\2{\u0082&quot;+
+		&quot;\7\13\2\2|}\7\16\2\2}\u0081\b\13\1\2~\177\7\r\2\2\177\u0081\b\13\1\2\u0080&quot;+
+		&quot;|\3\2\2\2\u0080~\3\2\2\2\u0081\u0084\3\2\2\2\u0082\u0080\3\2\2\2\u0082&quot;+
+		&quot;\u0083\3\2\2\2\u0083\u0085\3\2\2\2\u0084\u0082\3\2\2\2\u0085\u0086\7\13&quot;+
+		&quot;\2\2\u0086\25\3\2\2\2\13\&quot;$\60\62epr\u0080\u0082&quot;;
+<span class="fc" id="L925">	public static final ATN _ATN =</span>
+<span class="fc" id="L926">		new ATNDeserializer().deserialize(_serializedATN.toCharArray());</span>
+	static {
+<span class="fc" id="L928">		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];</span>
+<span class="fc bfc" id="L929" title="All 2 branches covered.">		for (int i = 0; i &lt; _ATN.getNumberOfDecisions(); i++) {</span>
+<span class="fc" id="L930">			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);</span>
+		}
+<span class="fc" id="L932">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

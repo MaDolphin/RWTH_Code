@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LineUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">GuitarTabLanguage</a> &gt; <a href="index.source.html" class="el_package">guitartab.utils</a> &gt; <span class="el_source">LineUtils.java</span></div><h1>LineUtils.java</h1><pre class="source lang-java linenums">// (c) https://github.com/MontiCore/monticore
+package guitartab.utils;
+
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * Utils for working with lines in a tabulator
+ *
+ * @author (last commit) kirchhof
+ * @version 1.0, 20.03.19
+ * @since 1.0
+ */
+<span class="nc" id="L14">public class LineUtils {</span>
+  /**
+   * Returns the number at the given index as integer.
+   *
+   * @param index      the index at which to search for a number
+   * @param stringList list of digits and &quot;-&quot;
+   * @return number at the given position
+   */
+  public static Optional&lt;Integer&gt; getNumber(int index, List&lt;String&gt; stringList) {
+
+    // Check if there is any number
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    if (stringList.get(index).equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L26">      return Optional.empty();</span>
+    }
+
+<span class="fc" id="L29">    Integer result = getNumberEndingAtIndex(findEndIndexOfNumber(index, stringList), stringList);</span>
+
+<span class="fc" id="L31">    return Optional.of(result);</span>
+  }
+
+  /**
+   * Returns the number at the given index range as integer.
+   *
+   * @param range      the index range at which to search for a number
+   * @param stringList list of digits and &quot;-&quot;
+   * @return number at the given position
+   */
+  public static Optional&lt;Integer&gt; getNumber(IndexRange range, List&lt;String&gt; stringList) {
+
+<span class="fc" id="L43">    Optional&lt;Integer&gt; startIndex = getIndexOfFirstDigitWithinRange(range, stringList);</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">    if (!startIndex.isPresent()) {</span>
+<span class="fc" id="L45">      return Optional.empty();</span>
+    }
+<span class="fc" id="L47">    Integer stopIndex = findEndIndexOfNumber(startIndex.get(), stringList);</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">    if (stopIndex &gt; range.getStop()) {</span>
+<span class="fc" id="L49">      stopIndex = range.getStop();</span>
+    }
+
+<span class="fc" id="L52">    return Optional.of(getNumberEndingAtIndex(stopIndex, stringList, startIndex.get()));</span>
+  }
+
+  /**
+   * Get the index of the first, i.e. lowest index, digit within the given range of the stringList
+   *
+   * @param range      a range of indices to search in
+   * @param stringList a list of digits or &quot;-&quot;
+   * @return the lowest index containing a digit, Optional.empty if none found
+   */
+  public static Optional&lt;Integer&gt; getIndexOfFirstDigitWithinRange(IndexRange range,
+      List&lt;String&gt; stringList) {
+
+<span class="fc bfc" id="L65" title="All 2 branches covered.">    if (!stringList.get(range.getStart()).equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L66">      return Optional.of(range.getStart());</span>
+    }
+
+<span class="fc bfc" id="L69" title="All 2 branches covered.">    if (range.getStart() == range.getStop()) {</span>
+<span class="fc" id="L70">      return Optional.empty();</span>
+    }
+
+<span class="fc" id="L73">    IndexRange smallerRange = new IndexRange(range.getStart() + 1, range.getStop());</span>
+<span class="fc" id="L74">    return getIndexOfFirstDigitWithinRange(smallerRange, stringList);</span>
+  }
+
+  /**
+   * Finds the index at which a number ends (assuming it consists of multiple digits).
+   * Caller has to guarantee there is actually a digit at the given index.
+   *
+   * @param index      an arbitrary index of digit of a number
+   * @param stringList list of digits and &quot;-&quot;
+   * @return the index of the last digit of the number
+   */
+  public static int findEndIndexOfNumber(int index, List&lt;String&gt; stringList) {
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">    if (index &gt;= stringList.size()) {</span>
+<span class="nc" id="L87">      return stringList.size() - 1;</span>
+    }
+
+<span class="fc" id="L90">    String contentAtIndex = stringList.get(index);</span>
+<span class="fc bfc" id="L91" title="All 2 branches covered.">    if (!contentAtIndex.equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L92">      return findEndIndexOfNumber(index + 1, stringList);</span>
+    }
+    else {
+<span class="fc" id="L95">      return index - 1;</span>
+    }
+  }
+
+  /**
+   * Finds the index at which a number starts (assuming it consists of multiple digits).
+   * Caller has to guarantee there is actually a digit at the given index.
+   *
+   * @param index      an arbitrary index of digit of a number
+   * @param stringList list of digits and &quot;-&quot;
+   * @return the index of the first digit of the number
+   */
+  public static int findStartIndexOfNumber(int index, List&lt;String&gt; stringList) {
+<span class="fc bfc" id="L108" title="All 2 branches covered.">    if (index &lt;= 0) {</span>
+<span class="fc" id="L109">      return 0;</span>
+    }
+
+<span class="fc" id="L112">    String contentAtIndex = stringList.get(index);</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">    if (!contentAtIndex.equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L114">      return findStartIndexOfNumber(index - 1, stringList);</span>
+    }
+    else {
+<span class="fc" id="L117">      return index + 1;</span>
+    }
+  }
+
+  /**
+   * Get the int representation of the fret ending at the given index
+   *
+   * @param index      the index of the last digit of the fret
+   * @param stringList list of digits and &quot;-&quot;
+   * @return int representation of the fret
+   */
+  public static int getNumberEndingAtIndex(int index, List&lt;String&gt; stringList) {
+<span class="fc bfc" id="L129" title="All 2 branches covered.">    if (stringList.get(index).equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L130">      return 0;</span>
+    }
+<span class="fc" id="L132">    return Integer.valueOf(stringList.get(index)) +</span>
+<span class="fc" id="L133">        10 * getNumberEndingAtIndex(index - 1, stringList);</span>
+  }
+
+  /**
+   * Get the int representation of the fret ending at the given index
+   *
+   * @param index      the index of the last digit of the fret
+   * @param stringList list of digits and &quot;-&quot;
+   * @param lowerBound index at which to stop searching for more digits
+   * @return int representation of the fret
+   */
+  public static int getNumberEndingAtIndex(int index, List&lt;String&gt; stringList, int lowerBound) {
+<span class="pc bpc" id="L145" title="1 of 2 branches missed.">    if (stringList.get(index).equals(&quot;-&quot;)) {</span>
+<span class="nc" id="L146">      return 0;</span>
+    }
+<span class="pc bpc" id="L148" title="1 of 2 branches missed.">    if (index == lowerBound) {</span>
+<span class="fc" id="L149">      return Integer.valueOf(stringList.get(index));</span>
+    }
+<span class="nc" id="L151">    return Integer.valueOf(stringList.get(index)) +</span>
+<span class="nc" id="L152">        10 * getNumberEndingAtIndex(index - 1, stringList, lowerBound);</span>
+  }
+
+  /**
+   * Get the range of indices of the number at the given index, i.e. the indices at which the number
+   * at the given index starts / ends
+   *
+   * @param index      index of the number for which the range of indices is searched
+   * @param stringList list of digits and &quot;-&quot;
+   * @return start / end index of the number at the given index, Optional.empty if there is no digit at the given index
+   */
+  public static Optional&lt;IndexRange&gt; getRangeOfNumberAtIndex(int index, List&lt;String&gt; stringList) {
+<span class="fc bfc" id="L164" title="All 2 branches covered.">    if (stringList.get(index).equals(&quot;-&quot;)) {</span>
+<span class="fc" id="L165">      return Optional.empty();</span>
+    }
+
+<span class="fc" id="L168">    IndexRange result = new IndexRange(</span>
+<span class="fc" id="L169">        findStartIndexOfNumber(index, stringList),</span>
+<span class="fc" id="L170">        findEndIndexOfNumber(index, stringList)</span>
+    );
+
+<span class="fc" id="L173">    return Optional.of(result);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

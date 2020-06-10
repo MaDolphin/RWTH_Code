@@ -1,0 +1,60 @@
+// (c) https://github.com/MontiCore/monticore
+grammar TravelCosts extends de.monticore.literals.MCCommonLiterals {
+
+///// Reisekosten //////////////////////////////////////////////////////
+
+TravelExpenseReport =
+  "Dienstreise" Name "{"
+    TravelNumber?
+    Arrival
+    (AllWorkDays | WorkDay+)
+    Departure
+    CostItems
+"}";
+
+TravelNumber =
+  "Reisenummer" travelNo:NatLiteral
+;
+// Reisezeiten
+Arrival       = "Anreise" Duration;
+WorkDay       = "Arbeitstag" Duration;
+AllWorkDays   = "Arbeitstage" beginTime:Time "-" endTime:Time;
+Departure     = "Abreise" Duration;
+
+// Kosten
+CostItems = "Kosten" "{" CostItem+ "}";
+
+interface Cost;
+
+CostItem = (id:NatLiteral ")")? amount:NumericLiteral currency:[euro:"€"|dollar:"$"|else:"-"] Cost;
+
+HotelCost implements Cost
+  = "Hotel";
+
+TransportCost implements Cost
+  = "Fahrt" TravelMeans (description:Description)?;
+
+ExtraCost implements Cost
+  = "Nebenkosten" description:Description;
+
+enum TravelMeans
+  = train:"Zug" | plane:"Flug" | publicTransport:"ÖPNV" | cab:"Taxi";
+
+Description   = (short:Name | long:StringLiteral);
+
+// e.g. 2017-07-15 or 07-15, year default is current year
+  ISODate
+    = ( year:NatLiteral "-")?
+       month:NatLiteral "-"
+         day:NatLiteral;
+
+  // 09:00 or 15, minutes default is 00
+  Time
+    = leadingZero:NatLiteral? hours:NatLiteral (":" minutes:NatLiteral)?;
+
+  // enddate default is startDate, endTime default ist starttime
+  Duration
+    = startDate:ISODate startTime:Time ("-" (endDate:ISODate)? endTime:Time)?;
+
+
+}

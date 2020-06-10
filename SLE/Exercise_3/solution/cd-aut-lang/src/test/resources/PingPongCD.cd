@@ -1,0 +1,14 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+classdiagram PingPongCD {
+
+  public class Ping  {
+  }
+
+  public class Pong {
+  }
+
+  public class NoGame {
+  }
+
+}

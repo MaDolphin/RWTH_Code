@@ -1,0 +1,12 @@
+automata/parser/ParseTrafficLightTest.class
+automata/AutomatonToolTest.class
+automata/lang/AbstractTest.class
+automata/visitors/CountStatesTest.class
+automata/symboltable/AutomatonSymbolTableCreatorTest.class
+automata/prettyprint/PrettyPrinterTest.class
+automata/cocos/TransitionSourceExistsTest.class
+automata/parser/AutomatonParserTest.class
+automata/cocos/AutomataCoCosTest.class
+automata/symboltable/AutomatonSymbolSerializationTest.class
+automata/cocos/AtLeastOneInitialAndFinalStateTest.class
+automata/parser/PrintStatesTest.class

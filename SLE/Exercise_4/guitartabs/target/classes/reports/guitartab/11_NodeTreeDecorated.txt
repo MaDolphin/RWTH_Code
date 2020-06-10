@@ -1,0 +1,92 @@
+========================================================== Node Tree + Extra Infos
++--@GuitarTab!MCGrammar(3,0)                                 (11x)
+                          template Parser.ftl
+                          template ParserHeader.ftl
+                          template LexerMember.ftl
+                          generates "GuitarTabAntlr.g4"
+                          template MCParser.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          template MCParserMethods.ftl
+                          generates "GuitarTabParser.java"
+   +--@MCBasics!GrammarReference(3,26)
+   +--@Digit!LexProd(7,2)
+   |  +--@!LexAlt(7,16)
+   |  |  +--@!LexCharRange(7,16)
+   +--@Linebreak!LexProd(8,2)
+   |  +--@!LexAlt(8,20)
+   |  |  +--@NEWLINE!LexNonTerminal(8,20)
+   +--@Tab!ClassProd(5,2)
+   |  +--@!Alt(5,8)
+   |  |  +--@!Block(5,8)
+   |  |  |  +--@!Alt(5,9)
+   |  |  |  |  +--@Comment!NonTerminal(5,9)
+   |  |  |  +--@!Alt(5,19)
+   |  |  |  |  +--@SixStrings!NonTerminal(5,19)
+   |  |  |  +--@!Alt(5,32)
+   |  |  |  |  +--@Linebreak!NonTerminal(5,32)
+   +--@Comment!ClassProd(10,2)
+   |  +--@!Alt(10,12)
+   |  |  +--@LBRACK!Terminal(10,12)
+   |  |  +--@!Block(10,16)
+   |  |  |  +--@!Alt(10,17)
+   |  |  |  |  +--@Name!NonTerminal(10,17)
+   |  |  |  +--@!Alt(10,24)
+   |  |  |  |  +--@WS!NonTerminal(10,24)
+   |  |  +--@RBRACK!Terminal(10,29)
+   |  |  +--@Linebreak!NonTerminal(10,33)
+   +--@SixStrings!ClassProd(13,2)
+   |  +--@!Alt(14,4)
+   |  |  +--@e!Terminal(14,4)
+   |  |  +--@GuitarString!NonTerminal(14,8)
+   |  |  +--@Linebreak!NonTerminal(14,21)
+   |  |  +--@B!Terminal(15,4)
+   |  |  +--@GuitarString!NonTerminal(15,8)
+   |  |  +--@Linebreak!NonTerminal(15,21)
+   |  |  +--@G!Terminal(16,4)
+   |  |  +--@GuitarString!NonTerminal(16,8)
+   |  |  +--@Linebreak!NonTerminal(16,21)
+   |  |  +--@D!Terminal(17,4)
+   |  |  +--@GuitarString!NonTerminal(17,8)
+   |  |  +--@Linebreak!NonTerminal(17,21)
+   |  |  +--@A!Terminal(18,4)
+   |  |  +--@GuitarString!NonTerminal(18,8)
+   |  |  +--@Linebreak!NonTerminal(18,21)
+   |  |  +--@E!Terminal(19,4)
+   |  |  +--@GuitarString!NonTerminal(19,8)
+   |  |  +--@!Block(20,4)
+   |  |  |  +--@!Alt(20,5)
+   |  |  |  |  +--@Linebreak!NonTerminal(20,5)
+   |  |  |  |  +--@L!Terminal(20,15)
+   |  |  |  |  +--@LengthLine!NonTerminal(20,19)
+   +--@GuitarString!ClassProd(23,2)
+   |  +--@!Alt(23,17)
+   |  |  +--@PIPE!Terminal(23,17)
+   |  |  +--@!Block(23,21)
+   |  |  |  +--@!Alt(23,22)
+   |  |  |  |  +--@Digit!NonTerminal(23,22)
+   |  |  |  +--@!Alt(23,38)
+   |  |  |  |  +--@MINUS!Terminal(23,38)
+   |  |  +--@PIPE!Terminal(23,52)
+   +--@LengthLine!ClassProd(26,2)
+   |  +--@!Alt(26,15)
+   |  |  +--@PIPE!Terminal(26,15)
+   |  |  +--@!Block(26,19)
+   |  |  |  +--@!Alt(26,20)
+   |  |  |  |  +--@Digit!NonTerminal(26,20)
+   |  |  |  +--@!Alt(26,36)
+   |  |  |  |  +--@MINUS!Terminal(26,36)
+   |  |  +--@PIPE!Terminal(26,50)
+========================================================== Explanation
+Node Tree: this is the extended form: one with extra infos
+as sublines. The tree itself lists all AST nodes using their identifiers.
+Vertical line: list all the direct children of a node.
+Each node knows about:
+- #Visits through templates (in the raw version) looks like: (2x)
+- files generated originating from this node
+- templates called on this node
+Remark: a "null" as value in the tree means that the tree has been altered
+after parsing. --> this is not yet reflected in the protocol
+(EOF)
