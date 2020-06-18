@@ -34,7 +34,19 @@ insert(X,Y,Xs):- add_elem_in_list(X, [], R), app(Y,R,Xs).
 
 % f) Implement a predicate sublist/2 which has two lists as arguments and yields the answer true iﬀ whenever an element occurs n times in the ﬁrst list, then it also occurs at least n times in the second list.
 
-sublist(S,[H|T]) :- insert(S,[],H), sublist(S,T).
+% sublist(S,R) :- insert(S,_,R).
+% sublist(S,Z):- insert(_,S,X), append(X,_,Z).
+
+suffix(X,Y):- insert(_,X,Y). 
+prefix(X,Y):- insert(X,_,Y).
+sublist(X,Y):- suffix(X,Z),prefix(Z,Y).
+
+
+% g) Implement a predicate shrink/2 which removes all occurrences of the empty set ([]) from the list in the ﬁrst argument to obtain the list in the second argument.
+
+delMember(_, [], []).
+delMember(X, [X|Xs], Y) :- !, delMember(X, Xs, Y).
+delMember(X, [T|Xs], Y) :- !, delMember(X, Xs, Y2), append([T], Y2, Y).
 
 
 
