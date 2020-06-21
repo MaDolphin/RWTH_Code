@@ -18,7 +18,21 @@ remove_duplicates([H|T], [H|T1]) :- not_member(H, T), remove_duplicates(T, T1).
 % d) The lists in this and in the following subexercises are meant to represent sets, i.e., unordered lists without duplicates. Implement a predicate setify/2 where the list in the second argument results from removing all duplicates from the list given in the ﬁrst argument, regarding not only the top level of the list, but also all of its sublists recursively.
 
 
-setify([H|T], Set):- remove_duplicates([H|T],List), setify(List,Set).
+% setify([H|T], Set):- setify(R,Set), member(H,T), remove_duplicates([H|T],R).
+% setify([],_):-!.
+% setify([H|T],Node,Set):- setify(H,[H|T],Set), not_member(H,T).
+
+% setify([H|T],Node,Set):- setify(H,[H|T],Set), member(H,T),remove_duplicates(Node,New_Node).
+% setify(List,Set):- setify(List,List,Set).
+
+
+
+% setify([],Node,Set):- remove_duplicates(Node,New_Node).
+% setify(List,Node,Set):- member(M,List), setify(M,List,Set).
+
+setify([],[]).
+setify([X],[Y]):- setify(X,Y).
+setify([H|T],Y):- setify([H],M),setify([T],N),remove_duplicates([M|N],Y).
 
 
 
@@ -37,23 +51,62 @@ insert(X,Y,Xs):- add_elem_in_list(X, [], R), app(Y,R,Xs).
 % sublist(S,R) :- insert(S,_,R).
 % sublist(S,Z):- insert(_,S,X), append(X,_,Z).
 
-suffix(X,Y):- insert(_,X,Y). 
-prefix(X,Y):- insert(X,_,Y).
-sublist(X,Y):- suffix(X,Z),prefix(Z,Y).
+% suffix(X,Y):- insert(_,X,Y). 
+% prefix(X,Y):- insert(X,_,Y).
+% sublist(X,Y):- suffix(X,Z),prefix(Z,Y).
+
+sublist([],[]).
+sublist(X, [Y|Ys]) :- sublist(X, Y).
+sublist(X, [Y|Ys]) :- sublist(Xs, Y), insert(Ys, Xs, X).
+
 
 
 % g) Implement a predicate shrink/2 which removes all occurrences of the empty set ([]) from the list in the ﬁrst argument to obtain the list in the second argument.
 
-delMember(_, [], []).
-delMember(X, [X|Xs], Y) :- !, delMember(X, Xs, Y).
-delMember(X, [T|Xs], Y) :- !, delMember(X, Xs, Y2), append([T], Y2, Y).
+% delete_first_element([_|T],T).
+
+% add_list([],List,InitList,ResultList,R):- 
+%     write(oldRE-ResultList),nl,
+%     write(addListE-List1),nl,
+%     member(T,List),append([T],ResultList,New_ResultList1),
+%     delete_first_element(InitList,New_InitList),
+
+%     write(rE-New_ResultList1),nl,
+%     write(newInitListE-New_InitList),nl,
+
+%     shrink(New_InitList,New_InitList,[],New_ResultList1,R).
+
+% add_list([H|T],TempList,InitList,ResultList,R):- 
+%     append([TempList],H,TempList1), 
+%     add_list(T,TempList1,InitList,ResultList,R).
+
+% shrink([],[],_,ResultList,ResultList).
+
+% shrink([],InitList,[_|TempList],ResultList,R):- 
+%  TempList \= [[]],
+%  write(tempListNo-TempList),nl,
+%  add_list(TempList,[],InitList,ResultList,R).
+
+% shrink([],InitList,[_|TempList],ResultList,R):- 
+%  TempList == [[]],
+%  write(tempListYes-TempList),nl,
+%  write(initListYes-InitList),nl,
+
+%  member(T,InitList),
+%  delete_first_element(T,New_InitList),
+%  write(newInitList-New_InitList),nl,
+%  shrink([New_InitList],[New_InitList],[],ResultList,R).
+
+% shrink([H|_],InitList,TempList,ResultList,R):- 
+%     write(init-H),nl,
+%     append([[]],TempList,TempList1), 
+%     shrink(H,InitList,TempList1,ResultList,R).
+
+% shrink(InitList,R):- shrink(InitList,InitList,[],[],R).
 
 
-
-
-
-
-
+shrink([X],X).
+shrink([X|Xs],Y):- shrink(X,M),shrink(Xs,N),append(M,N,Y).
 
 
 
