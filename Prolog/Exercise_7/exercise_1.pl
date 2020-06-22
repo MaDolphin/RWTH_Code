@@ -55,9 +55,32 @@ insert(X,Y,Xs):- add_elem_in_list(X, [], R), app(Y,R,Xs).
 % prefix(X,Y):- insert(X,_,Y).
 % sublist(X,Y):- suffix(X,Z),prefix(Z,Y).
 
-sublist([],[]).
-sublist(X, [Y|Ys]) :- sublist(X, Y).
-sublist(X, [Y|Ys]) :- sublist(Xs, Y), insert(Ys, Xs, X).
+% sublist([],[]).
+% sublist(X, [Y|Ys]) :- sublist(X, Y).
+% sublist(X, [Y|Ys]) :- sublist(Xs, Y), insert(Ys, Xs, X).
+
+
+subset([],[]).
+subset([X|L],[X|S]) :- subset(L,S).
+subset(L, [X|S]) :- subset(L,S).
+
+
+% prefix(P,L):- insert(P,_,L).
+% suffix(S,L):- insert(_,S,L).
+% sublist(Sub,List):- suffix(Suffix,List), prefix(Sub,Suffix).
+
+sublist(R,ResultList,[]):- write(eeee-ResultList),nl.
+% sublist(R,ResultList,[H|T]):- 
+%     \+ member(M,T),
+%     insert(H,[],TempList), 
+%     append([TempList],ResultList,ResultList1),
+%     sublist(R,ResultList1,T).
+step_sublist(R,[H|T]):- 
+    member(M,T),
+    insert(H,[M],R).
+    step_sublist(R,T).
+
+sublist(R,List):- step_sublist(R1,List),insert(R1,List,List1),remove_duplicates(List1,List2),member(R,List2).
 
 
 
