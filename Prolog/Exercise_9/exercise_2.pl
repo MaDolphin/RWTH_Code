@@ -1,4 +1,3 @@
-
 q(24).
 q(6).
 p(X) :- q(X).
@@ -6,9 +5,7 @@ p(X) :- q(X).
 findPred(Element,Q):- 
     Element =.. [Type|Parameters],
     length(Parameters, Int),
-    length(List, Int),
-    append([Type],List,New_List),
-    Q =.. New_List.
+    functor(Q,Type,Int).
 
 :- dynamic count/2.
 init([]).
@@ -25,5 +22,11 @@ solveH(true,[]):-!.
 solveH(Query,List):-
     clause(Query,Body),
     solveH(Body,NewList),
-    append([Query:-Body],NewList,List).
-    
+    findPred(Query,Query1),
+    findPred(Body,Body1),
+    clause(Query1,Body1),
+    unifiable(Query,Query1,_),
+    append([Query1:-Body1],NewList,List).
+
+solve(Query):-
+    solveH(Query,List),inc(List).
