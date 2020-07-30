@@ -1,66 +1,89 @@
 
-% fun([],[]):-
-%     write(1),nl.
+% % ----------------------------------
+% toList([],[]).
 
-% fun([[]|Xs],Result_List):-
-%     write(2),nl,
-%     fun(Xs,Result_List).
-
-% fun([var(Element)|Xs],Result_List):-
-%     write(3),nl,
-%     fun(Xs,Result_List).
-
-% fun([Element|Xs],Result_List):-
-%     atomic(Element),
-%     write(4),nl,
-%     fun(Xs,Result_List).
-
-% fun([[Element|Ys]|Xs],Result_List):- 
+% toList([[]|Xs],R2):- toList(Xs,R2).
+% toList([[Element|Ys]|Xs],Result_List):-
 %     compound(Element),
-%     write(5),nl,
-%     Element =.. [H|Element_To_List],
-%     reverse(Element_To_List,Element_To_List1),
-%     append([H],Element_To_List1,List),
-%     fun(List,R_List),
-%     fun(Xs,Xs_List),
-%     append([R_List],Xs_List,Result_List).
+%     Element =.. [Type|Parameters],
+%     reverse(Parameters,Parameters1),
+%     append([Type],Parameters1,List),
+%     append([List],Ys,New_Ys),
+%     toList([Element|New_Ys],R1),
+%     toList(Xs,R2),
+%     append([R1],R2,Result_List).
 
-% reverseArgs(Init_Element,Result_List):- 
+% toList([Element|Xs],Head_List,Tail_List,Result_List):-
+%     var(Element),
+    
+%     toList(Xs,Result_List).
+% toList([Element|Xs],Head_List,Tail_List,Result_List):-
+%     toList(Xs,Result_List),
+%     atomic(Element).
+% toList([Element|Xs],Head_List,Tail_List,Result_List):-
+%     toList(Xs,Result_List),
+%     compound(Element),
+%     Element =.. [Type|Parameters],
+%     reverse(Parameters,Parameters1),
+%     append([Type],Parameters1,List),
+%     append([List],Xs,New_Xs),
+
+
+% reverseArgs(Init_Element,Result):-
 %     compound(Init_Element),
 %     Init_Element =.. Init_List,
-%     fun(Init_List,Result_List).
+%     toList(Init_List,Result_List).
+% reverseArgs(Element,Result):- 
+%     reverseArgs(Element,Result).
 
-% % ----------------------------------
-toList([],[]).
-
-toList([[]|Xs],R2):- toList(Xs,R2).
-toList([[Element|Ys]|Xs],Result_List):-
+reverseArgs(Element,Result):-
     compound(Element),
     Element =.. [Type|Parameters],
-    reverse(Parameters,Parameters1),
-    append([Type],Parameters1,List),
-    append([List],Ys,New_Ys),
-    toList([Element|New_Ys],R1),
-    toList(Xs,R2),
-    append([R1],R2,Result_List).
+    reverseArgsList(Type,Parameters,Result).
 
-toList([Element|Xs],Head_List,Tail_List,Result_List):-
+reverseArgs(Element,Result):-
     var(Element),
+    writeln(2-Element),
+    true.
+
+reverseArgs(Element,Result):-
+    atomic(Element),
+    writeln(3-Element),
+    true.
+
+reverseArgsList(Type,[],Result):- 
+    writeln('['),
+    writeln(1-Type).
+
+reverseArgsList(Type,[T|Ts],Result):-
+    % writeln(4-[T|Ts]),
+    reverseArgsList(Type,Ts,XTR),
+    reverseArgs(T,XR).
+    % append([T],XR,TempList),
     
-    toList(Xs,Result_List).
-toList([Element|Xs],Head_List,Tail_List,Result_List):-
-    toList(Xs,Result_List),
-    atomic(Element).
-toList([Element|Xs],Head_List,Tail_List,Result_List):-
-    toList(Xs,Result_List),
-    compound(Element),
-    Element =.. [Type|Parameters],
-    reverse(Parameters,Parameters1),
-    append([Type],Parameters1,List),
-    append([List],Xs,New_Xs),
+
+% p(a, q(f(Z,Y),Y,b), X)
+% [p,a,[q,[f,Z,Y],Y,b],X]
 
 
-reverseArgs(Init_Element,Result):-
-    compound(Init_Element),
-    Init_Element =.. Init_List,
-    toList(Init_List,Result_List).
+trans([],[]).
+trans([[]|Xs],XsR):- writeln(1-Xs),trans(Xs,XsR).
+trans([[Y|Ys]|Xs],Result):- trans([Y|Ys],XR), trans(Xs,XsR).
+trans([X|Xs],Result):- trans(Xs,Result).
+
+
+test([],T,[]):- reverse(T,T_R), Element =.. T_R.
+test([[Type|Ys]|Xs],T,R):- test(Xs,T,R),append([Type],[],T1),test(Ys,T1,R),append([]).
+test([X|Xs],T,R):- test(Xs,T1,R),append([X],T,T1).
+
+
+
+
+
+
+
+
+
+
+
+% [p,X,[q,b,Y,[f,Y,Z]],a]
